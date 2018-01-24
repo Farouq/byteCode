@@ -1,0 +1,17 @@
+"C:\Program Files\Microsoft Visual Studio 8\SDK\v2.0\Bin"
+0.7
+0.85
+0.7
+0.7
+5.0
+3
+C:\Users\faa634\Desktop\ASXGUI
+
+
+
+
+the Configuration file is set as follows
+1- The path of IlDasm intermediate language disassembler
+2- similarity threshold used for LCS or Levenshtien
+3- Comparison method used set 1 to use SimCad or 2 to use LCS or 3 to use Levenshtien 
+4- The project path (source code + exe files)
