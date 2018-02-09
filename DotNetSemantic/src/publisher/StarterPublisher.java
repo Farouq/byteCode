@@ -9,7 +9,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
-
+import java.lang.*;
 import org.apache.commons.io.FileUtils;
 
 
@@ -66,6 +66,11 @@ public class StarterPublisher {
 		//export the unfiltered binary code and source code to xml files
 		//System.out.println("step4");
 		step4_exportToXML(config,files,disassembledCodeList);
+		/* To to
+		 * I need to check if path of the files. If the project has been moved after compilation, I need to move the source 
+		 * code files to it's path at the time of compilation
+		 * Do later before publish the source code
+		 */
 		 
 		// export all filtered binary code to one xml file. and all source code to one file
 		//System.out.println("step5");
@@ -129,12 +134,12 @@ public class StarterPublisher {
 			} 
 			ArrayList<String> disassebledCode=new ArrayList<String>();
 			Runtime rt = Runtime.getRuntime();
-			//String command=config.disassembeler_EXE_path+"   "+file + "  /source /text ";
+			String command=config.disassembeler_EXE_path+"   "+file + "  /source /text ";
 			// String command=config.disassembeler_EXE_path+"   "+file + "  /source /text /linenum ";
 
 			
 
-			String command="C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.7 Tools\\ildasm.exe "+file + "  /source /text ";
+	//		String command="C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.7 Tools\\ildasm.exe "+file + "  /source /text ";
 	//		System.out.println(command);
 			Process pr = rt.exec(command);
 			BufferedReader input = new BufferedReader(new InputStreamReader(pr.getInputStream()));
@@ -161,6 +166,7 @@ public class StarterPublisher {
 
 	private static void step3_writeDisassembleContentToFiles(Configuration config,ArrayList<String> files,ArrayList<ArrayList<String>> disassembledCodeList,boolean bLineNo) throws Exception
 	{
+		//System.out.println("export to text file" +disassembledCodeList.get(0).size() );
 
 		for(int i=0;i<files.size();i++)
 		{
@@ -198,6 +204,7 @@ public class StarterPublisher {
 	private static void step4_exportToXML(Configuration config,ArrayList<String> files,ArrayList<ArrayList<String>> disassembledCodeList) throws Exception
 	{
 		String currentSourceFileAddress="NULL";
+	//	System.out.println("export to XML file" +disassembledCodeList.get(0).size() );
 
 		for(int i=0;i< files.size();i++)	
 		{
@@ -215,6 +222,7 @@ public class StarterPublisher {
 			int methoBlockEndLine=Integer.MAX_VALUE;
 			for(int j=0;j<in_lines.size();j++)
 			{
+				
 				if(in_lines.get(j).startsWith("// Source File '"))
 				{
 					String t=in_lines.get(j).replace("// Source File '", "");
@@ -319,6 +327,8 @@ public class StarterPublisher {
 
 	private static void step5_Filter_ExportAllToXML(Configuration config,ArrayList<String> files,ArrayList<ArrayList<String>> disassembledCodeList) throws Exception
 	{
+		//System.out.println("export to filtered  XML file" +disassembledCodeList.get(0).size());
+
 		String lin;
 		int methodCounter=0;
 		
@@ -343,6 +353,7 @@ public class StarterPublisher {
 
 		for(int i=0;i< files.size();i++)	
 		{			
+			
 
 			ArrayList<String> in_lines=disassembledCodeList.get(i);
 			ArrayList<String> methodBlockBuffer_binary=new ArrayList<String>();
@@ -466,7 +477,7 @@ public class StarterPublisher {
 						lin = lin.substring(w);
 					}
 					
-					// this block creates called methos set in the method
+					// this block creates called methods set in the method
 					if (lin.trim().startsWith("call"))
 					{
 						String calledFunction;
@@ -545,8 +556,12 @@ public class StarterPublisher {
 
 					if(!lin.equals("call")) methodBlockBuffer_binary.add(lin);
 				//	methodBlockBuffer_binary.add(lin);
+				//	System.out.println(lin);
+					
 					
 				}
+				
+
 
 
 
@@ -579,11 +594,17 @@ public class StarterPublisher {
 					b=methodBlockBuffer_source.size()>5;
 					System.out.println(b+"  ");
 					*/
+
 					
 					// if statement is to filter out small fragments && methods with no source code
-					if (methodBlockBuffer_binary.size()>5 && methoBlockStartLine !=Integer.MAX_VALUE && !currentSourceFileAddress.endsWith(".xaml") && methodBlockBuffer_source.size()>4)
+					
+					// This old condition.  methoBlockStartLine =Integer.MAX_VALUE inly if it could not find the start line and end line
+					//if (methodBlockBuffer_binary.size()>5 && methoBlockStartLine !=Integer.MAX_VALUE && !currentSourceFileAddress.endsWith(".xaml") && methodBlockBuffer_source.size()>4)
 
+					
+				    if (methodBlockBuffer_binary.size()>5  && !currentSourceFileAddress.endsWith(".xaml") )
 					{
+
 						methodCounter++;
 						out_lines_binary.add("<source file=\""+currentSourceFileAddress+"\" startline=\""+methoBlockStartLine+"\" endline=\""+methoBlockEndLine+"\"><![CDATA[");
 						methodCalls.add("<source file=\""+currentSourceFileAddress+"\" startline=\""+methoBlockStartLine+"\" endline=\""+methoBlockEndLine+"\"><![CDATA[");
@@ -597,6 +618,7 @@ public class StarterPublisher {
 						{
 							out_lines_binary.add(llll);
 						}
+
 
 						out_lines_binary.add("]]></source>");
 
@@ -649,6 +671,9 @@ public class StarterPublisher {
 						}						
 						methodCalls.add("]]></source>");
 						
+						
+						// It will be better to create a method fot the following code
+						// to be done
 						String sig="";
 						for(String s : methodSignitureBuffer)
 						{
@@ -728,6 +753,7 @@ public class StarterPublisher {
 		
 		copyUsedSourceFiles(config,sourceCodeFileSet);
 		System.out.println("Number of methods extracted : "+ methodCounter);
+		
 
 		
 
@@ -738,25 +764,54 @@ public class StarterPublisher {
 		boolean make;
 		File projectAddress = new File(config.projectAddress);
 		String projectName = projectAddress.getName();
-		
-		
+		//CharSequence projectAddressAsASequance=projectAddress.toString();
+
+
 		//System.out.println("copying source code files");
-		
+
 		for(String filePath:sourceCodeFileSet ){
-			
+
+
 			File sourceFile= new File(filePath);
-			
-			String targetFilePath=filePath.replace(config.projectAddress,config.sourceCodeAddress.concat("\\".concat(projectName)));
-			
+
+			// it means that the source files that are compiled in VS didn't move
+			// easier to choose the second condition
+			//if (filePath.contains(projectAddressAsASequance))
+			//System.out.println(" the file is exist: "+sourceFile.exists());
+			if(sourceFile.exists()) {
+				String targetFilePath=filePath.replace(config.projectAddress,config.sourceCodeAddress.concat("\\".concat(projectName)));
+				File file = new File(targetFilePath);
+				File parentDir= file.getParentFile();
+				make= parentDir.mkdirs(); // create the parent directory of the target address
+				
+				FileUtils.copyFileToDirectory(sourceFile,parentDir);
+			}
+			else
+				//The project are moved after it was compiled. need to search for the files in the project address and move them
+				// A proposed solution is to move back all files to its orginal path so the ILdasm will be able to Generate the source code
+			{
+
+				int projectNamePosition= filePath.indexOf(projectName);
+				
+
+				System.out.println("Project has been moved. Search for the source code file in current dirctory ");
+				
+			}
+
+
+
+
+
+
+
 			// if statement check if the source code (visual studio source code ) moved or copied after compilation.
-			// cause exe files save the original path of compiled files. I need to determine the pathe of files to copy
-			
+			// cause exe files save the original path of compiled files. I need to determine the path of files to copy
+			// if the files (project didn't moved after compilation then I need to copy it from : the path found in the exe to 
+			// project address+ \\2-SourceDode folder+\\ rest of file path in the project
+
+			/*
 			if(!filePath.equals(targetFilePath))
 			{
-			File file = new File(targetFilePath);
-			File parentDir= file.getParentFile();
-			make= parentDir.mkdirs();
-			FileUtils.copyFileToDirectory(sourceFile,parentDir);
 			}
 			else{
 				int projectNamePosition= filePath.indexOf(projectName);
@@ -766,10 +821,12 @@ public class StarterPublisher {
 				make= parentDir.mkdirs();
 				FileUtils.copyFileToDirectory(sourceFile,parentDir);
 			}
+
+
+			 */
 		}
-		
 		System.out.println("Number of source files used: "+ sourceCodeFileSet.size());
-		
+
 	}
 
 	

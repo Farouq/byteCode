@@ -53,7 +53,7 @@ public class Starter_FactExtraction_Step2 {
 			config.callsLCSThreshold= Double.parseDouble(arguments.get(3));
 		}
 		
-		if (args.length>=4){ 
+		if (args.length>=4){  
 			config.instructionLevThreshold= Double.parseDouble(arguments.get(1));
 			config.instructionJaccThreshold= Double.parseDouble(arguments.get(2));
 			config.callsLCSThreshold= Double.parseDouble(arguments.get(3));
@@ -72,9 +72,12 @@ public class Starter_FactExtraction_Step2 {
 		
 		// extract bytecode into xml files
 		// move used source code and exe files
+		
+		//System.out.println(config.disassembeler_EXE_path); // correct disasem
 		StarterPublisher.start(config);
 		
 		
+		 
 		// clone detection using Lev distance on byte code
 		
 		InstructionLev.levenstien(config, config.xmlByteCode);

@@ -14,7 +14,11 @@ public class Configuration {
 	//Win 7 old
 	//This is the last version
 	
-	public String disassembeler_EXE_path="C:C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.7 Tools\\ildasm.exe";
+	// the is not accurate results on win 10
+	//public String disassembeler_EXE_path="C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.7 Tools\\ildasm.exe";
+	
+	// this one is accurate
+	public String disassembeler_EXE_path="C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v7.0A\\Bin\\ildasm.exe";
 	public String sourceCodeAddress="";
 	public String byteCodeAddress="";
 	public String disassebledAddress="";
@@ -99,7 +103,11 @@ public class Configuration {
 	{
 		Configuration config=new Configuration();
 
-		config.disassembeler_EXE_path="C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.7 Tools\\ildasm.exe ";
+		// This disassimpler on Windows 10 not accurate. dont parse source sode correctly
+		// config.disassembeler_EXE_path="C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.7 Tools\\ildasm.exe ";
+		
+		// ildasm version 4.0....
+		config.disassembeler_EXE_path="C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v7.0A\\Bin\\ildasm.exe";
 		config.instructionLevThreshold= 0.7;
 		config.instructionJaccThreshold= 0.85;
 		config.callsLCSThreshold= 0.7;
