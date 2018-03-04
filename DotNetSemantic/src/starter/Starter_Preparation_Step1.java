@@ -30,6 +30,7 @@ public class Starter_Preparation_Step1 {
 		//System.out.println(config.comparisonMethod);
 		
 	}
+
 	
 	
 	public static void makeOutputFolders(Configuration config){
@@ -41,6 +42,8 @@ public class Starter_Preparation_Step1 {
 		mkdir(config.ontologyAddress);
 	//	mkdir(config.sparqlAddress);
 		mkdir(config.reportAddress);	
+		mkdir(config.testing);	
+		
 		System.out.println("Output Dicrectory created look in: " + config.projectClone);
 	}
 	

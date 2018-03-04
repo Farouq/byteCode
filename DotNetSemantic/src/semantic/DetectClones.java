@@ -65,7 +65,7 @@ public class DetectClones {
 		// load method signiture into ArrayList
 		
 
-		
+	
 
 		detect(config);
 		
@@ -92,8 +92,8 @@ public class DetectClones {
 		config.xmlCalledMethods=config.disassebledAddress+"\\method_0_calls.xml";
 		parse2(config.xmlCalledMethods);
 		
-		config.methodSigniture=config.disassebledAddress+"\\Method_0_Signiture.xml";
-		parse3(config.methodSigniture);
+		config.xmlmethodSignature=config.disassebledAddress+"\\Method_0_Signiture.xml";
+		parse3(config.xmlmethodSignature);
 		
 
 		String outputFileAddress2=config.reportAddress+"\\FinalCloneReport"+ config.instructionLevThreshold+".xml";

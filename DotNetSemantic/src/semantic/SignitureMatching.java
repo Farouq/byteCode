@@ -5,10 +5,6 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 import java.util.Map.Entry;
 import java.util.*;
 
@@ -33,6 +29,10 @@ public class SignitureMatching {
 	// ArrayList<ArrayList<String>>();
 	private static ArrayList<ArrayList<String>> methodsData1 = new ArrayList<ArrayList<String>>();
 	private static ArrayList<ArrayList<String>> methodSigniture = new ArrayList<ArrayList<String>>();
+	private static ArrayList<String> cscode=new ArrayList<String>();
+
+	
+	private static ArrayList<Set<String>> methodInstructionSet = new ArrayList<Set<String>>();
 
 	//private static ArrayList<Set<String>> methodsDataSet = new ArrayList<Set<String>>();
 
@@ -47,10 +47,13 @@ public class SignitureMatching {
 		Configuration config=Configuration.initialize(args[0]);
 
 		//Configuration config=Configuration.loadFromFile();
-		config.methodSigniture=config.disassebledAddress+"\\Method_0_Signiture.xml";
+		config.xmlmethodSignature=config.disassebledAddress+"\\method_0_Signiture.xml";
 		
-		lcsCalledMethods(config);
-		System.out.println(methodSigniture.size());
+		parse3(config.xmlmethodSignature);
+
+	//	lcsCalledMethods(config);
+	//	levenstien(config,config.xmlmethodSignature);
+		jaccInstructions(config);
 		
 	}
 
@@ -62,8 +65,13 @@ public class SignitureMatching {
 		bufferedWriter.write("<clones>");
 		bufferedWriter.newLine();
 
-		parse3(config.methodSigniture);
 	
+		config.callsLCSThreshold=0.85;
+		System.out.println("Number of method extracted: "+methodSigniture.size());
+		System.out.println("Similarity Threshold: "+config.callsLCSThreshold);
+
+		
+
 
 		// LCS similarity for called methods
 
@@ -77,8 +85,9 @@ public class SignitureMatching {
 					{
 						double d = (double) LCSAlgorithm(methodSigniture.get(v), methodSigniture.get(c)).size()	* 2	/ (methodSigniture.get(v).size() + methodSigniture.get(c).size());
 						if (d>config.callsLCSThreshold){
+							d=Math.round(d * 100.0) / 100.0;
 							
-						bufferedWriter.write( "<clone_pair>");
+						bufferedWriter.write("<clone_pair Similarity=\""+d +"\" Verified= \"N\" >");
 						bufferedWriter.newLine();
 						//System.out.println(d );
 						// first fragment
@@ -98,7 +107,7 @@ public class SignitureMatching {
 						//close pair
 						bufferedWriter.write("</clone_pair>");
 						bufferedWriter.newLine();
-						
+					//	System.out.println(methodSigniture.get(v));
 						clonePairs++;
 						}
 					}
@@ -118,8 +127,156 @@ public class SignitureMatching {
 		System.out.println("Number of clone pairs detected using Callss using LCS: "+ clonePairs);
 	}
 
+	public static void jaccInstructions(Configuration config)throws Exception{
+
+	//	parse(config.xmlByteCode);
+
+
+		// convert list to set of called methods
+		for (int v = 0; v < methodSigniture.size(); v++) {
+
+			Set<String> set = new HashSet<String>(methodSigniture.get(v));
+			methodInstructionSet.add(set);
+		}
+
+		config.signitureJaccThreshold=0.75;
+		System.out.println("Jacc threshold is: "+ config.signitureJaccThreshold);
+
+		int clonePairs=0;
+		String outputFileAddress=config.reportAddress+"\\SignitureJaccard"+ config.signitureJaccThreshold+".xml";
+		BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(outputFileAddress));
+		bufferedWriter.write("<clones>");
+		bufferedWriter.newLine();
+
+	//parse(config.xmlByteCode);
+
+	
+		
+
+		for (int v = 0; v < methodInstructionSet.size(); v++) 
+		{
+			for (int c = v + 1; c < methodInstructionSet.size(); c++)
+			{
+
+				{
+					if (methodInstructionSet.get(v).size() > 0 && methodInstructionSet.get(c).size() > 0) 
+					{
+						double d = jaccardAlg(methodInstructionSet.get(v),methodInstructionSet.get(c));
+
+						d=Math.round(d * 100.0) / 100.0;
+						//if (d>config.threshold){
+							if(d>config.signitureJaccThreshold){
+							bufferedWriter.write( "<clone_pair Similarity=\""+d +"\" Verified= \"N\" >");
+							bufferedWriter.newLine();
+							//System.out.println(d );
+							// first fragment
+							bufferedWriter.write( "<clone_fragment file=\""+methodsData1.get(v).get(0)+"\" startline=\""+ methodsData1.get(v).get(1) +"\" endline=\""+ methodsData1.get(v).get(2)+"\">");
+							bufferedWriter.newLine();
+							bufferedWriter.write("<![CDATA["+ getSourceCode( config, methodsData1.get(v).get(0), methodsData1.get(v).get(1))+"]]>");
+							bufferedWriter.newLine();
+							bufferedWriter.write("</clone_fragment>");
+							bufferedWriter.newLine();
+							//second fragment
+							bufferedWriter.write( "<clone_fragment file=\""+methodsData1.get(c).get(0)+"\" startline=\""+ methodsData1.get(c).get(1) +"\" endline=\""+ methodsData1.get(c).get(2)+"\">");
+							bufferedWriter.newLine();
+							bufferedWriter.write("<![CDATA["+getSourceCode( config, methodsData1.get(c).get(0), methodsData1.get(c).get(1))+"]]>");
+							bufferedWriter.newLine();
+							bufferedWriter.write("</clone_fragment>");
+							bufferedWriter.newLine();
+							//close pair
+							bufferedWriter.write("</clone_pair>");
+							bufferedWriter.newLine();
+							
+							clonePairs++;
+						}
+					}
+				}
+			}
+		}
+
+		bufferedWriter.write("</clones>");
+		bufferedWriter.newLine();
+		bufferedWriter.flush();
+		bufferedWriter.close();
+		
+		System.out.println("Number of clone pairs detected using Jaccard on  Signiture set: "+ clonePairs);
+
+	}
+	
+	public static void levenstien(Configuration config, String filename)throws Exception	
+	{ 
+
+		//Configuration config=Configuration.loadFromFile();
+
+		config.signitureLevThreshold=0.95;
+		
+		String outputFileAddress2=config.reportAddress+"\\SignitureLevenshtien"+ config.signitureLevThreshold+".xml";
+		BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(outputFileAddress2));
+		bufferedWriter.write("<clones>");
+		bufferedWriter.newLine();
+
+		int clonePairs=0;
+
+		System.out.println("Levnstien threshold is: "+ config.signitureLevThreshold);
 	
 
+		parseForLev(config.xmlmethodSignature);
+
+
+		for (int v = 0; v < cscode.size(); v++)
+		{
+			for (int c = v + 1; c < cscode.size(); c++) 
+			{
+
+						
+					double max= (cscode.get(v).length()>cscode.get(c).length())? cscode.get(v).length():cscode.get(c).length();
+					double d=(double)1-(getLevenshteinDistance(cscode.get(v),cscode.get(c))/max);
+
+					//out.write(i+"	"+d+"\n");
+
+
+					d=Math.round(d * 100.0) / 100.0;
+						
+					if (d>=config.signitureLevThreshold){
+						
+						bufferedWriter.write("<clone_pair Similarity=\""+d +"\" Verified= \"N\" >");
+						bufferedWriter.newLine();
+						//System.out.println(d );
+						// first fragment
+						bufferedWriter.write( "<clone_fragment file=\""+methodsData1.get(v).get(0)+"\" startline=\""+ methodsData1.get(v).get(1) +"\" endline=\""+ methodsData1.get(v).get(2)+"\">");
+						bufferedWriter.newLine();
+						bufferedWriter.write("<![CDATA["+ getSourceCode( config, methodsData1.get(v).get(0), methodsData1.get(v).get(1))+"]]>");
+						bufferedWriter.newLine();
+						bufferedWriter.write("</clone_fragment>");
+						bufferedWriter.newLine();
+						//second fragment
+						bufferedWriter.write( "<clone_fragment file=\""+methodsData1.get(c).get(0)+"\" startline=\""+ methodsData1.get(c).get(1) +"\" endline=\""+ methodsData1.get(c).get(2)+"\">");
+						bufferedWriter.newLine();
+						bufferedWriter.write("<![CDATA["+getSourceCode( config, methodsData1.get(c).get(0), methodsData1.get(c).get(1))+"]]>");
+						bufferedWriter.newLine();
+						bufferedWriter.write("</clone_fragment>");
+						bufferedWriter.newLine();
+						//close pair
+						bufferedWriter.write("</clone_pair>");
+						bufferedWriter.newLine();
+					//	System.out.println(methodSigniture.get(v));
+						clonePairs++;
+					
+					
+				}
+				
+			}
+			
+		}
+		
+		bufferedWriter.write("</clones>");
+		bufferedWriter.newLine();
+		bufferedWriter.flush();
+		bufferedWriter.close();
+		
+		System.out.println("Number of clone pairs detected using Levention on Method Signiture is: "+ clonePairs);
+
+	}
 
 	public static void parse3(String cs) throws IOException {
 
@@ -168,7 +325,7 @@ public class SignitureMatching {
 					csd.add(endline);
 					methodsData1.add(csd);
 
-					String[] csA = content.split("\n");
+					String[] csA = content.split(" ");
 
 					ArrayList<String> csl = new ArrayList<String>();
 
@@ -189,8 +346,79 @@ public class SignitureMatching {
 			e.printStackTrace();
 		}
 	}
+	
+	public static void parseForLev(String cs) throws IOException {
 
-	public static ArrayList<String> LCSAlgorithm(ArrayList<String> a,
+		boolean error = false;
+		File fileName = new File(cs);
+		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+		try {
+			DocumentBuilder db = dbf.newDocumentBuilder();
+			Document doc = db.parse(fileName);
+			doc.getDocumentElement().normalize();
+
+			Element root = doc.getDocumentElement();
+
+			NodeList nl = root.getElementsByTagName("name");
+			if (nl.getLength() > 0) {
+			} else {
+				error = true;
+			}
+
+			nl = root.getElementsByTagName("description");
+			if (nl.getLength() > 0) {
+
+			} else {
+				error = true;
+			}
+
+			nl = root.getElementsByTagName("source_elements");
+			if (nl.getLength() > 0) {
+				NodeList sourceList = nl.item(0).getChildNodes();
+
+				long start = System.currentTimeMillis();
+				long items = 0;
+				for (int i = 0; i < sourceList.getLength(); i++) {
+					Node source = sourceList.item(i);
+					if (source.getNodeType() != Node.ELEMENT_NODE)
+						continue;
+
+					String file = source.getAttributes().getNamedItem("file").getFirstChild().getNodeValue();
+					String startline = source.getAttributes().getNamedItem("startline").getFirstChild().getNodeValue();
+					String endline = source.getAttributes().getNamedItem("endline").getFirstChild().getNodeValue();
+					String content = source.getFirstChild().getTextContent();
+
+					ArrayList<String> csd = new ArrayList<String>();
+					csd.add(file);
+					csd.add(startline);
+					csd.add(endline);
+					methodsData1.add(csd);
+
+					String[] csA = content.split(" ");
+
+					String temp=null;
+					//ArrayList<String> csl = new ArrayList<String>();
+
+					for (String t : csA) {
+
+						if (t.trim() == null || t.trim().isEmpty())
+							continue;
+						//csl.add(t.trim());
+						temp+=t.trim();
+
+					}
+
+					cscode.add(temp);
+
+
+				}
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+    public static ArrayList<String> LCSAlgorithm(ArrayList<String> a,
 			ArrayList<String> b) {
 		int n = a.size();
 		int m = b.size();
@@ -269,9 +497,6 @@ public class SignitureMatching {
 		return lcs2;
 	}
 
-
-
-
 	public static String getSourceCode(Configuration config, String fileName, String startLine) throws IOException{
 
 		String source=null;
@@ -316,5 +541,71 @@ public class SignitureMatching {
 		}
 		return source;
 	}
+
+	public static int getLevenshteinDistance (String s, String t) {
+		if (s == null || t == null) {
+			throw new IllegalArgumentException("Strings must not be null");
+		}
+
+
+		int n = s.length(); // length of s
+		int m = t.length(); // length of t
+
+		if (n == 0) {
+			return m;
+		} else if (m == 0) {
+			return n;
+		}
+
+		int p[] = new int[n+1]; //'previous' cost array, horizontally
+		int d[] = new int[n+1]; // cost array, horizontally
+		int _d[]; //placeholder to assist in swapping p and d
+
+		// indexes into strings s and t
+		int i; // iterates through s
+		int j; // iterates through t
+
+		char t_j; // jth character of t
+
+		int cost; // cost
+
+		for (i = 0; i<=n; i++) {
+			p[i] = i;
+		}
+
+		for (j = 1; j<=m; j++) {
+			t_j = t.charAt(j-1);
+			d[0] = j;
+
+			for (i=1; i<=n; i++) {
+				cost = s.charAt(i-1)==t_j ? 0 : 1;
+				// minimum of cell to the left+1, to the top+1, diagonally left and up +cost
+				d[i] = Math.min(Math.min(d[i-1]+1, p[i]+1),  p[i-1]+cost);
+			}
+
+			// copy current distance counts to 'previous row' distance counts
+			_d = p;
+			p = d;
+			d = _d;
+		}
+
+		// our last action in the above loop was to switch d and p, so p now
+		// actually has the most recent cost counts
+		return p[n];
+	}
+
+	public static double jaccardAlg(Set<String> a, Set<String> b) {
+		double jaccard;
+
+		Set<String> intersection = new HashSet<String>(a);
+		Set<String> union = new HashSet<String>(a);
+
+		intersection.retainAll(b);
+		union.addAll(b);
+
+		jaccard = (double) intersection.size() / union.size();
+		return jaccard;
+	}
+	
 
 }

@@ -83,7 +83,7 @@ public class Starter_FactExtraction_Step2 {
 		InstructionLev.levenstien(config, config.xmlByteCode);
 		
 		// detection using Jaccard on byte code
-		InstructionJacc.jaccmethodInstructions(config);
+		InstructionJacc.jaccInstructions(config);
 		
 		// clone detection using LCS on called methods
 		
@@ -93,9 +93,20 @@ public class Starter_FactExtraction_Step2 {
 		
 		Merge.mergeReports(config);
 		
+		
+		System.out.println(config.instructionLevThreshold);
+		System.out.println(config.instructionJaccThreshold);
+		
+		System.out.println(config.callsJaccardThreshold);
+		System.out.println(config.callsLCSThreshold);
+		
+		System.out.println(config.signitureLevThreshold);
+		System.out.println(config.signitureJaccThreshold);
+		
+		
 	//	System.out.println("Reports Generated look for files in folder : 5_Report");
 
-		
+		 
 /*		
 		Configuration config=Configuration.loadFromFile2();
 

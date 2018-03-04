@@ -46,14 +46,14 @@ public class InstructionJacc {
 		// TODO Auto-generated method stub
 		Configuration config=Configuration.loadFromFile();
 		config.xmlByteCode=config.disassebledAddress+"\\allFiles.xml_0_binary.xml";
-		jaccmethodInstructions(config);
+		jaccInstructions(config);
 		
 
 	}
 
 	
 	
-	public static void jaccmethodInstructions(Configuration config)throws Exception{
+	public static void jaccInstructions(Configuration config)throws Exception{
 
 		parse(config.xmlByteCode);
 
@@ -86,9 +86,10 @@ public class InstructionJacc {
 					{
 						double d = jaccardAlg(methodInstructionSet.get(v),methodInstructionSet.get(c));
 
+						d=Math.round(d * 100.0) / 100.0;
 						//if (d>config.threshold){
 							if(d>config.instructionJaccThreshold){
-							bufferedWriter.write( "<clone_pair>");
+							bufferedWriter.write( "<clone_pair Similarity=\""+d +"\" Verified= \"N\" >");
 							bufferedWriter.newLine();
 							//System.out.println(d );
 							// first fragment
@@ -218,7 +219,7 @@ public class InstructionJacc {
 		}
 	}
 
-	
+
 
 	public static double jaccardAlg(Set<String> a, Set<String> b) {
 		double jaccard;

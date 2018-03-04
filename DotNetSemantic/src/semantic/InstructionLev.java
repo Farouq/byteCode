@@ -76,7 +76,7 @@ public class InstructionLev {
 					//out.write(i+"	"+d+"\n");
 
 
-
+					d=Math.round(d * 100.0) / 100.0;
 
 					if (d>=config.instructionLevThreshold){
 						//				System.out.print(config.threshold + "  <  ");
@@ -86,7 +86,7 @@ public class InstructionLev {
 						//				System.out.println(csdata.get(c).get(0));
 
 						// write to report  / all detected cloned using binarcode 					
-						bufferedWriter2.write( "<clone_pair>");
+						bufferedWriter2.write( "<clone_pair Similarity=\""+d +"\" Verified= \"N\" >");
 						bufferedWriter2.newLine();
 						//System.out.println(d );
 						// first fragment
@@ -127,7 +127,7 @@ public class InstructionLev {
 //			}
 		}
 
-		System.out.println("Number of clone pairs detected using Levshtien in instruction set: "+ clonePairs );
+		System.out.println("Number of clone pairs detected using Levshtien on byte code instruction set: "+ clonePairs );
 
 
 		// close file		

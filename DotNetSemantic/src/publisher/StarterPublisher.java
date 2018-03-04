@@ -331,6 +331,7 @@ public class StarterPublisher {
 
 		String lin;
 		int methodCounter=0;
+		int totalMethodCounter=0;
 		
 		String currentSourceFileAddress="NULL";
 		ArrayList<String> out_lines_binary=new ArrayList<String>();
@@ -601,8 +602,8 @@ public class StarterPublisher {
 					// This old condition.  methoBlockStartLine =Integer.MAX_VALUE inly if it could not find the start line and end line
 					//if (methodBlockBuffer_binary.size()>5 && methoBlockStartLine !=Integer.MAX_VALUE && !currentSourceFileAddress.endsWith(".xaml") && methodBlockBuffer_source.size()>4)
 
-					
-				    if (methodBlockBuffer_binary.size()>5  && !currentSourceFileAddress.endsWith(".xaml") )
+					totalMethodCounter++;
+				    if (methodBlockBuffer_binary.size()>5  && !currentSourceFileAddress.endsWith(".xaml") && methodBlockBuffer_source.size()>4 )
 					{
 
 						methodCounter++;
@@ -679,11 +680,13 @@ public class StarterPublisher {
 						{
 							s=s.trim();
 							s=s.replaceAll("\n"," ");
-							sig=sig+s;
+							sig=sig+" "+s;
 						//	methodSigniture.add(s);
 						//	System.out.println(s);
 
 						}
+						//System.out.println(sig);
+						
 						// parse method signiture into Return tupe + nethod name+ list of arguments data type
 						int pos = sig.indexOf("(");
 						String name= sig.substring(0,pos);
@@ -742,17 +745,18 @@ public class StarterPublisher {
 		writeToXMLFile(config,"allFiles.xml",00,"source",out_lines_source);
 		writeToXMLFile(config,"method",00,"calls",methodCalls);
 		//// create xml file for NiCad
-		writeToXMLFile(config,"Method",00,"Signiture",methodSigniture);
+		writeToXMLFile(config,"method",00,"Signiture",methodSigniture);
 
 
 		
 		config.xmlByteCode= config.disassebledAddress+"/allFiles.xml_0_binary"+".xml";
 		config.xmlSourceCode= config.disassebledAddress+"/allFiles.xml_0_source"+".xml";
 		config.xmlCalledMethods= config.disassebledAddress+"/method_0_calls"+".xml";
-		
+		config.xmlmethodSignature=config.disassebledAddress+"/method_0_Signature"+".xml";
 		
 		copyUsedSourceFiles(config,sourceCodeFileSet);
-		System.out.println("Number of methods extracted : "+ methodCounter);
+
+		System.out.println("Number of methods extracted : "+totalMethodCounter+ "Number of methods used"+ methodCounter);
 		
 
 		
@@ -760,6 +764,32 @@ public class StarterPublisher {
 
 	}
 
+	private static String ParseSigniture(String sig){
+		
+
+		int pos = sig.indexOf("(");
+		String name= sig.substring(0,pos);
+		name=name.trim();
+		String[] t=name.split(" ");
+		String name1= t[3];
+		for(int s=4;s<t.length;s++){
+
+			name1=name1+" "+ t[s];
+		}
+
+		int pos2=sig.indexOf(")");
+		String args=sig.substring(pos+1,pos2);
+		
+		if (args!=null){
+			String[] para=args.split(",");
+			args="";
+			for(int s=0;s<para.length;s++){
+				args=args+para[s]+" ";
+			}
+		}
+		sig=name1+" "+args;
+		return sig;
+	}
 	private static void copyUsedSourceFiles(Configuration config,Set <String>sourceCodeFileSet)throws Exception{
 		boolean make;
 		File projectAddress = new File(config.projectAddress);

@@ -28,12 +28,15 @@ public class Configuration {
 	public String reportAddress="";
 	public String projectAddress="";
 	public String projectClone="";
+	public String testing="";
+	
 	
 	public String xmlByteCode="";
 	public String xmlSourceCode="";
 	public String xmlCalledMethods="";
+	public String xmlmethodSignature="";
 	
-	public String methodSigniture="";
+	//public String methodSigniture="";
 
 	public String detectionMethod="";
 	public String ReportingMethod="";
@@ -44,9 +47,12 @@ public class Configuration {
 
 	// default was !!! Levenshtien on byte code //instructions
 	public double instructionLevThreshold=0.7;
-	public double instructionJaccThreshold=0.9;
+	public double instructionJaccThreshold=0.85;
 	public double callsLCSThreshold=0.7;
 	public double callsJaccardThreshold=0.7;
+	
+	public double signitureLevThreshold=0.7;
+	public double signitureJaccThreshold=0.7;
 	
 
 	// threshold for method calls
@@ -96,6 +102,7 @@ public class Configuration {
 	//	config.sparqlAddress=projectAddress+"/4_Sparql";
 		config.reportAddress=config.projectClone+"/5_Report";
 	//	System.out.println(config.projectAddress);
+		
 		return(config);
 	}
 
@@ -108,10 +115,13 @@ public class Configuration {
 		
 		// ildasm version 4.0....
 		config.disassembeler_EXE_path="C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v7.0A\\Bin\\ildasm.exe";
-		config.instructionLevThreshold= 0.7;
-		config.instructionJaccThreshold= 0.85;
+		
+		config.instructionLevThreshold= 0.70;
+		config.instructionJaccThreshold= 0.80;
 		config.callsLCSThreshold= 0.7;
 		config.callsJaccardThreshold= 0.7;
+		config.signitureLevThreshold=0.96;
+		config.signitureJaccThreshold=0.7;
 
 		
 		config.min_threshold=0.5f;
@@ -127,6 +137,9 @@ public class Configuration {
 	//	config.sparqlAddress=projectAddress+"/4_Sparql";
 		config.reportAddress=config.projectClone+"/5_Report";
 	//	System.out.println(config.projectAddress);
+		
+		config.testing=config.projectClone+"/6_Testing";
+		
 		return(config);
 	}
 /*	public static Configuration loadFromFile2() throws Exception

@@ -75,8 +75,10 @@ public class CalledMethodsMatching {
 					{
 						double d = (double) LCSAlgorithm(calledMethods.get(v), calledMethods.get(c)).size()	* 2	/ (calledMethods.get(v).size() + calledMethods.get(c).size());
 						if (d>config.callsLCSThreshold){
+						
+						d=Math.round(d * 100.0) / 100.0;
 							
-						bufferedWriter.write( "<clone_pair>");
+						bufferedWriter.write( "<clone_pair Similarity=\""+d +"\" Verified= \"N\" >");
 						bufferedWriter.newLine();
 						//System.out.println(d );
 						// first fragment
@@ -153,8 +155,8 @@ public class CalledMethodsMatching {
 						double d = jaccardAlg(methodsDataSet.get(v),methodsDataSet.get(c));
 
 						if (d>config.callsJaccardThreshold){
-							
-							bufferedWriter.write( "<clone_pair>");
+							d=Math.round(d * 100.0) / 100.0;
+							bufferedWriter.write( "<clone_pair Similarity=\""+d +"\" Verified= \"N\" >");
 							bufferedWriter.newLine();
 							//System.out.println(d );
 							// first fragment
