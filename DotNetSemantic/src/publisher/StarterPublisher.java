@@ -719,7 +719,6 @@ public class StarterPublisher {
 					}
 
 
-
 					methodBlockBuffer_binary.clear();
 					methodBlockBuffer_source.clear();
 					methodCallsBuffer.clear();

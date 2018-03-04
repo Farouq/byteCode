@@ -88,7 +88,8 @@ public class DetectClones {
 		
 		//Configuration config=Configuration.loadFromFile();
 		config.xmlByteCode=config.disassebledAddress+"\\allFiles.xml_0_binary.xml";
-
+		parse(config.xmlByteCode);
+		
 		config.xmlCalledMethods=config.disassebledAddress+"\\method_0_calls.xml";
 		parse2(config.xmlCalledMethods);
 		
@@ -97,12 +98,12 @@ public class DetectClones {
 		
 
 		String outputFileAddress2=config.reportAddress+"\\FinalCloneReport"+ config.instructionLevThreshold+".xml";
+		
 		BufferedWriter bufferedWriter2 = new BufferedWriter(new FileWriter(outputFileAddress2));
 		bufferedWriter2.write("<clones>");
 		bufferedWriter2.newLine();
 
 
-		parse(config.xmlByteCode);
 
 
 		int progress=0;
