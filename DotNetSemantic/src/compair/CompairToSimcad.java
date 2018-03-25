@@ -28,14 +28,15 @@ public class CompairToSimcad {
 		// need tow files. 1- simcad report and must be copied into Rrport folder of the project
 		// and semantic report
 		
-		String reportAddress=config.reportAddress+"\\Semantic Clones Report.xml";
+		String reportAddress=config.reportAddress+"\\FinalCloneReportWeighted Similarities.0.75.xml";
 		String simcadReportAddress=config.reportAddress+"\\simcad_function_clone-pairs_type-1-2-3_generous.xml";
 		
+	
 		
 
 		// Load the clone reports data into ArrayList
 		 ArrayList<ArrayList<String>> clones =parseCloneReport (config, reportAddress );
-		 ArrayList<ArrayList<String>> clonesEnd = parseCloneReport2 (config, reportAddress );
+			 ArrayList<ArrayList<String>> clonesEnd = parseCloneReport2 (config, reportAddress );
 
 
 		 ArrayList<ArrayList<String>> simcadClones=parsesimcadPairs(config, simcadReportAddress);		 
@@ -44,14 +45,14 @@ public class CompairToSimcad {
 
 		 
 		 
-			System.out.println(simcadClones.size());
-			System.out.println(clones.size());
+			System.out.println("Number of clone pairs detected by simcad is: "+simcadClones.size());
+			System.out.println("Number of clone pairs detected by my tool is: "+clones.size());
 			
-			System.out.println(simcadClones);
-			System.out.println(simcadClonesEnd);
+		//	System.out.println(simcadClones);
+		//	System.out.println(simcadClonesEnd);
 			
-			System.out.println(clones);
-			System.out.println(clonesEnd);
+		//	System.out.println(clones);
+		//	System.out.println(clonesEnd);
 
 			
 			 ArrayList<ArrayList<String>> both = new ArrayList<ArrayList<String>>();
@@ -93,16 +94,17 @@ public class CompairToSimcad {
 				 }
 			 
 					System.out.println("missed    "+simcadOnly.size());
-					System.out.println(both);
-					System.out.println(semOnly);
-					System.out.println(simcadOnly);
+				//	System.out.println(both);
+				//	System.out.println(semOnly);
+				//	System.out.println(simcadOnly);
 
 
+					 boolean success =  (new File(config.reportAddress+"\\simcad\\")).mkdirs();
 
 					writeToXMLFile(config,both,"both simcad and Sem");
 					writeToXMLFile(config,semOnly, "Semantic Only");
 					writeToXMLFile(config,simcadOnly, "simcad only");
-					
+				
 
 	}
 
@@ -118,6 +120,7 @@ public class CompairToSimcad {
 	
 	private static void writeToXMLFile(Configuration config,ArrayList<ArrayList<String>> meregedClones, String fileName) throws Exception
 	{
+		
 		String outputFileAddress=config.reportAddress+"\\simcad\\"+fileName+".xml";
 		BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(outputFileAddress));
 		bufferedWriter.write("<clones>");
@@ -380,7 +383,7 @@ public class CompairToSimcad {
 
 	}
 
-	
+
 	public static ArrayList<ArrayList<String>> parsesimcadPairs2( Configuration config, String rawFunctionsFileName) throws Exception{
 
 //		Configuration config=Configuration.loadFromFile();
@@ -497,12 +500,12 @@ public class CompairToSimcad {
 	}
 
 	
-	
 	public static ArrayList<ArrayList<String>> parseCloneReport (Configuration config, String rawFunctionsFileName) throws IOException{
 
 		     ArrayList<ArrayList<String>> reportClones = new ArrayList<ArrayList<String>>();
 			File projectAddress= new File(config.projectAddress);
 	
+				
 		File fileName = new File(rawFunctionsFileName);
 	
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
@@ -586,7 +589,6 @@ public class CompairToSimcad {
 		return reportClones;
 
 	}
-	
 	
 	
 	public static ArrayList<ArrayList<String>> parseCloneReport2 (Configuration config, String rawFunctionsFileName) throws IOException{

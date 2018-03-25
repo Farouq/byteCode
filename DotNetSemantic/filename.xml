@@ -1,0 +1,13 @@
+<StackOverflow>
+<Question Title="Question tiltile" >
+<Answer ID=" you can add id here" Score="you can add score or anything">
+<![CDATA[Answer2]]>
+</Answer>
+<Answer ID=" you can add id here" Score="you can add score or anything">
+<![CDATA[Answer2]]>
+</Answer>
+<Answer ID=" you can add id here" Score="you can add score or anything">
+<![CDATA[Answer2]]>
+</Answer>
+</Question>
+</StackOverflow>

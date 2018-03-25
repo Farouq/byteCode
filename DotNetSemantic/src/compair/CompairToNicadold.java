@@ -15,7 +15,7 @@ import org.w3c.dom.NodeList;
 
 import configuration.Configuration;
 
-public class CompairToNicad {
+public class CompairToNicadold{
 	private static String projectHomeAddress="";
 
 	public static void main(String[] args) throws Exception{
@@ -28,95 +28,81 @@ public class CompairToNicad {
 		System.out.println(projectAddress.getName());
 		// need tow files. 1- Nicad report and must be copied into Rrport folder of the project
 		// and semantic report
-
+		
+		String reportAddress=config.reportAddress+"\\FinalCloneReportWeighted Similarities0.7.xml";
+		String nicadReportAddress=config.reportAddress+"\\1-ASXGUI_functions-blind-clones-0.30.xml";
 		
 		
-		String reportAddress=config.reportAddress+"\\FinalCloneReportWeighted Similarities.0.75.xml";
-		String nicadReportAddress=config.reportAddress+"\\NetGore_0.4.0_functions-blind-clones-0.30.xml";
-	
-
-
 
 		// Load the clone reports data into ArrayList
-		ArrayList<ArrayList<String>> clones =parseCloneReport (config, reportAddress );
-		ArrayList<ArrayList<String>> clonesEnd = parseCloneReport2 (config, reportAddress );
-
-		clones=sortReport(clones);
-
-		ArrayList<ArrayList<String>> nicadClones=parseNiCadPairs(config, nicadReportAddress);		 
-		ArrayList<ArrayList<String>> nicadClonesEnd= parseNiCadPairs2(config, nicadReportAddress);
+		 ArrayList<ArrayList<String>> clones =parseCloneReport (config, reportAddress );
+		 ArrayList<ArrayList<String>> clonesEnd = parseCloneReport2 (config, reportAddress );
 
 
+		 ArrayList<ArrayList<String>> nicadClones=parseNiCadPairs(config, nicadReportAddress);		 
+		 ArrayList<ArrayList<String>> nicadClonesEnd= parseNiCadPairs2(config, nicadReportAddress);
+		 
 
+		 
+		 
+			System.out.println("NiCad Clone Pairs: "+nicadClones.size());
+			System.out.println("My Clone Pairs: "+clones.size());
+//			
+//			System.out.println(nicadClones);
+//			System.out.println(nicadClonesEnd);
+//			
+//			System.out.println(clones);
+//			System.out.println(clonesEnd);
 
-		System.out.println("NiCad Clone Pairs: "+nicadClones.size());
-		System.out.println("My Clone Pairs: "+clones.size());
-		//			
-		//			System.out.println(nicadClones);
-		//			System.out.println(nicadClonesEnd);
-		//			
-		//			System.out.println(clones);
-		//			System.out.println(clonesEnd);
-
-
-		ArrayList<ArrayList<String>> both = new ArrayList<ArrayList<String>>();
-		ArrayList<ArrayList<String>> semOnly = new ArrayList<ArrayList<String>>();
-		ArrayList<ArrayList<String>> nicadOnly = new ArrayList<ArrayList<String>>();
-
-		for(int i=0; i<clones.size();i++ ){
-
-			// this is old. changes to add similarity
-			//	ArrayList<String> clonePair=clonesEnd.get(i);
-			//	ArrayList<String> clonePairSwaped= swapFileOrder(clonePair);
-			ArrayList<String> clonePair=new ArrayList<String>();
-			clonePair.add(clones.get(i).get(1));
-			clonePair.add(clones.get(i).get(3));
-			clonePair.add(clones.get(i).get(4));
-			clonePair.add(clones.get(i).get(6));
 			
-			//System.out.println()
-			ArrayList<String> clonePairSwaped= swapFileOrder(clonePair);
+			 ArrayList<ArrayList<String>> both = new ArrayList<ArrayList<String>>();
+			 ArrayList<ArrayList<String>> semOnly = new ArrayList<ArrayList<String>>();
+			 ArrayList<ArrayList<String>> nicadOnly = new ArrayList<ArrayList<String>>();
+			 
+			 for(int i=0; i<clonesEnd.size();i++ ){
+					
+					ArrayList<String> clonePair=clonesEnd.get(i);
+					ArrayList<String> clonePairSwaped= swapFileOrder(clonePair);
+					
+					if( (nicadClonesEnd.contains(clonePair) || nicadClonesEnd.contains(clonePairSwaped))  ) {
+						//System.out.println(clonePair);
+						both.add(clones.get(i));
+						}
+					else{
+						semOnly.add(clones.get(i));
+					}
+			 }
+			 
+				System.out.println("Bothhhhhhh     "+both.size());
+				System.out.println("Extraaaa    "+semOnly.size());
+				
+				
+				
+				 for(int i=0; i<nicadClonesEnd.size();i++ ){
+						
+						ArrayList<String> clonePair=nicadClonesEnd.get(i);
+						ArrayList<String> clonePairSwaped= swapFileOrder(clonePair);
+						
+						if( (clonesEnd.contains(clonePair) || clonesEnd.contains(clonePairSwaped))  ) {
+							//System.out.println(clonePair);
+							}else
+							{
+								nicadOnly.add(nicadClones.get(i));
 
-			if( (nicadClonesEnd.contains(clonePair) || nicadClonesEnd.contains(clonePairSwaped))  ) {
-				//System.out.println("found "+ clones.get(i).get(0));
-				both.add(clones.get(i));
-			}
-			else{
-				semOnly.add(clones.get(i));
-			//	System.out.println("Not found "+ clones.get(i).get(0));
-
-			}
-		}
-
-		System.out.println("Bothhhhhhh     "+both.size());
-		System.out.println("Extraaaa    "+semOnly.size());
+							}
+						
+				 }
+			 
+					System.out.println("missed    "+nicadOnly.size());
+	//				System.out.println(both); // could call write to XMl file to write results to xml file
+	//				System.out.println(semOnly);
+	//				System.out.println(nicadOnly);
 
 
 
-		for(int i=0; i<nicadClonesEnd.size();i++ ){
-
-			ArrayList<String> clonePair=nicadClonesEnd.get(i);
-			ArrayList<String> clonePairSwaped= swapFileOrder(clonePair);
-
-			if( (clonesEnd.contains(clonePair) || clonesEnd.contains(clonePairSwaped))  ) {
-				//System.out.println(clonePair);
-			}else
-			{
-				nicadOnly.add(nicadClones.get(i));
-			}						
-		}
-
-
-		System.out.println("missed    "+nicadOnly.size());
-		//				System.out.println(both); // could call write to XMl file to write results to xml file
-		//				System.out.println(semOnly);
-		//				System.out.println(nicadOnly);
-
-
-
-		writeToXMLFile(config,both,"both NiCad and Sem");
-		writeToXMLFile(config,semOnly, "Semantic Only");
-		writeToXMLFileForNiCad(config,nicadOnly, "NiCad only");
+					writeToXMLFile(config,both,"both NiCad and Sem");
+					writeToXMLFile(config,semOnly, "Semantic Only");
+					writeToXMLFile(config,nicadOnly, "NiCad only");
 
 	}
 
@@ -128,56 +114,17 @@ public class CompairToNicad {
 		temp.add(clonePair.get(0));
 		temp.add(clonePair.get(1));
 		return temp;
-	}
-
+		}
+	
 	private static void writeToXMLFile(Configuration config,ArrayList<ArrayList<String>> meregedClones, String fileName) throws Exception
 	{
 		String outputFileAddress=config.reportAddress+"\\"+fileName+".xml";
 		BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(outputFileAddress));
 		bufferedWriter.write("<clones>");
 		bufferedWriter.newLine();
-
-		for(int i=0; i<meregedClones.size();i++ ){
-
-			bufferedWriter.write( "<clone_pair Similarity=\""+ meregedClones.get(i).get(0)+"\" >");
-			bufferedWriter.newLine();
-			//System.out.println(d );
-			// first fragment
-			bufferedWriter.write( "<clone_fragment file=\""+meregedClones.get(i).get(1)+"\" startline=\""+ meregedClones.get(i).get(2) +"\" endline=\""+ meregedClones.get(i).get(3)+"\">");
-			bufferedWriter.newLine();
-			bufferedWriter.write("<![CDATA["+ getSourceCode( config, meregedClones.get(i).get(1), meregedClones.get(i).get(3))+"]]>");
-			bufferedWriter.newLine();
-			bufferedWriter.write("</clone_fragment>");
-			bufferedWriter.newLine();
-			//second fragment
-			bufferedWriter.write( "<clone_fragment file=\""+meregedClones.get(i).get(4)+"\" startline=\""+ meregedClones.get(i).get(5) +"\" endline=\""+ meregedClones.get(i).get(6)+"\">");
-			bufferedWriter.newLine();
-			bufferedWriter.write("<![CDATA["+getSourceCode( config, meregedClones.get(i).get(4), meregedClones.get(i).get(6))+"]]>");
-			bufferedWriter.newLine();
-			bufferedWriter.write("</clone_fragment>");
-			bufferedWriter.newLine();
-			//close pair
-			bufferedWriter.write("</clone_pair>");
-			bufferedWriter.newLine();
-		}
-
-		bufferedWriter.write("</clones>");
-		bufferedWriter.newLine();
-		bufferedWriter.flush();
-		bufferedWriter.close();
-
-
-	}
 	
-	private static void writeToXMLFileForNiCad(Configuration config,ArrayList<ArrayList<String>> meregedClones, String fileName) throws Exception
-	{
-		String outputFileAddress=config.reportAddress+"\\"+fileName+".xml";
-		BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(outputFileAddress));
-		bufferedWriter.write("<clones>");
-		bufferedWriter.newLine();
-
 		for(int i=0; i<meregedClones.size();i++ ){
-
+			
 			bufferedWriter.write( "<clone_pair>");
 			bufferedWriter.newLine();
 			//System.out.println(d );
@@ -199,7 +146,7 @@ public class CompairToNicad {
 			bufferedWriter.write("</clone_pair>");
 			bufferedWriter.newLine();
 		}
-
+		
 		bufferedWriter.write("</clones>");
 		bufferedWriter.newLine();
 		bufferedWriter.flush();
@@ -207,8 +154,7 @@ public class CompairToNicad {
 
 
 	}
-
-
+	
 	public static String getSourceCode(Configuration config, String fileName, String end) throws IOException{
 
 		String source=null;
@@ -253,21 +199,21 @@ public class CompairToNicad {
 		}
 		return source;
 	}
-
+	
 	public static ArrayList<ArrayList<String>> parseNiCadPairs( Configuration config, String rawFunctionsFileName) throws Exception{
 
-		//		Configuration config=Configuration.loadFromFile();
+//		Configuration config=Configuration.loadFromFile();
 
 		ArrayList<ArrayList<String>> reportClones = new ArrayList<ArrayList<String>>();
 
 
 		File projectAddress= new File(config.projectAddress);
-
-		//		System.out.println(config.projectAddress);
-		//		System.out.println(projectAddress.getName());
-		//		System.out.println(projectAddress.getPath());
-
-
+		
+//		System.out.println(config.projectAddress);
+//		System.out.println(projectAddress.getName());
+//		System.out.println(projectAddress.getPath());
+		
+		
 
 		File fileName = new File(rawFunctionsFileName);
 
@@ -290,7 +236,7 @@ public class CompairToNicad {
 
 			nl = root.getElementsByTagName("clone");
 
-			//	System.out.println(nl.getLength()+"**************************");
+		//	System.out.println(nl.getLength()+"**************************");
 
 			if(nl.getLength()>0){
 
@@ -326,29 +272,29 @@ public class CompairToNicad {
 
 					file1=file1.replace(".ifdefed","");
 					file1=file1.replace("/","\\");
-					//				file1=file1.replace("Monoo-2.10","mono-2.10");
-
+					file1=file1.replace("Monoo-2.10","mono-2.10");
+					
 					int pos = file1.indexOf(projectAddress.getName());
 					file1=file1.substring(pos);
 					file1=projectHomeAddress.concat(file1);
-					//	file1=file1.substring(42);
-					//	file1=c.concat(file1);
+				//	file1=file1.substring(42);
+				//	file1=c.concat(file1);
 
 					file22=file22.replace(".ifdefed","");
 					file22=file22.replace("/","\\");
-					//				file22=file22.replace("Monoo-2.10","mono-2.10");
+					file22=file22.replace("Monoo-2.10","mono-2.10");
 
 					pos = file22.indexOf(projectAddress.getName());
 					file22=file22.substring(pos);
 					file22=projectHomeAddress.concat(file22);
-					//	file22=file22.substring(42);
-					//	file22=c.concat(file22);
+				//	file22=file22.substring(42);
+				//	file22=c.concat(file22);
 
-					//					if(!foundInLevenshtien( config, file1, startline1, endline1,file22, startline22,endline22 )){
-					//
-					//
-					//					}
-
+//					if(!foundInLevenshtien( config, file1, startline1, endline1,file22, startline22,endline22 )){
+//
+//
+//					}
+					
 					ArrayList<String> clonePair=new ArrayList<String>();
 					clonePair.add(file1);
 					clonePair.add(startline1);
@@ -357,7 +303,7 @@ public class CompairToNicad {
 					clonePair.add(startline22);
 					clonePair.add(endline22);
 					reportClones.add(clonePair);
-
+					
 				}
 
 
@@ -371,8 +317,8 @@ public class CompairToNicad {
 
 		return reportClones;
 	}
-
-
+	
+	
 	public static Boolean foundInLevenshtien(Configuration config, String fileA, String stA, String enA, String fileB, String stB, String enB) throws IOException{
 		boolean found = false;
 
@@ -438,20 +384,20 @@ public class CompairToNicad {
 
 	}
 
-
+	
 	public static ArrayList<ArrayList<String>> parseNiCadPairs2( Configuration config, String rawFunctionsFileName) throws Exception{
 
-		//		Configuration config=Configuration.loadFromFile();
+//		Configuration config=Configuration.loadFromFile();
 
 		ArrayList<ArrayList<String>> reportClones = new ArrayList<ArrayList<String>>();
 
 
-		//		System.out.println(config.projectAddress);
+//		System.out.println(config.projectAddress);
 		File projectAddress= new File(config.projectAddress);
-		//		System.out.println(projectAddress.getName());
-		//		System.out.println(projectAddress.getPath());
-
-
+//		System.out.println(projectAddress.getName());
+//		System.out.println(projectAddress.getPath());
+		
+	
 
 		File fileName = new File(rawFunctionsFileName);
 
@@ -475,7 +421,7 @@ public class CompairToNicad {
 			nl = root.getElementsByTagName("clone");
 
 
-			//			System.out.println(nl.getLength()+"**************************");
+//			System.out.println(nl.getLength()+"**************************");
 
 
 			if(nl.getLength()>0){
@@ -517,8 +463,8 @@ public class CompairToNicad {
 					int pos = file1.indexOf(projectAddress.getName());
 					file1=file1.substring(pos);
 					file1=projectHomeAddress.concat(file1);
-					//	file1=file1.substring(42);
-					//	file1=c.concat(file1);
+				//	file1=file1.substring(42);
+				//	file1=c.concat(file1);
 
 					file22=file22.replace(".ifdefed","");
 					file22=file22.replace("/","\\");
@@ -527,14 +473,14 @@ public class CompairToNicad {
 					pos = file22.indexOf(projectAddress.getName());
 					file22=file22.substring(pos);
 					file22=projectHomeAddress.concat(file22);
-					//	file22=file22.substring(42);
-					//	file22=c.concat(file22);
+				//	file22=file22.substring(42);
+				//	file22=c.concat(file22);
 
-					//					if(!foundInLevenshtien( config, file1, startline1, endline1,file22, startline22,endline22 )){
-					//
-					//
-					//					}
-
+//					if(!foundInLevenshtien( config, file1, startline1, endline1,file22, startline22,endline22 )){
+//
+//
+//					}
+					
 					ArrayList<String> clonePair=new ArrayList<String>();
 					clonePair.add(file1);
 					//clonePair.add(startline1);
@@ -543,7 +489,7 @@ public class CompairToNicad {
 					//clonePair.add(startline22);
 					clonePair.add(endline22);
 					reportClones.add(clonePair);
-
+					
 				}
 
 
@@ -558,15 +504,15 @@ public class CompairToNicad {
 		return reportClones;
 	}
 
-
-
+	
+	
 	public static ArrayList<ArrayList<String>> parseCloneReport (Configuration config, String rawFunctionsFileName) throws IOException{
 
-		ArrayList<ArrayList<String>> reportClones = new ArrayList<ArrayList<String>>();
-		File projectAddress= new File(config.projectAddress);
-
+		     ArrayList<ArrayList<String>> reportClones = new ArrayList<ArrayList<String>>();
+			File projectAddress= new File(config.projectAddress);
+	
 		File fileName = new File(rawFunctionsFileName);
-
+	
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 		try{
 			DocumentBuilder db = dbf.newDocumentBuilder();
@@ -575,76 +521,72 @@ public class CompairToNicad {
 			doc.getDocumentElement().normalize();
 			Element root = doc.getDocumentElement();
 
-			//	System.out.println(root.getNodeName()+"--------");
+				//	System.out.println(root.getNodeName()+"--------");
 
 			NodeList nl = root.getElementsByTagName("cloneinfo");
 
-			//	System.out.println(nl.getLength());
-			//	System.out.println(nl.item(0).getAttributes().getNamedItem("npairs").getFirstChild().getNodeValue());
+					//	System.out.println(nl.getLength());
+					//	System.out.println(nl.item(0).getAttributes().getNamedItem("npairs").getFirstChild().getNodeValue());
 
-			//	nl = root.getElementsByTagName("class");  //in case of xml classes report
-
+					//	nl = root.getElementsByTagName("class");  //in case of xml classes report
+			
 			nl = root.getElementsByTagName("clone_pair");
 
 
-			//System.out.println(nl.getLength()+"**************************");
+					//System.out.println(nl.getLength()+"**************************");
 
 			if(nl.getLength()>0){
 
-
+				
 				for (int group=0;group<nl.getLength();group++)
 				{
 					NodeList sourceList = nl.item(group).getChildNodes();
-					//				System.out.println( sourceList.getLength()+"----------------------");
+//				System.out.println( sourceList.getLength()+"----------------------");
 
 
 
-					//for(int file=1;file<sourceList.getLength();file+=2){
+				//for(int file=1;file<sourceList.getLength();file+=2){
 
-					Node nNode = nl.item(group);
-					Element eElement = (Element) nNode;
-					String  similarity=eElement.getAttribute("Similarity");
+						
+						String file1= sourceList.item(1).getAttributes().getNamedItem("file").getFirstChild().getNodeValue();
+						String startline1 = sourceList.item(1).getAttributes().getNamedItem("startline").getFirstChild().getNodeValue();
+						String endline1 = sourceList.item(1).getAttributes().getNamedItem("endline").getFirstChild().getNodeValue();
 
-					String file1= sourceList.item(1).getAttributes().getNamedItem("file").getFirstChild().getNodeValue();
-					String startline1 = sourceList.item(1).getAttributes().getNamedItem("startline").getFirstChild().getNodeValue();
-					String endline1 = sourceList.item(1).getAttributes().getNamedItem("endline").getFirstChild().getNodeValue();
-
-
-					String file2= sourceList.item(3).getAttributes().getNamedItem("file").getFirstChild().getNodeValue();
-					String startline2 = sourceList.item(3).getAttributes().getNamedItem("startline").getFirstChild().getNodeValue();
-					String endline2 = sourceList.item(3).getAttributes().getNamedItem("endline").getFirstChild().getNodeValue();
-
-					int pos = file1.indexOf(projectAddress.getName());
-					projectHomeAddress= file1.substring(0,pos);
+						
+						String file2= sourceList.item(3).getAttributes().getNamedItem("file").getFirstChild().getNodeValue();
+						String startline2 = sourceList.item(3).getAttributes().getNamedItem("startline").getFirstChild().getNodeValue();
+						String endline2 = sourceList.item(3).getAttributes().getNamedItem("endline").getFirstChild().getNodeValue();
+					
+						int pos = file1.indexOf(projectAddress.getName());
+						projectHomeAddress= file1.substring(0,pos);
 					//	System.out.println(projectHomeAddress);
-					//file1=file1.substring(pos);
+						//file1=file1.substring(pos);
+
+						
+				//	    pos = file2.indexOf(projectAddress.getName());
+				//		file2=file2.substring(pos);
+						
+						
+						ArrayList<String> clonePair=new ArrayList<String>();
+						clonePair.add(file1);
+						clonePair.add(startline1);
+						clonePair.add(endline1);
+						clonePair.add(file2);
+						clonePair.add(startline2);
+						clonePair.add(endline2);
+						reportClones.add(clonePair);
 
 
-					//	    pos = file2.indexOf(projectAddress.getName());
-					//		file2=file2.substring(pos);
 
-
-					ArrayList<String> clonePair=new ArrayList<String>();
-					clonePair.add(similarity);
-					clonePair.add(file1);
-					clonePair.add(startline1);
-					clonePair.add(endline1);
-					clonePair.add(file2);
-					clonePair.add(startline2);
-					clonePair.add(endline2);
-					reportClones.add(clonePair);
-
-
-
-					//	}
+				//	}
 				}
 
-				//	System.out.println("Done");
+			//	System.out.println("Done");
 
 
 			}
 		}
-
+		
 
 		catch (Exception e) {
 			e.printStackTrace();
@@ -652,62 +594,62 @@ public class CompairToNicad {
 		return reportClones;
 
 	}
-
-
-
+	
+	
+	
 	public static ArrayList<ArrayList<String>> parseCloneReport2 (Configuration config, String rawFunctionsFileName) throws IOException{
 
-		ArrayList<ArrayList<String>> reportClones = new ArrayList<ArrayList<String>>();
+	     ArrayList<ArrayList<String>> reportClones = new ArrayList<ArrayList<String>>();
 		File projectAddress= new File(config.projectAddress);
 
-		File fileName = new File(rawFunctionsFileName);
+	File fileName = new File(rawFunctionsFileName);
 
-		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-		try{
-			DocumentBuilder db = dbf.newDocumentBuilder();
+	DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+	try{
+		DocumentBuilder db = dbf.newDocumentBuilder();
 
-			Document doc = db.parse(fileName);
-			doc.getDocumentElement().normalize();
-			Element root = doc.getDocumentElement();
+		Document doc = db.parse(fileName);
+		doc.getDocumentElement().normalize();
+		Element root = doc.getDocumentElement();
 
 			//	System.out.println(root.getNodeName()+"--------");
 
-			NodeList nl = root.getElementsByTagName("cloneinfo");
+		NodeList nl = root.getElementsByTagName("cloneinfo");
 
-			//	System.out.println(nl.getLength());
-			//	System.out.println(nl.item(0).getAttributes().getNamedItem("npairs").getFirstChild().getNodeValue());
+				//	System.out.println(nl.getLength());
+				//	System.out.println(nl.item(0).getAttributes().getNamedItem("npairs").getFirstChild().getNodeValue());
 
-			//	nl = root.getElementsByTagName("class");  //in case of xml classes report
-
-			nl = root.getElementsByTagName("clone_pair");
-
-
-			//System.out.println(nl.getLength()+"**************************");
-
-			if(nl.getLength()>0){
+				//	nl = root.getElementsByTagName("class");  //in case of xml classes report
+		
+		nl = root.getElementsByTagName("clone_pair");
 
 
-				for (int group=0;group<nl.getLength();group++)
-				{
-					NodeList sourceList = nl.item(group).getChildNodes();
-					//			System.out.println( sourceList.getLength()+"----------------------");
+				//System.out.println(nl.getLength()+"**************************");
+
+		if(nl.getLength()>0){
+
+			
+			for (int group=0;group<nl.getLength();group++)
+			{
+				NodeList sourceList = nl.item(group).getChildNodes();
+//			System.out.println( sourceList.getLength()+"----------------------");
 
 
 
-					//for(int file=1;file<sourceList.getLength();file+=2){
+			//for(int file=1;file<sourceList.getLength();file+=2){
 
-
+					
 					String file1= sourceList.item(1).getAttributes().getNamedItem("file").getFirstChild().getNodeValue();
 					String startline1 = sourceList.item(1).getAttributes().getNamedItem("startline").getFirstChild().getNodeValue();
 					String endline1 = sourceList.item(1).getAttributes().getNamedItem("endline").getFirstChild().getNodeValue();
 
-
+					
 					String file2= sourceList.item(3).getAttributes().getNamedItem("file").getFirstChild().getNodeValue();
 					String startline2 = sourceList.item(3).getAttributes().getNamedItem("startline").getFirstChild().getNodeValue();
 					String endline2 = sourceList.item(3).getAttributes().getNamedItem("endline").getFirstChild().getNodeValue();
-
-
-
+				
+		
+					
 					ArrayList<String> clonePair=new ArrayList<String>();
 					clonePair.add(file1);
 					//clonePair.add(startline1);
@@ -719,36 +661,25 @@ public class CompairToNicad {
 
 
 
-					//	}
-				}
-
-				//	System.out.println("Done");
-
-
+			//	}
 			}
+
+		//	System.out.println("Done");
+
+
 		}
-
-
-		catch (Exception e) {
-			e.printStackTrace();
-		}
-		return reportClones;
-
 	}
+	
 
-
-	public static ArrayList<ArrayList<String>> sortReport( ArrayList<ArrayList<String>> clones){
-
-		Collections.sort(clones, new Comparator<ArrayList<String>>() {
-			@Override
-			public int compare(ArrayList<String> one, ArrayList<String> two) {
-				return two.get(0).compareTo(one.get(0));
-			}
-		});
-
-		return clones;
+	catch (Exception e) {
+		e.printStackTrace();
 	}
+	return reportClones;
 
-
-
+}
+	
+	
+	
+		
+	
 }

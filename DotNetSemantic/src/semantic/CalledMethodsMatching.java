@@ -47,6 +47,7 @@ public class CalledMethodsMatching {
 		Configuration config=Configuration.loadFromFile();
 		config.xmlCalledMethods=config.disassebledAddress+"\\method_0_calls.xml";
 		
+		
 		lcsCalledMethods(config);
 	//	System.out.println(calledMethods.size());
 		

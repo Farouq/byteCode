@@ -29,7 +29,7 @@ public class CompairToNicad3 {
 		// need tow files. 1- Nicad report and must be copied into Rrport folder of the project
 		// and semantic report
 
-		String reportAddress=config.reportAddress+"\\SignitureJaccard0.75.xml";
+		String reportAddress=config.reportAddress+"\\FinalCloneReport0.7.xml";
 		String nicadReportAddress=config.reportAddress+"\\1-ASXGUI_functions-blind-clones-0.30.xml";
 		
 		String ClonesReportAddress=config.testing+"\\Verified Clones2.xml";
@@ -971,5 +971,7 @@ public class CompairToNicad3 {
 	}
 
 
+	
+	
 }
 

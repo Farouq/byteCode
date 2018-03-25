@@ -18,6 +18,7 @@ public class Crawler {
 	public ArrayList<String> findExeFiles(String rootAddress )
 	{
 		exeFileList=new ArrayList<String>( );
+		//System.out.println(__targetFileType);
 		findRecursively(new File(rootAddress));
 		return(exeFileList);
 	}
@@ -50,7 +51,7 @@ public class Crawler {
 	    		int dotPos = fileName.lastIndexOf('.', fileName.length());
 	    		if (dotPos > -1) {
 	    			String extension = fileName.substring(dotPos + 1);
-	    			if (extension.equalsIgnoreCase(__targetFileType) && exeHasPdb(current)) {
+	    			if ((extension.equalsIgnoreCase(__targetFileType)) && exeHasPdb(current) ||(extension.equalsIgnoreCase("dll")) && dllHasPdb(current)) {
 
 	    				exeFileList.add(current.getPath());
 	    		//		System.out.println(current);
@@ -63,6 +64,16 @@ public class Crawler {
 	 	} 
 	    }
 	    
+	    
+	    private boolean dllHasPdb(File current)
+	    {
+	    	String pdbPath= current.getPath().replace("dll","pdb");
+	    	File pdbFile= new File(pdbPath);
+	    	
+	     boolean exist= pdbFile.exists();
+	     return exist;
+	    }
+	    // easy way if file.exsist();
 	    private boolean exeHasPdb(File current){
 	    	boolean found=false;
 	    	

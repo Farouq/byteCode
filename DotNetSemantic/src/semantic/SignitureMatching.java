@@ -51,24 +51,23 @@ public class SignitureMatching {
 		
 		parse3(config.xmlmethodSignature);
 
-	//	lcsCalledMethods(config);
+		lcsCalledMethods(config);
 	//	levenstien(config,config.xmlmethodSignature);
-		jaccInstructions(config);
+	//	jaccInstructions(config);
 		
 	}
 
 	public static void lcsCalledMethods(Configuration config) throws Exception{
 		
 		int clonePairs=0;
-		String outputFileAddress=config.reportAddress+"\\SignitureLCS"+ config.callsLCSThreshold+".xml";
+		String outputFileAddress=config.reportAddress+"\\SignitureLCS"+ config.signitureLCSThreshold+".xml";
 		BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(outputFileAddress));
 		bufferedWriter.write("<clones>");
 		bufferedWriter.newLine();
 
 	
-		config.callsLCSThreshold=0.85;
 		System.out.println("Number of method extracted: "+methodSigniture.size());
-		System.out.println("Similarity Threshold: "+config.callsLCSThreshold);
+		System.out.println("Similarity Threshold: "+config.signitureLCSThreshold);
 
 		
 
@@ -84,7 +83,7 @@ public class SignitureMatching {
 					if (methodSigniture.get(v).size() > 0	&& methodSigniture.get(c).size() > 0)
 					{
 						double d = (double) LCSAlgorithm(methodSigniture.get(v), methodSigniture.get(c)).size()	* 2	/ (methodSigniture.get(v).size() + methodSigniture.get(c).size());
-						if (d>config.callsLCSThreshold){
+						if (d>config.signitureLCSThreshold){
 							d=Math.round(d * 100.0) / 100.0;
 							
 						bufferedWriter.write("<clone_pair Similarity=\""+d +"\" Verified= \"N\" >");

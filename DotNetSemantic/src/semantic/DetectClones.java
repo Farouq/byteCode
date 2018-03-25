@@ -35,12 +35,12 @@ public class DetectClones {
 	private static ArrayList<ArrayList<String>> methodData=new ArrayList<ArrayList<String>>();
 
 	//methodsData contain the same contents as methodData but extrateced form another xml file
-	private static ArrayList<ArrayList<String>> methodsData = new ArrayList<ArrayList<String>>();
 	private static ArrayList<ArrayList<String>> calledMethods = new ArrayList<ArrayList<String>>();
+	private static ArrayList<ArrayList<String>> methodsDataForCalls = new ArrayList<ArrayList<String>>();
 	
 	// ArrayList contain Method Signiture
-	private static ArrayList<ArrayList<String>> methodsData1 = new ArrayList<ArrayList<String>>();
 	private static ArrayList<ArrayList<String>> methodSigniture = new ArrayList<ArrayList<String>>();
+	private static ArrayList<ArrayList<String>> methodsDataForSignature = new ArrayList<ArrayList<String>>();
 
 	private static final int NEITHER = 0;
 	private static final int UP = 1;
@@ -53,21 +53,31 @@ public class DetectClones {
 
 		Configuration config=Configuration.initialize(args[0]);
 
-		// do this two steps just first time running on a system
-	//	Starter_Preparation_Step1.makeOutputFolders(config);
-	//	StarterPublisher.start(config);
+		Starter_Preparation_Step1.makeOutputFolders(config);
 		
-		// byte code
+		StarterPublisher.start(config);
 		
-		// Called method 
-		
-
-		// load method signiture into ArrayList
-		
-
+		loadDataIntoArraylists(config);
 	
+		/* 
+		 * Just to check if all methods data are the same 
+		System.out.println( isTwoArrayListsWithSameValues(methodData,methodsDataForCalls));
+		System.out.println( isTwoArrayListsWithSameValues(methodsDataForSignature,methodsDataForCalls));
+		System.out.println (methodData.size());
+		System.out.println (methodsDataForCalls.size());
+		System.out.println (methodsDataForSignature.size());
+		*/
 
-		detect(config);
+		// selected method of combination		
+//		detectUnionSimilarities(config);
+		
+		// is good
+			detectWeightAverage(config);
+		
+		// intersection is not effectine 57 clone pairs common 51 extra 6 missed 44
+	    // detectIntersectionSimilarities(config);
+		
+		
 		
 //		System.out.println(byteCode.size());
 //		System.out.println(methodData.size());
@@ -81,12 +91,8 @@ public class DetectClones {
 
 	}
 	
-	
-	public static void detect(Configuration config)throws Exception	
-	{ 
-
+	public static void loadDataIntoArraylists(Configuration config) throws Exception {
 		
-		//Configuration config=Configuration.loadFromFile();
 		config.xmlByteCode=config.disassebledAddress+"\\allFiles.xml_0_binary.xml";
 		parse(config.xmlByteCode);
 		
@@ -96,21 +102,22 @@ public class DetectClones {
 		config.xmlmethodSignature=config.disassebledAddress+"\\Method_0_Signiture.xml";
 		parse3(config.xmlmethodSignature);
 		
+	}
+	
+	public static void detectWeightAverage(Configuration config)throws Exception	
+	{ 
 
-		String outputFileAddress2=config.reportAddress+"\\FinalCloneReport"+ config.instructionLevThreshold+".xml";
+		String outputFileAddress2=config.reportAddress+"\\FinalCloneReportWeighted Similarities."+ config.threshold+".xml";
 		
 		BufferedWriter bufferedWriter2 = new BufferedWriter(new FileWriter(outputFileAddress2));
 		bufferedWriter2.write("<clones>");
 		bufferedWriter2.newLine();
-
-
-
-
+		
 		int progress=0;
 		int clonePairs=0;
+		int progressStep=byteCode.size()/100;
 		
 		System.out.println("detcting... ");
-
 
 		for(int v =0; v<byteCode.size()-1;v++){
 			//System.out.print(v);
@@ -122,9 +129,7 @@ public class DetectClones {
 					double dInstruction=(double)1-(getLevenshteinDistance(byteCode.get(v),byteCode.get(c))/max);
 
 					//out.write(i+"	"+d+"\n");
-					
-				if ( dInstruction>=0.4){
-					
+										
 				
 					double dMethod;
 					if (calledMethods.get(v).size() > 0	&& calledMethods.get(c).size() > 0)
@@ -142,21 +147,21 @@ public class DetectClones {
 						dSigniture=0;
 					}
 
+					
+
+
+					// old condition 
 					double finalSimilarity=dInstruction*0.6 + dMethod*0.2 + dSigniture*0.2;
-
-
-
-					if (finalSimilarity>=config.instructionLevThreshold || (dSigniture>=0.8 && dInstruction>=0.8)){
-						//				System.out.print(config.threshold + "  <  ");
-
-						//				System.out.println(d+"------------");
-						//				System.out.println(vbdata.get(v).get(0));
-						//				System.out.println(csdata.get(c).get(0));
+					if (finalSimilarity>=config.threshold /*|| (dSigniture>=0.8 && dInstruction>=0.8)*/) {
+					
+						//double finalSimilarity=dInstruction*0.6+ dMethod *0.2+ dSigniture*0.3;
+						//if (finalSimilarity>=0.7  ){
 
 						// write to report  / all detected cloned using binarcode 
 						clonePairs++;
 
 						finalSimilarity=Math.round(finalSimilarity*100.0)/100.0;
+						
 						bufferedWriter2.write( "<clone_pair pairid=\""+ clonePairs+"\" semantic_similarity= \""+finalSimilarity+"\" >");
 						bufferedWriter2.newLine();
 						//System.out.println(d );
@@ -181,14 +186,20 @@ public class DetectClones {
 						// check if this clone pairs  Did not detected in nicad	then save these clones in a seperate file
 
 					}
-				}
 
 
 				} //outer If
 
 
 			}	// inner loop 
-			progress++;
+			
+			int i= v%progressStep;
+			if(i==0) {
+				progress=((v+1)*100 /byteCode.size());
+				System.out.println("progress: "+ progress+"%");
+			}
+			
+			
 	}// outer loop
 
 		
@@ -205,7 +216,187 @@ public class DetectClones {
 	}
 
 
+	
+	public static void detectUnionSimilarities(Configuration config)throws Exception	
+	{ 
+		
+		String outputFileAddress2=config.reportAddress+"\\FinalCloneReport.xml";
+		
+		BufferedWriter bufferedWriter2 = new BufferedWriter(new FileWriter(outputFileAddress2));
+		bufferedWriter2.write("<clones>");
+		bufferedWriter2.newLine();
+		
+		int progress=0;
+		int clonePairs=0;
+		
+		System.out.println("detcting... ");
 
+		for(int v =0; v<byteCode.size()-1;v++){
+			//System.out.print(v);
+			for(int c =v+1; c<byteCode.size(); c++){ //cscode.size();c++){
+
+				double dInstruction=0;
+				if(byteCode.get(v).length()<2000 && byteCode.get(c).length()<2000)
+				{
+					double max= (byteCode.get(v).length()>byteCode.get(c).length())? byteCode.get(v).length():byteCode.get(c).length();
+					 dInstruction=(double)1-(getLevenshteinDistance(byteCode.get(v),byteCode.get(c))/max);
+				}
+
+			
+					double dMethod;
+					if (calledMethods.get(v).size() > 0	&& calledMethods.get(c).size() > 0)
+					{
+						 dMethod = (double) LCSAlgorithm(calledMethods.get(v), calledMethods.get(c)).size()	* 2	/ (calledMethods.get(v).size() + calledMethods.get(c).size());
+					} else{
+						 dMethod=0f;
+					}
+					
+					double dSigniture;
+					if (methodSigniture.get(v).size() > 0	&& methodSigniture.get(c).size() > 0)
+					{
+						dSigniture = (double) LCSAlgorithm(methodSigniture.get(v), methodSigniture.get(c)).size()	* 2	/ (methodSigniture.get(v).size() + methodSigniture.get(c).size());
+					}else{
+						dSigniture=0;
+					}
+
+
+					if (dInstruction>=config.instructionLevThreshold||dMethod>=config.callsLCSThreshold||dSigniture>=config.signitureLCSThreshold){
+
+						clonePairs++;
+						dInstruction=Math.round(dInstruction * 100.0) / 100.0;
+						dMethod=Math.round(dMethod * 100.0) / 100.0;
+						dSigniture=Math.round(dSigniture * 100.0) / 100.0;
+
+						bufferedWriter2.write( "<clone_pair  Instruction_Sim=\""+dInstruction +"\""+" Calls_Sim=\""+dMethod +"\"" + " Signiture_Sim=\""+dSigniture +"\"" +" Verified= \"N\" >");
+						bufferedWriter2.newLine();
+						//System.out.println(d );
+						// first fragment
+						bufferedWriter2.write( "<clone_fragment file=\""+methodData.get(v).get(0)+"\" startline=\""+ methodData.get(v).get(1) +"\" endline=\""+ methodData.get(v).get(2)+"\">");
+						bufferedWriter2.newLine();
+						bufferedWriter2.write("<![CDATA["+ getsource( config, methodData.get(v).get(0), methodData.get(v).get(1))+"]]>");
+						bufferedWriter2.newLine();
+						bufferedWriter2.write("</clone_fragment>");
+						bufferedWriter2.newLine();
+						//second fragment
+						bufferedWriter2.write( "<clone_fragment file=\""+methodData.get(c).get(0)+"\" startline=\""+ methodData.get(c).get(1) +"\" endline=\""+ methodData.get(c).get(2)+"\">");
+						bufferedWriter2.newLine();
+						bufferedWriter2.write("<![CDATA["+getsource( config, methodData.get(c).get(0), methodData.get(c).get(1))+"]]>");
+						bufferedWriter2.newLine();
+						bufferedWriter2.write("</clone_fragment>");
+						bufferedWriter2.newLine();
+						//close pair
+						bufferedWriter2.write("</clone_pair>");
+						bufferedWriter2.newLine();
+
+
+					}
+				
+
+			}	// inner loop 
+			progress++;
+	}// outer loop
+
+		
+		System.out.println("Number of clone pairs detected using Union all similarities:"+ clonePairs );
+
+
+		// close file		
+
+		bufferedWriter2.write("</clones>");
+		bufferedWriter2.newLine();
+		bufferedWriter2.flush();
+		bufferedWriter2.close();
+	}
+	
+	
+	public static void detectIntersectionSimilarities(Configuration config)throws Exception	
+	{ 
+		
+		String outputFileAddress2=config.reportAddress+"\\FinalCloneReportIntersection"+ config.instructionLevThreshold+".xml";
+		
+		BufferedWriter bufferedWriter2 = new BufferedWriter(new FileWriter(outputFileAddress2));
+		bufferedWriter2.write("<clones>");
+		bufferedWriter2.newLine();
+		
+		int progress=0;
+		int clonePairs=0;
+		
+		System.out.println("detcting... ");
+
+		for(int v =0; v<byteCode.size()-1;v++){
+			//System.out.print(v);
+			for(int c =v+1; c<byteCode.size(); c++){ //cscode.size();c++){
+
+				double dInstruction=0;
+				if(byteCode.get(v).length()<2000 && byteCode.get(c).length()<2000)
+				{
+					double max= (byteCode.get(v).length()>byteCode.get(c).length())? byteCode.get(v).length():byteCode.get(c).length();
+					 dInstruction=(double)1-(getLevenshteinDistance(byteCode.get(v),byteCode.get(c))/max);
+				}
+
+			
+					double dMethod;
+					if (calledMethods.get(v).size() > 0	&& calledMethods.get(c).size() > 0)
+					{
+						 dMethod = (double) LCSAlgorithm(calledMethods.get(v), calledMethods.get(c)).size()	* 2	/ (calledMethods.get(v).size() + calledMethods.get(c).size());
+					} else{
+						 dMethod=0f;
+					}
+					
+					double dSigniture;
+					if (methodSigniture.get(v).size() > 0	&& methodSigniture.get(c).size() > 0)
+					{
+						dSigniture = (double) LCSAlgorithm(methodSigniture.get(v), methodSigniture.get(c)).size()	* 2	/ (methodSigniture.get(v).size() + methodSigniture.get(c).size());
+					}else{
+						dSigniture=0;
+					}
+
+
+					if (dInstruction>=config.instructionLevThreshold && dMethod>=config.callsLCSThreshold && dSigniture>=config.signitureLCSThreshold){
+
+						clonePairs++;
+
+						bufferedWriter2.write( "<clone_pair>");
+						bufferedWriter2.newLine();
+						//System.out.println(d );
+						// first fragment
+						bufferedWriter2.write( "<clone_fragment file=\""+methodData.get(v).get(0)+"\" startline=\""+ methodData.get(v).get(1) +"\" endline=\""+ methodData.get(v).get(2)+"\">");
+						bufferedWriter2.newLine();
+						bufferedWriter2.write("<![CDATA["+ getsource( config, methodData.get(v).get(0), methodData.get(v).get(1))+"]]>");
+						bufferedWriter2.newLine();
+						bufferedWriter2.write("</clone_fragment>");
+						bufferedWriter2.newLine();
+						//second fragment
+						bufferedWriter2.write( "<clone_fragment file=\""+methodData.get(c).get(0)+"\" startline=\""+ methodData.get(c).get(1) +"\" endline=\""+ methodData.get(c).get(2)+"\">");
+						bufferedWriter2.newLine();
+						bufferedWriter2.write("<![CDATA["+getsource( config, methodData.get(c).get(0), methodData.get(c).get(1))+"]]>");
+						bufferedWriter2.newLine();
+						bufferedWriter2.write("</clone_fragment>");
+						bufferedWriter2.newLine();
+						//close pair
+						bufferedWriter2.write("</clone_pair>");
+						bufferedWriter2.newLine();
+
+
+					}
+				
+
+			}	// inner loop 
+			progress++;
+	}// outer loop
+
+		
+		System.out.println("Number of clone pairs detected using Intersection all similarities:"+ clonePairs );
+
+
+		// close file		
+
+		bufferedWriter2.write("</clones>");
+		bufferedWriter2.newLine();
+		bufferedWriter2.flush();
+		bufferedWriter2.close();
+	}
+	
 
 	public static String getsource(Configuration config, String fileName, String startLine) throws IOException{
 
@@ -217,10 +408,7 @@ public class DetectClones {
 			Document docs = dbs.parse(config.disassebledAddress+"/allFiles.xml_0_source.xml");
 			docs.getDocumentElement().normalize();
 
-
 			Element roots = docs.getDocumentElement();
-
-
 
 			NodeList nls = roots.getElementsByTagName("source_elements");
 
@@ -229,11 +417,8 @@ public class DetectClones {
 			if(nls.getLength()>0){
 				NodeList sourceLists = nls.item(0).getChildNodes();
 
-
-
 				boolean found=false;
 				int k=0;
-
 
 				while(!found && k<sourceLists.getLength()){
 					Node sources = sourceLists.item(k);
@@ -255,8 +440,6 @@ public class DetectClones {
 
 				}
 			}
-
-
 
 		}
 
@@ -467,7 +650,7 @@ public class DetectClones {
 					csd.add(file);
 					csd.add(startline);
 					csd.add(endline);
-					methodsData.add(csd);
+					methodsDataForCalls.add(csd);
 					// System.out.println( file+"\n"+ startline+ "\n"+
 					// endline+"\n");
 
@@ -630,7 +813,7 @@ public class DetectClones {
 					csd.add(file);
 					csd.add(startline);
 					csd.add(endline);
-					methodsData1.add(csd);
+					methodsDataForSignature.add(csd);
 
 					String[] csA = content.split("\n");
 
@@ -654,5 +837,25 @@ public class DetectClones {
 		}
 	}
 	
+	
+    public static boolean isTwoArrayListsWithSameValues(ArrayList<ArrayList<String>> list1, ArrayList<ArrayList<String>> list2)
+    {
+    	//ArrayList<String> temp= new ArrayList<String>();
+        //null checking
+        if(list1==null && list2==null)
+            return true;
+        if((list1 == null && list2 != null) || (list1 != null && list2 == null))
+            return false;
+
+        if(list1.size()!=list2.size())
+            return false;
+        for(ArrayList<String> itemList1: list1)
+        {
+            if(!list2.contains(itemList1))
+                return false;
+        }
+
+        return true;
+    }
 	
 }

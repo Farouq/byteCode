@@ -30,7 +30,7 @@ public class CompairToConQAT {
 		// need tow files. 1- simcad report and must be copied into Rrport folder of the project
 		// and semantic report
 		
-		String reportAddress=config.reportAddress+"\\Semantic Clones Report.xml";
+		String reportAddress=config.reportAddress+"\\FinalCloneReportWeighted Similarities0.7.xml";
 		String conQATReportAddress=config.reportAddress+"\\clones.xml";
 		
 		
@@ -38,8 +38,8 @@ public class CompairToConQAT {
 		// Load the clone reports data into ArrayList
 		ArrayList<ArrayList<String>> clones =parseCloneReport (config, reportAddress );
 		// ArrayList<ArrayList<String>> clonesEnd = parseCloneReport2 (config, reportAddress );
-		System.out.println(clones.size());
-		System.out.println(clones);
+		System.out.println("Number of clone pairs detected by my tool "+clones.size());
+		//System.out.println(clones);
 
 
 		
@@ -51,8 +51,8 @@ public class CompairToConQAT {
 		 ArrayList<ArrayList<String>> both = new ArrayList<ArrayList<String>>();
 		 ArrayList<ArrayList<String>> semOnly = new ArrayList<ArrayList<String>>();
 		 
-			System.out.println(conQATClones.size());
-			System.out.println(conQATClones);
+			System.out.println("Number of clone pairs detected by Conqat "+conQATClones.size());
+		//	System.out.println(conQATClones);
 			int counter=0;
 			
 			for(int i=0; i<clones.size();i++ ){			
@@ -67,6 +67,8 @@ public class CompairToConQAT {
 				
 			}
 			System.out.println(counter);
+			System.out.println("Number of common clones "+ both.size());
+			System.out.println("number of missed clones ");
 
 			
 			
@@ -157,7 +159,7 @@ public class CompairToConQAT {
 			if((fA1.equals(fA2) && sA1<=eA2 && eA1>=sA2) && (fB1.equals(fB2) && sB1<= eB2 && eB1>=sB2)
 				||	(fA1.equals(fB2) && sA1<=eB2 && eA1>=sB2) && (fB1.equals(fA2) && sB1<= eA2 && eB1>=sA2) ){
 				found=true;
-				System.out.println(clonePair);
+	//			System.out.println(clonePair);
 				break;
 			}
 		}
@@ -318,9 +320,9 @@ public class CompairToConQAT {
 					String file1= sourceList.item(file).getAttributes().getNamedItem("sourceFileId").getFirstChild().getNodeValue();
 					String startline1 = sourceList.item(file).getAttributes().getNamedItem("startLine").getFirstChild().getNodeValue();
 					String endline1 = sourceList.item(file).getAttributes().getNamedItem("endLine").getFirstChild().getNodeValue();
-//					System.out.println(file1);
-//					System.out.println(startline1);
-//					System.out.println(endline1);
+				//	System.out.println(file1);
+				//	System.out.println(startline1);
+				//	System.out.println(endline1);
 					int fileID=Integer.parseInt(file1);
 					ArrayList<String> clone = new ArrayList<String>();
 					clone.add(listFiles.get(fileID));
@@ -329,8 +331,8 @@ public class CompairToConQAT {
 					cloneClass.add(clone);
 				}
 				
-				// System.out.println(cloneClass.size());
-				// System.out.println(cloneClass);
+			//	 System.out.println(cloneClass.size());
+			//	 System.out.println(cloneClass);
 				
 				// build clone pairs from clone classes 
 				for (int i=0; i<cloneClass.size()-1; i++){
@@ -363,7 +365,6 @@ public class CompairToConQAT {
 		return reportClones;
 	}
 
-	
 	
 	
 	public static Boolean foundInLevenshtien(Configuration config, String fileA, String stA, String enA, String fileB, String stB, String enB) throws IOException{
@@ -760,10 +761,7 @@ public class CompairToConQAT {
 		bufferedWriter.close();
 	}
 		
-	
-	
-	
-	
+		
 	public static String getSourceCode(Configuration config, String fileName, String start, String end) throws IOException{
 
 		 String line = null;

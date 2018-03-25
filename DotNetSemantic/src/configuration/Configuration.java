@@ -48,18 +48,18 @@ public class Configuration {
 	// default was !!! Levenshtien on byte code //instructions
 	public double instructionLevThreshold=0.7;
 	public double instructionJaccThreshold=0.85;
+	
 	public double callsLCSThreshold=0.7;
 	public double callsJaccardThreshold=0.7;
 	
 	public double signitureLevThreshold=0.7;
 	public double signitureJaccThreshold=0.7;
 	
+	public double signitureLCSThreshold=0.7;
 
-	// threshold for method calls
-	//1- LCS threshold
-	//2- Jaccard threshold
-	public float callsJaccthreshold=0.75f;
 	
+
+
 	
 	//default !!!
 	public float min_threshold=5.0f;
@@ -118,11 +118,16 @@ public class Configuration {
 		
 		config.instructionLevThreshold= 0.70;
 		config.instructionJaccThreshold= 0.80;
+		
 		config.callsLCSThreshold= 0.7;
 		config.callsJaccardThreshold= 0.7;
+		
 		config.signitureLevThreshold=0.96;
 		config.signitureJaccThreshold=0.7;
+		
+		config.signitureLCSThreshold=0.90;
 
+		config.threshold=0.75;
 		
 		config.min_threshold=0.5f;
 		config.comparisonMethod=3;

@@ -52,7 +52,7 @@ public class StarterPublisher {
 		
 		//Consider only moved files. No dublicated files.  findMovedExeFiles is a better name for this method
 		files = movedFiles(config);
-		System.out.println("Number of exe files found and used are: "+ files.size());
+		System.out.println("Number of Portable Executable files found and used are: "+ files.size());
 
 
 		//System.out.println(files.size()+"hellocs");
@@ -89,6 +89,10 @@ public class StarterPublisher {
 	{
 		Crawler crwl=new Crawler("exe");
 		ArrayList<String> files=crwl.findExeFiles(config.projectAddress);
+		
+		Crawler crwl2=new Crawler("dll");
+		ArrayList<String> files2=crwl2.findExeFiles(config.projectAddress);
+		files.addAll(files2);
 		return(files);
 	}
 
@@ -96,7 +100,16 @@ public class StarterPublisher {
 		File destination= new File(config.byteCodeAddress);
 		for( String file:files){
 			File exeFile=new File(file);
-			String pdbFileName = file.replace("exe","pdb");
+			
+			String pdbFileName=	file.endsWith("exe") ?   file.replace("exe","pdb") :file.replace("dll","pdb");
+			
+//			if (file.endsWith("exe")) 
+//			{ pdbFileName = file.replace("exe","pdb");
+//				}
+//			else
+//			{	 pdbFileName = file.replace("dll","pdb");
+//						}
+						
 			File pdbFile= new File(pdbFileName);
 			FileUtils.copyFileToDirectory(exeFile,destination);
 			FileUtils.copyFileToDirectory(pdbFile,destination);
@@ -111,7 +124,7 @@ public class StarterPublisher {
 		File byteAddesss= new File(config.byteCodeAddress);
 		for(File exeFile : byteAddesss.listFiles()){
 			String fileName =exeFile.getName();
-			if(fileName.endsWith("exe")){
+			if(fileName.endsWith("exe")||fileName.endsWith("dll")){
 				listOfExeFiles.add(exeFile.getPath() );
 			}
 		}
@@ -140,7 +153,7 @@ public class StarterPublisher {
 			
 
 	//		String command="C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.7 Tools\\ildasm.exe "+file + "  /source /text ";
-	//		System.out.println(command);
+			System.out.println("Disassembling the file "+ file.substring(file.lastIndexOf("\\")+1));
 			Process pr = rt.exec(command);
 			BufferedReader input = new BufferedReader(new InputStreamReader(pr.getInputStream()));
 
@@ -151,11 +164,11 @@ public class StarterPublisher {
 				disassebledCode.add(line);
 			}
 
-			int exitVal = pr.waitFor();
-			if(exitVal!=0)
-			{
-				throw(new Exception("error in disassembler cf45n7zsl4sg4e6"));
-			}
+//			int exitVal = pr.waitFor();
+//			if(exitVal!=0)
+//			{
+//				throw(new Exception("error in disassembler cf45n7zsl4sg4e6"));
+//			}
 
 			disassebledCodeList.add(disassebledCode);
 		}
@@ -212,6 +225,7 @@ public class StarterPublisher {
 			ArrayList<String> out_lines_binary=new ArrayList<String>();
 			ArrayList<String> out_lines_source=new ArrayList<String>();
 			ArrayList<String> in_lines=disassembledCodeList.get(i);
+			//System.out.println("file size in LOC   "+in_lines.size());
 			out_lines_binary.add("<project><name></name><description></description><prog_language></prog_language><source_elements>");
 			out_lines_source.add("<project><name></name><description></description><prog_language></prog_language><source_elements>");
 
@@ -227,6 +241,7 @@ public class StarterPublisher {
 				{
 					String t=in_lines.get(j).replace("// Source File '", "");
 					t=t.substring(0,t.lastIndexOf("'"));
+				//	System.out.println(t);
 					currentSourceFileAddress=t;
 				}
 
@@ -754,8 +769,10 @@ public class StarterPublisher {
 		config.xmlmethodSignature=config.disassebledAddress+"/method_0_Signature"+".xml";
 		
 		copyUsedSourceFiles(config,sourceCodeFileSet);
+		
 
-		System.out.println("Number of methods extracted : "+totalMethodCounter+ "Number of methods used"+ methodCounter);
+		//System.out.println("Number of methods extracted : "+totalMethodCounter+ "Number of methods used"+ methodCounter);
+		System.out.println("Number of methods extracted and used in dedection:"+ methodCounter);
 		
 
 		
@@ -789,58 +806,30 @@ public class StarterPublisher {
 		sig=name1+" "+args;
 		return sig;
 	}
-	private static void copyUsedSourceFiles(Configuration config,Set <String>sourceCodeFileSet)throws Exception{
+	private static void copyUsedSourceFiles(Configuration config,Set <String> sourceCodeFileSet)throws Exception{
 		boolean make;
 		File projectAddress = new File(config.projectAddress);
 		String projectName = projectAddress.getName();
 		//CharSequence projectAddressAsASequance=projectAddress.toString();
 
 
-		//System.out.println("copying source code files");
+		System.out.println("copying source code files");
 
 		for(String filePath:sourceCodeFileSet ){
-
-
+			
 			File sourceFile= new File(filePath);
-
-			// it means that the source files that are compiled in VS didn't move
-			// easier to choose the second condition
-			//if (filePath.contains(projectAddressAsASequance))
-			//System.out.println(" the file is exist: "+sourceFile.exists());
-			if(sourceFile.exists()) {
-				String targetFilePath=filePath.replace(config.projectAddress,config.sourceCodeAddress.concat("\\".concat(projectName)));
-				File file = new File(targetFilePath);
-				File parentDir= file.getParentFile();
-				make= parentDir.mkdirs(); // create the parent directory of the target address
-				
-				FileUtils.copyFileToDirectory(sourceFile,parentDir);
-			}
-			else
-				//The project are moved after it was compiled. need to search for the files in the project address and move them
-				// A proposed solution is to move back all files to its orginal path so the ILdasm will be able to Generate the source code
-			{
-
-				int projectNamePosition= filePath.indexOf(projectName);
-				
-
-				System.out.println("Project has been moved. Search for the source code file in current dirctory ");
-				
-			}
-
-
-
-
-
-
-
+			
+			String targetFilePath=filePath.replace(config.projectAddress,config.sourceCodeAddress.concat("\\".concat(projectName)));
+			
 			// if statement check if the source code (visual studio source code ) moved or copied after compilation.
-			// cause exe files save the original path of compiled files. I need to determine the path of files to copy
-			// if the files (project didn't moved after compilation then I need to copy it from : the path found in the exe to 
-			// project address+ \\2-SourceDode folder+\\ rest of file path in the project
-
-			/*
+			// cause exe files save the original path of compiled files. I need to determine the pathe of files to copy
+			
 			if(!filePath.equals(targetFilePath))
 			{
+			File file = new File(targetFilePath);
+			File parentDir= file.getParentFile();
+			make= parentDir.mkdirs();
+			FileUtils.copyFileToDirectory(sourceFile,parentDir);
 			}
 			else{
 				int projectNamePosition= filePath.indexOf(projectName);
@@ -850,9 +839,6 @@ public class StarterPublisher {
 				make= parentDir.mkdirs();
 				FileUtils.copyFileToDirectory(sourceFile,parentDir);
 			}
-
-
-			 */
 		}
 		System.out.println("Number of source files used: "+ sourceCodeFileSet.size());
 
@@ -887,6 +873,6 @@ public class StarterPublisher {
 
 	}
 	
-	
+
 	
 }
