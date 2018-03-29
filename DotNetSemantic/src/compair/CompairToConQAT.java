@@ -20,19 +20,22 @@ import configuration.Configuration;
 public class CompairToConQAT {
 	
 	private static String projectHomeAddress="";
+	
+	private static Set<String> myListofFiles= new HashSet<String>();
 
 	public static void main(String[] args) throws Exception{
-		// TODO Auto-generated method stub
-		// to load the project address. Project address used to process project path
+
 		Configuration config=Configuration.initialize(args[0]);
 
 //		System.out.println(config.reportAddress);
 		// need tow files. 1- simcad report and must be copied into Rrport folder of the project
 		// and semantic report
 		
-		String reportAddress=config.reportAddress+"\\FinalCloneReportWeighted Similarities0.7.xml";
-		String conQATReportAddress=config.reportAddress+"\\clones.xml";
+		String reportAddress=config.reportAddress+"\\FinalCloneReportWeighted Similarities.0.75.xml";
+		String conQATReportAddress=config.reportAddress+"\\ASXGui clones.xml";
 		
+		// collect disassembled source code
+		 collectListOfFiles(new File(config.sourceCodeAddress), config);
 		
 
 		// Load the clone reports data into ArrayList
@@ -40,6 +43,8 @@ public class CompairToConQAT {
 		// ArrayList<ArrayList<String>> clonesEnd = parseCloneReport2 (config, reportAddress );
 		System.out.println("Number of clone pairs detected by my tool "+clones.size());
 		//System.out.println(clones);
+
+		//writeToText(clones) ;
 
 
 		
@@ -54,6 +59,12 @@ public class CompairToConQAT {
 			System.out.println("Number of clone pairs detected by Conqat "+conQATClones.size());
 		//	System.out.println(conQATClones);
 			int counter=0;
+//			
+//			for(int i=0; i<conQATClones.size();i++ ){	
+//				
+//				System.out.println(conQATClones.get(i));
+//				
+//			}
 			
 			for(int i=0; i<clones.size();i++ ){			
 				
@@ -64,80 +75,102 @@ public class CompairToConQAT {
 					semOnly.add(clones.get(i));
 
 				}
-				
 			}
-			System.out.println(counter);
+				
+			
+			Set<String> myListofFiles2= new HashSet<String>();
+			
+			for(int i=0; i<clones.size();i++ ){			
+				String cFile=clones.get(i).get(0);
+				String dFile=clones.get(i).get(3);
+				myListofFiles2.add(cFile);
+				myListofFiles2.add(dFile);
+				
+			//	System.out.println(cFile);
+
+			}
+			
+
+			
+			System.out.println("number of files disassimbled "+ myListofFiles.size());
+			System.out.println("number of files Form my clone report "+ myListofFiles2.size());
+					
+			//System.out.println(counter);
 			System.out.println("Number of common clones "+ both.size());
-			System.out.println("number of missed clones ");
+			System.out.println("number of Extra clones " +semOnly.size());
+			System.out.println("number of Missed clones  take the difference" );
+			
 
 			
 			
-//			System.out.println(conQATClonesEnd);
-			
-
-//			System.out.println(clonesEnd);
-
-			/*	 		
-			 ArrayList<ArrayList<String>> both = new ArrayList<ArrayList<String>>();
-			 ArrayList<ArrayList<String>> semOnly = new ArrayList<ArrayList<String>>();
-			 ArrayList<ArrayList<String>> simcadOnly = new ArrayList<ArrayList<String>>();
-			 
-			 for(int i=0; i<clonesEnd.size();i++ ){
-					
-					ArrayList<String> clonePair=clonesEnd.get(i);
-					ArrayList<String> clonePairSwaped= swapFileOrder(clonePair);
-					
-					if( (simcadClonesEnd.contains(clonePair) || simcadClonesEnd.contains(clonePairSwaped))  ) {
-						//System.out.println(clonePair);
-						both.add(clones.get(i));
-						}
-					else{
-						semOnly.add(clones.get(i));
-					}
-			 }
-			 
-				System.out.println("Bothhhhhhh     "+both.size());
-				System.out.println("Extraaaa    "+semOnly.size());
-				
-				
-				
-				 for(int i=0; i<simcadClonesEnd.size();i++ ){
-						
-						ArrayList<String> clonePair=simcadClonesEnd.get(i);
-						ArrayList<String> clonePairSwaped= swapFileOrder(clonePair);
-						
-						if( (clonesEnd.contains(clonePair) || clonesEnd.contains(clonePairSwaped))  ) {
-							//System.out.println(clonePair);
-							}else
-							{
-								simcadOnly.add(simcadClones.get(i));
-
-							}
-						
-				 }
-			 
-					System.out.println("missed    "+simcadOnly.size());
-					System.out.println(both);
-					System.out.println(semOnly);
-					System.out.println(simcadOnly);
-
-
-
-					writeToXMLFile(config,both,"both simcad and Sem");
-					writeToXMLFile(config,semOnly, "Semantic Only");
-					writeToXMLFile(config,simcadOnly, "simcad only");
-					*/
 
 	}
 
+	
+	private static void writeToText(ArrayList<ArrayList<String>> clones) throws Exception
+	{
+		String outputFileAddress="fileNames.txt";
+		BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(outputFileAddress));
+
+
+		for(int i=0; i<clones.size();i++ ){
+
+
+		//	bufferedWriter.write(clones.get(i).get(0));
+		//	bufferedWriter.newLine();
+			bufferedWriter.write(clones.get(i).get(3));
+			bufferedWriter.newLine();
+		//	bufferedWriter.write(clones.get(i).get(1));
+		//	bufferedWriter.newLine();
+
+
+		}
+
+		bufferedWriter.flush();
+		bufferedWriter.close();
+
+
+	}
+	
+	private static void writeSetToText(Set<String> clones, String file) throws Exception
+	{
+		String outputFileAddress="setfileNames.txt";
+		BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(outputFileAddress));
+
+
+		for(String s: clones){
+
+
+		//	bufferedWriter.write(clones.get(i).get(0));
+		//	bufferedWriter.newLine();
+			bufferedWriter.write(s);
+			if (s.trim().toLowerCase().equals(file.trim().toLowerCase())) {
+				bufferedWriter.write("      Equal");
+			}else
+			{
+				bufferedWriter.write("      Not Equal");
+			}
+			bufferedWriter.newLine();
+		//	bufferedWriter.write(clones.get(i).get(1));
+		//	bufferedWriter.newLine();
+
+
+		}
+
+		bufferedWriter.flush();
+		bufferedWriter.close();
+
+
+	}
+	
 	public static boolean foundInConQAT(ArrayList<String> clonePair,  ArrayList<ArrayList<String>> conQATClones){
 		boolean found=false;
 		//System.out.println(clonePair);
 		
-		String fA1= clonePair.get(0);
+		String fA1= clonePair.get(0).toLowerCase();
 		int sA1 =Integer.parseInt( clonePair.get(1));
 		int eA1 =Integer.parseInt( clonePair.get(2));
-		String fB1= clonePair.get(3);
+		String fB1= clonePair.get(3).toLowerCase();
 		int sB1 =Integer.parseInt( clonePair.get(4));
 		int eB1 =Integer.parseInt( clonePair.get(5));
 		
@@ -145,19 +178,19 @@ public class CompairToConQAT {
 		
 		for(int i=0; i<conQATClones.size();i++ ){
 			
-			String fA2= conQATClones.get(i).get(0);
+			String fA2= conQATClones.get(i).get(0).toLowerCase();
 			int sA2 =Integer.parseInt( conQATClones.get(i).get(1));
 			int eA2 =Integer.parseInt( conQATClones.get(i).get(2));
 			
-			String fB2= conQATClones.get(i).get(3);
+			String fB2= conQATClones.get(i).get(3).toLowerCase();
 			int sB2 =Integer.parseInt( conQATClones.get(i).get(4));
 			int eB2 =Integer.parseInt( conQATClones.get(i).get(5));
 			
 			//System.out.println(fA1+"  "+fA2);
-
+		
 			
-			if((fA1.equals(fA2) && sA1<=eA2 && eA1>=sA2) && (fB1.equals(fB2) && sB1<= eB2 && eB1>=sB2)
-				||	(fA1.equals(fB2) && sA1<=eB2 && eA1>=sB2) && (fB1.equals(fA2) && sB1<= eA2 && eB1>=sA2) ){
+			if(((fA1.equals(fA2) && sA1<=eA2 && eA1>=sA2) && (fB1.equals(fB2) && sB1<= eB2 && eB1>=sB2))
+				||	((fA1.equals(fB2) && sA1<=eB2 && eA1>=sB2) && (fB1.equals(fA2) && sB1<= eA2 && eB1>=sA2) )){
 				found=true;
 	//			System.out.println(clonePair);
 				break;
@@ -264,6 +297,31 @@ public class CompairToConQAT {
 		return source;
 	}
 	
+	
+	
+	public static void collectListOfFiles (File current, Configuration config){
+		
+		
+		//System.out.println(current.getPath());
+		
+    	if (current.isDirectory()) {
+    		for (File f : current.listFiles())
+    			try {
+
+    				collectListOfFiles(f,config);
+    			} catch (Exception ex) {
+
+    		 
+    			} catch (Error e) {
+    		 	}
+    	} else if (current.isFile()) {
+    		String filePath=current.getPath().replace(config.sourceCodeAddress, config.projectAddress.substring (0, config.projectAddress.lastIndexOf("\\")));
+
+    		myListofFiles.add(filePath);
+    	}
+    	
+	}
+	
 	public static ArrayList<ArrayList<String>> parseconQATPairs( Configuration config, String rawFunctionsFileName) throws Exception{
 
 		//		Configuration config=Configuration.loadFromFile();
@@ -323,18 +381,34 @@ public class CompairToConQAT {
 				//	System.out.println(file1);
 				//	System.out.println(startline1);
 				//	System.out.println(endline1);
+					
+
+					
 					int fileID=Integer.parseInt(file1);
 					ArrayList<String> clone = new ArrayList<String>();
-					clone.add(listFiles.get(fileID));
-					clone.add(startline1);
-					clone.add(endline1);
-					cloneClass.add(clone);
+					
+					if (myListofFiles.contains(listFiles.get(fileID)))
+					{
+						clone.add(listFiles.get(fileID));
+						clone.add(startline1);
+						clone.add(endline1);
+						cloneClass.add(clone);
+						//System.out.println(" exist file");
+					}
+					else {
+						System.out.println(" Not exist file");
+
+					}
+					
+
 				}
 				
 			//	 System.out.println(cloneClass.size());
 			//	 System.out.println(cloneClass);
 				
 				// build clone pairs from clone classes 
+				
+				if ( cloneClass.size()>1) {
 				for (int i=0; i<cloneClass.size()-1; i++){
 					
 					for (int j=i+1; j<cloneClass.size(); j++){
@@ -351,6 +425,8 @@ public class CompairToConQAT {
 					}
 					
 				}
+				
+			} // if
 				
 				cloneClass.clear();
 				
@@ -621,6 +697,8 @@ public class CompairToConQAT {
 						reportClones.add(clonePair);
 
 
+					//	myListofFiles.add(file1);
+					//	myListofFiles.add(file2);
 
 				//	}
 				}
@@ -725,7 +803,7 @@ public class CompairToConQAT {
 	
 	private static void writeToXMLFileAsSimCad(Configuration config,ArrayList<ArrayList<String>> meregedClones, String fileName) throws Exception
 	{
-		String outputFileAddress=config.reportAddress+"\\simcad\\"+fileName+".xml";
+		String outputFileAddress=config.reportAddress+fileName+".xml";
 		BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(outputFileAddress));
 		
 		bufferedWriter.write("<clones>");

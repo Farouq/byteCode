@@ -62,4 +62,31 @@ public class XmlWriter {
 
 
 	}
+	
+	private static void writeToText(ArrayList<ArrayList<String>> clones) throws Exception
+	{
+		String outputFileAddress="fileNames.txt";
+		BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(outputFileAddress));
+
+
+		for(int i=0; i<clones.size();i++ ){
+
+
+			bufferedWriter.write(clones.get(i).get(0));
+			bufferedWriter.newLine();
+			bufferedWriter.write(clones.get(i).get(3));
+			bufferedWriter.newLine();
+		//	bufferedWriter.write(clones.get(i).get(1));
+		//	bufferedWriter.newLine();
+
+
+		}
+
+		bufferedWriter.flush();
+		bufferedWriter.close();
+
+
+	}
+	
+	
 }

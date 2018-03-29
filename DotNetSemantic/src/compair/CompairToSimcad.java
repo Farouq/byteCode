@@ -28,10 +28,10 @@ public class CompairToSimcad {
 		// need tow files. 1- simcad report and must be copied into Rrport folder of the project
 		// and semantic report
 		
-		String reportAddress=config.reportAddress+"\\FinalCloneReportWeighted Similarities.0.75.xml";
+		String reportAddress=config.reportAddress+"\\FinalCloneReportWeighted Similarities.0.61.xml";
 		String simcadReportAddress=config.reportAddress+"\\simcad_function_clone-pairs_type-1-2-3_generous.xml";
 		
-	
+
 		
 
 		// Load the clone reports data into ArrayList
@@ -101,9 +101,9 @@ public class CompairToSimcad {
 
 					 boolean success =  (new File(config.reportAddress+"\\simcad\\")).mkdirs();
 
-					writeToXMLFile(config,both,"both simcad and Sem");
-					writeToXMLFile(config,semOnly, "Semantic Only");
-					writeToXMLFile(config,simcadOnly, "simcad only");
+	//				writeToXMLFile(config,both,"both simcad and Sem");
+	//				writeToXMLFile(config,semOnly, "Semantic Only");
+	//				writeToXMLFile(config,simcadOnly, "simcad only");
 				
 
 	}

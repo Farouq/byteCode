@@ -29,10 +29,10 @@ public class CompairToNicad {
 		// need tow files. 1- Nicad report and must be copied into Rrport folder of the project
 		// and semantic report
 
+	
 		
-		
-		String reportAddress=config.reportAddress+"\\FinalCloneReportWeighted Similarities.0.75.xml";
-		String nicadReportAddress=config.reportAddress+"\\NetGore_0.4.0_functions-blind-clones-0.30.xml";
+		String reportAddress=config.reportAddress+"\\FinalCloneReportWeighted Similarities.0.61.xml";
+		String nicadReportAddress=config.reportAddress+"\\1-ASXGUI_functions-blind-clones-0.30.xml";
 	
 
 
@@ -114,9 +114,9 @@ public class CompairToNicad {
 
 
 
-		writeToXMLFile(config,both,"both NiCad and Sem");
-		writeToXMLFile(config,semOnly, "Semantic Only");
-		writeToXMLFileForNiCad(config,nicadOnly, "NiCad only");
+	//	writeToXMLFile(config,both,"both NiCad and Sem");
+	//	writeToXMLFile(config,semOnly, "Semantic Only");
+	//	writeToXMLFileForNiCad(config,nicadOnly, "NiCad only");
 
 	}
 

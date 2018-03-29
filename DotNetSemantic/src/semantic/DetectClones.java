@@ -59,6 +59,7 @@ public class DetectClones {
 		
 		loadDataIntoArraylists(config);
 	
+		
 		/* 
 		 * Just to check if all methods data are the same 
 		System.out.println( isTwoArrayListsWithSameValues(methodData,methodsDataForCalls));

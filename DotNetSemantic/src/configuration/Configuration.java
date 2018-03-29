@@ -127,23 +127,23 @@ public class Configuration {
 		
 		config.signitureLCSThreshold=0.90;
 
-		config.threshold=0.75;
+		config.threshold=0.60;
 		
 		config.min_threshold=0.5f;
 		config.comparisonMethod=3;
 		config.projectAddress=address;
 
 		config.projectClone=config.projectAddress+"_Clone";
-		config.sourceCodeAddress=config.projectClone+"/1-SourceCode";
-		config.byteCodeAddress=config.projectClone+"/2-ByteCodes";
-		config.disassebledAddress=config.projectClone+"/3-Disassembled";
+		config.sourceCodeAddress=config.projectClone+"\\1-SourceCode";
+		config.byteCodeAddress=config.projectClone+"\\2-ByteCodes";
+		config.disassebledAddress=config.projectClone+"\\3-Disassembled";
 	//	config.disassebledAddress_lineNo=projectAddress+"/2_Disassembled_LineNo";
-		config.ontologyAddress=config.projectClone+"/4-Ontology";
+		config.ontologyAddress=config.projectClone+"\\4-Ontology";
 	//	config.sparqlAddress=projectAddress+"/4_Sparql";
-		config.reportAddress=config.projectClone+"/5_Report";
+		config.reportAddress=config.projectClone+"\\5_Report";
 	//	System.out.println(config.projectAddress);
 		
-		config.testing=config.projectClone+"/6_Testing";
+		config.testing=config.projectClone+"\\6_Testing";
 		
 		return(config);
 	}
