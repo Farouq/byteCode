@@ -1,0 +1,42 @@
+Similarity Analyser 2.5.6 - http://www.harukizaemon.com/simian
+Copyright (c) 2003-2017 Simon Harris.  All rights reserved.
+Simian is not free unless used solely for non-commercial or evaluation purposes.
+{failOnDuplication=true, ignoreCharacterCase=true, ignoreCurlyBraces=true, ignoreIdentifierCase=true, ignoreModifiers=true, ignoreStringCase=true, threshold=6}
+Found 6 duplicate lines with fingerprint 6558c89ba4d55d8149bec7f2e6c0812e in the following files:
+ Between lines 79 and 84 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/1-ASXGUI/Trunk/ASXGui/ExportProfile.xaml.cs
+ Between lines 124 and 129 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/1-ASXGUI/Trunk/ASXGui/ImportProfile.xaml.cs
+Found 6 duplicate lines with fingerprint a790921e20ac50d0bc741b780990bafe in the following files:
+ Between lines 1637 and 1645 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/1-ASXGUI/Trunk/ASXGui/video.cs
+ Between lines 1582 and 1590 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/1-ASXGUI/Trunk/ASXGui/video.cs
+Found 8 duplicate lines with fingerprint d659735c05c45eab79fa9ab74c7e424f in the following files:
+ Between lines 1203 and 1211 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/1-ASXGUI/Trunk/ASXGui/video.cs
+ Between lines 1098 and 1106 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/1-ASXGUI/Trunk/ASXGui/video.cs
+Found 9 duplicate lines with fingerprint b8f2e23043339b46a3dfb35c72341d4b in the following files:
+ Between lines 1860 and 1869 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/1-ASXGUI/Trunk/ASXGui/video.cs
+ Between lines 1877 and 1886 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/1-ASXGUI/Trunk/ASXGui/video.cs
+Found 13 duplicate lines with fingerprint 18214929a9938dfeeaa245313c88e4b6 in the following files:
+ Between lines 124 and 142 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/1-ASXGUI/Trunk/ASXGui/About.xaml.cs
+ Between lines 110 and 128 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs
+ Between lines 157 and 175 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/1-ASXGUI/Trunk/ASXGui/ImportProfile.xaml.cs
+ Between lines 76 and 94 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/1-ASXGUI/Trunk/ASXGui/Updating.xaml.cs
+Found 13 duplicate lines with fingerprint b2760fa09c6d94d6b52b455db2ca4192 in the following files:
+ Between lines 63 and 77 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/1-ASXGUI/Trunk/ASXGui/ImportProfile.xaml.cs
+ Between lines 93 and 107 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/1-ASXGUI/Trunk/ASXGui/ImportProfile.xaml.cs
+Found 14 duplicate lines with fingerprint 39e7101bd044013e5707eed09096b726 in the following files:
+ Between lines 46 and 67 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/1-ASXGUI/Trunk/ASXGui/ExportProfile.xaml.cs
+ Between lines 561 and 582 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/1-ASXGUI/Trunk/ASXGui/Edit.xaml.cs
+Found 14 duplicate lines with fingerprint 48ec232378adc3e08fd0ea45338f10bd in the following files:
+ Between lines 1149 and 1168 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/1-ASXGUI/Trunk/ASXGui/video.cs
+ Between lines 805 and 824 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/1-ASXGUI/Trunk/ASXGui/video.cs
+Found 15 duplicate lines with fingerprint fa47e7fbbd6b7e51559cc2c303ea143e in the following files:
+ Between lines 119 and 142 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/1-ASXGUI/Trunk/ASXGui/About.xaml.cs
+ Between lines 105 and 128 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs
+Found 15 duplicate lines with fingerprint 4678d0caad19b43d86de8d346edfd299 in the following files:
+ Between lines 708 and 725 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/1-ASXGUI/Trunk/ASXGui/video.cs
+ Between lines 1342 and 1359 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/1-ASXGUI/Trunk/ASXGui/video.cs
+Found 28 duplicate lines with fingerprint 89310e42f991cd800bfa433ad613330c in the following files:
+ Between lines 1404 and 1434 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/1-ASXGUI/Trunk/ASXGui/video.cs
+ Between lines 993 and 1023 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/1-ASXGUI/Trunk/ASXGui/video.cs
+Found 282 duplicate lines in 22 blocks in 7 files
+Processed a total of 3713 significant (5645 raw) lines in 14 files
+Processing time: 0.456sec

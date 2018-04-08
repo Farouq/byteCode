@@ -1,0 +1,4353 @@
+<clones>
+<clone_pair pairid="1" semantic_similarity= "0.74" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\App.xaml.cs" startline="21" endline="25">
+<![CDATA[
+{
+if (!(value is bool))
+throw new ArgumentException("Value must be a boolean");
+return !((bool)value);
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\App.xaml.cs" startline="33" endline="42">
+<![CDATA[
+}
+public class BooltoVisible
+{
+public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+{
+if (!(value is bool))
+throw new ArgumentException("Value must be a boolean");
+return ((bool)value) ? Visibility.Visible
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="2" semantic_similarity= "0.74" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\App.xaml.cs" startline="21" endline="25">
+<![CDATA[
+{
+if (!(value is bool))
+throw new ArgumentException("Value must be a boolean");
+return !((bool)value);
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\App.xaml.cs" startline="50" endline="59">
+<![CDATA[
+}
+public class InvertedVisibility
+{
+public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+{
+if (!(value is bool))
+throw new ArgumentException("Value must be a boolean");
+return ((bool)value) ? Visibility.Hidden
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="3" semantic_similarity= "0.74" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\App.xaml.cs" startline="26" endline="32">
+<![CDATA[
+public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+{
+if (!(value is bool))
+throw new ArgumentException("Value must be a boolean");
+return !((bool)value);
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\App.xaml.cs" startline="43" endline="49">
+<![CDATA[
+public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+{
+if (!(value is bool))
+throw new ArgumentException("Value must be a boolean");
+return ((bool)value) ? Visibility.Visible
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="4" semantic_similarity= "0.74" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\App.xaml.cs" startline="26" endline="32">
+<![CDATA[
+public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+{
+if (!(value is bool))
+throw new ArgumentException("Value must be a boolean");
+return !((bool)value);
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\App.xaml.cs" startline="60" endline="66">
+<![CDATA[
+public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+{
+if (!(value is bool))
+throw new ArgumentException("Value must be a boolean");
+return ((bool)value) ? Visibility.Hidden
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="5" semantic_similarity= "0.8" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\App.xaml.cs" startline="33" endline="42">
+<![CDATA[
+}
+public class BooltoVisible
+{
+public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+{
+if (!(value is bool))
+throw new ArgumentException("Value must be a boolean");
+return ((bool)value) ? Visibility.Visible
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\App.xaml.cs" startline="50" endline="59">
+<![CDATA[
+}
+public class InvertedVisibility
+{
+public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+{
+if (!(value is bool))
+throw new ArgumentException("Value must be a boolean");
+return ((bool)value) ? Visibility.Hidden
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="6" semantic_similarity= "0.8" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\App.xaml.cs" startline="43" endline="49">
+<![CDATA[
+public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+{
+if (!(value is bool))
+throw new ArgumentException("Value must be a boolean");
+return ((bool)value) ? Visibility.Visible
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\App.xaml.cs" startline="60" endline="66">
+<![CDATA[
+public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+{
+if (!(value is bool))
+throw new ArgumentException("Value must be a boolean");
+return ((bool)value) ? Visibility.Hidden
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="7" semantic_similarity= "0.8" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\track.cs" startline="16" endline="20">
+<![CDATA[
+public track(string Path, double Delay)
+{
+path = Path;
+delay = Delay;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\track.cs" startline="32" endline="37">
+<![CDATA[
+public track(bool ForceSample, int OutputSample)
+{
+forcesample = ForceSample;
+outputsample = OutputSample;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="8" semantic_similarity= "0.74" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\MainForm.xaml.cs" startline="74" endline="87">
+<![CDATA[
+public DispatcherTimer tmrBlur = new DispatcherTimer(), tmrUpdate = new DispatcherTimer(), tmrLoad = new DispatcherTimer();
+public bool BlurOn = false;
+public int radius = 0;
+public MainForm()
+{
+InitializeComponent();
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Updating.xaml.cs" startline="25" endline="33">
+<![CDATA[
+private List<string> profilelist = MainForm.profileList;
+private static string appdir = MainForm.appdir;
+private DispatcherTimer timer = new DispatcherTimer(), tmrExit = new DispatcherTimer();
+private bool win6 = MainForm.win6, exit = false;
+public Updating()
+{
+InitializeComponent();
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="9" semantic_similarity= "0.75" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\MainForm.xaml.cs" startline="448" endline="469">
+<![CDATA[
+private void Window_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+{
+bool stop = edit;
+if (cmdPage1.IsMouseOver) stop = true;
+if (cmdPage2.IsMouseOver) stop = true;
+if (cmdOpen.IsMouseOver) stop = true;
+if (cmdDelete.IsMouseOver) stop = true;
+if (cmdClear.IsMouseOver) stop = true;
+if (cmdUp.IsMouseOver) stop = true;
+if (cmdDown.IsMouseOver) stop = true;
+if (chkAppend.IsMouseOver) stop = true;
+if (cmdEdit.IsMouseOver) stop = true;
+if (cboSettings.IsMouseOver) stop = true;
+if (cmdEncode.IsMouseOver) stop = true;
+if (lblDonate.IsMouseOver) stop = true;
+if (Menu.IsMouseOver) stop = true;
+if (lstVideos.IsMouseOver) stop = true;
+if (edit) edit = false;
+if (!stop) this.WindowState = (this.WindowState == WindowState.Normal) ? WindowState.Maximized
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Edit.xaml.cs" startline="544" endline="559">
+<![CDATA[
+private void Window_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+{
+bool stop = false;
+if (cmdCancel.IsMouseOver) stop = true;
+if (cmdOK.IsMouseOver) stop = true;
+if (cboSettings.IsMouseOver) stop = true;
+if (tabSettings.IsMouseOver) stop = true;
+if (Source.IsMouseOver) stop = true;
+if (Video.IsMouseOver) stop = true;
+if (Codec.IsMouseOver) stop = true;
+if (Other.IsMouseOver) stop = true;
+if (cmdPlay.IsMouseOver) stop = true;
+if (!stop) this.WindowState = (this.WindowState == WindowState.Normal) ? WindowState.Maximized
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="10" semantic_similarity= "0.71" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\MainForm.xaml.cs" startline="448" endline="469">
+<![CDATA[
+private void Window_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+{
+bool stop = edit;
+if (cmdPage1.IsMouseOver) stop = true;
+if (cmdPage2.IsMouseOver) stop = true;
+if (cmdOpen.IsMouseOver) stop = true;
+if (cmdDelete.IsMouseOver) stop = true;
+if (cmdClear.IsMouseOver) stop = true;
+if (cmdUp.IsMouseOver) stop = true;
+if (cmdDown.IsMouseOver) stop = true;
+if (chkAppend.IsMouseOver) stop = true;
+if (cmdEdit.IsMouseOver) stop = true;
+if (cboSettings.IsMouseOver) stop = true;
+if (cmdEncode.IsMouseOver) stop = true;
+if (lblDonate.IsMouseOver) stop = true;
+if (Menu.IsMouseOver) stop = true;
+if (lstVideos.IsMouseOver) stop = true;
+if (edit) edit = false;
+if (!stop) this.WindowState = (this.WindowState == WindowState.Normal) ? WindowState.Maximized
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ExportProfile.xaml.cs" startline="74" endline="88">
+<![CDATA[
+private void Window_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+{
+bool stop = false;
+if (cboSettings.IsMouseOver) stop = true;
+if (optFile.IsMouseOver) stop = true;
+if (txtFile.IsMouseOver) stop = true;
+if (cmdOpen.IsMouseOver) stop = true;
+if (optText.IsMouseOver) stop = true;
+if (txtText.IsMouseOver) stop = true;
+if (cmdClose.IsMouseOver) stop = true;
+if (cmdExport.IsMouseOver) stop = true;
+if (!stop) this.WindowState = (this.WindowState == WindowState.Normal) ? WindowState.Maximized
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="11" semantic_similarity= "0.66" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\MainForm.xaml.cs" startline="448" endline="469">
+<![CDATA[
+private void Window_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+{
+bool stop = edit;
+if (cmdPage1.IsMouseOver) stop = true;
+if (cmdPage2.IsMouseOver) stop = true;
+if (cmdOpen.IsMouseOver) stop = true;
+if (cmdDelete.IsMouseOver) stop = true;
+if (cmdClear.IsMouseOver) stop = true;
+if (cmdUp.IsMouseOver) stop = true;
+if (cmdDown.IsMouseOver) stop = true;
+if (chkAppend.IsMouseOver) stop = true;
+if (cmdEdit.IsMouseOver) stop = true;
+if (cboSettings.IsMouseOver) stop = true;
+if (cmdEncode.IsMouseOver) stop = true;
+if (lblDonate.IsMouseOver) stop = true;
+if (Menu.IsMouseOver) stop = true;
+if (lstVideos.IsMouseOver) stop = true;
+if (edit) edit = false;
+if (!stop) this.WindowState = (this.WindowState == WindowState.Normal) ? WindowState.Maximized
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ImportProfile.xaml.cs" startline="120" endline="133">
+<![CDATA[
+private void Window_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+{
+bool stop = false;
+if (optFile.IsMouseOver) stop = true;
+if (txtFile.IsMouseOver) stop = true;
+if (cmdOpen.IsMouseOver) stop = true;
+if (optText.IsMouseOver) stop = true;
+if (txtText.IsMouseOver) stop = true;
+if (cmdClose.IsMouseOver) stop = true;
+if (cmdImport.IsMouseOver) stop = true;
+if (!stop) this.WindowState = (this.WindowState == WindowState.Normal) ? WindowState.Maximized
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="12" semantic_similarity= "0.61" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\MainForm.xaml.cs" startline="448" endline="469">
+<![CDATA[
+private void Window_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+{
+bool stop = edit;
+if (cmdPage1.IsMouseOver) stop = true;
+if (cmdPage2.IsMouseOver) stop = true;
+if (cmdOpen.IsMouseOver) stop = true;
+if (cmdDelete.IsMouseOver) stop = true;
+if (cmdClear.IsMouseOver) stop = true;
+if (cmdUp.IsMouseOver) stop = true;
+if (cmdDown.IsMouseOver) stop = true;
+if (chkAppend.IsMouseOver) stop = true;
+if (cmdEdit.IsMouseOver) stop = true;
+if (cboSettings.IsMouseOver) stop = true;
+if (cmdEncode.IsMouseOver) stop = true;
+if (lblDonate.IsMouseOver) stop = true;
+if (Menu.IsMouseOver) stop = true;
+if (lstVideos.IsMouseOver) stop = true;
+if (edit) edit = false;
+if (!stop) this.WindowState = (this.WindowState == WindowState.Normal) ? WindowState.Maximized
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="91" endline="103">
+<![CDATA[
+private void Window_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+{
+bool stop = false;
+if (tabOptions.IsMouseOver) stop = true;
+if (cboSettings.IsMouseOver) stop = true;
+if (cmdCancel.IsMouseOver) stop = true;
+if (cmdOK.IsMouseOver) stop = true;
+if (opt32bit.IsMouseOver) stop = true;
+if (opt64bit.IsMouseOver) stop = true;
+if (!stop) this.WindowState = (this.WindowState == WindowState.Normal) ? WindowState.Maximized
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="13" semantic_similarity= "1.0" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\MainForm.xaml.cs" startline="498" endline="505">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\About.xaml.cs" startline="123" endline="129">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="14" semantic_similarity= "1.0" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\MainForm.xaml.cs" startline="498" endline="505">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Edit.xaml.cs" startline="560" endline="566">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="15" semantic_similarity= "1.0" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\MainForm.xaml.cs" startline="498" endline="505">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ExportProfile.xaml.cs" startline="45" endline="51">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="16" semantic_similarity= "1.0" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\MainForm.xaml.cs" startline="498" endline="505">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ImportProfile.xaml.cs" startline="156" endline="162">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="17" semantic_similarity= "1.0" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\MainForm.xaml.cs" startline="498" endline="505">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="109" endline="115">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="18" semantic_similarity= "1.0" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\MainForm.xaml.cs" startline="498" endline="505">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Updating.xaml.cs" startline="75" endline="81">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="19" semantic_similarity= "0.95" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\MainForm.xaml.cs" startline="506" endline="519">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam,
+IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+int aero = 0;
+DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) setGlass(this);
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\About.xaml.cs" startline="130" endline="143">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+int aero = 0;
+MainForm.DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) MainForm.setGlass(this);
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="20" semantic_similarity= "0.87" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\MainForm.xaml.cs" startline="506" endline="519">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam,
+IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+int aero = 0;
+DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) setGlass(this);
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Edit.xaml.cs" startline="567" endline="583">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+if (win6)
+{
+int aero = 0;
+MainForm.DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) MainForm.setGlass(this);
+}
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="21" semantic_similarity= "0.87" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\MainForm.xaml.cs" startline="506" endline="519">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam,
+IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+int aero = 0;
+DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) setGlass(this);
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ExportProfile.xaml.cs" startline="52" endline="68">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+if (win6)
+{
+int aero = 0;
+MainForm.DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) MainForm.setGlass(this);
+}
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="22" semantic_similarity= "0.95" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\MainForm.xaml.cs" startline="506" endline="519">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam,
+IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+int aero = 0;
+DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) setGlass(this);
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ImportProfile.xaml.cs" startline="163" endline="176">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+int aero = 0;
+MainForm.DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) MainForm.setGlass(this);
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="23" semantic_similarity= "0.95" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\MainForm.xaml.cs" startline="506" endline="519">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam,
+IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+int aero = 0;
+DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) setGlass(this);
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="116" endline="129">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+int aero = 0;
+MainForm.DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) MainForm.setGlass(this);
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="24" semantic_similarity= "0.95" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\MainForm.xaml.cs" startline="506" endline="519">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam,
+IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+int aero = 0;
+DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) setGlass(this);
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Updating.xaml.cs" startline="82" endline="95">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+int aero = 0;
+MainForm.DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) MainForm.setGlass(this);
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="25" semantic_similarity= "0.8" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\MainForm.xaml.cs" startline="580" endline="587">
+<![CDATA[
+private void profile_updater()
+{
+setBlur(true);
+Updating frmUpdating = new Updating();
+frmUpdating.ShowDialog();
+setBlur(false);
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\MainForm.xaml.cs" startline="1251" endline="1258">
+<![CDATA[
+private void About_Click(object sender, RoutedEventArgs e)
+{
+setBlur(true);
+About frmAbout = new About();
+frmAbout.ShowDialog();
+setBlur(false);
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="26" semantic_similarity= "0.8" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\MainForm.xaml.cs" startline="794" endline="800">
+<![CDATA[
+private void lstVideos_SizeChanged(object sender, SizeChangedEventArgs e)
+{
+ListView view = sender as ListView;
+GridView gridView = view.View as GridView;
+gridView.Columns[0].Width = view.ActualWidth - 130;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\MainForm.xaml.cs" startline="948" endline="956">
+<![CDATA[
+private void lstVideos_Loaded(object sender, RoutedEventArgs e)
+{
+ListView view = sender as ListView;
+GridView gridView = view.View as GridView;
+gridView.Columns[0].Width = view.ActualWidth - 130;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="27" semantic_similarity= "0.63" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\MainForm.xaml.cs" startline="1071" endline="1082">
+<![CDATA[
+private void cmdOpen_Click(object sender, RoutedEventArgs e)
+{
+OpenFileDialog openfile = new OpenFileDialog();
+if ((bool)openfile.ShowDialog())
+{
+video tmpvid = load_file(openfile.FileName);
+videolist.Add(tmpvid);
+VideoItem itm = new VideoItem(tmpvid.jobname, "Waiting...");
+lstVideos.Items.Add(itm);
+}
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ExportProfile.xaml.cs" startline="94" endline="102">
+<![CDATA[
+private void cmdOpen_Click(object sender, RoutedEventArgs e)
+{
+SaveFileDialog saveFile = new SaveFileDialog();
+saveFile.Filter = "ASXGui Profile|*.ini|Text File|*.txt|All Files|*.*";
+saveFile.FileName = txtFile.Text;
+if ((bool)saveFile.ShowDialog())
+txtFile.Text = saveFile.FileName;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="28" semantic_similarity= "0.63" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\MainForm.xaml.cs" startline="1071" endline="1082">
+<![CDATA[
+private void cmdOpen_Click(object sender, RoutedEventArgs e)
+{
+OpenFileDialog openfile = new OpenFileDialog();
+if ((bool)openfile.ShowDialog())
+{
+video tmpvid = load_file(openfile.FileName);
+videolist.Add(tmpvid);
+VideoItem itm = new VideoItem(tmpvid.jobname, "Waiting...");
+lstVideos.Items.Add(itm);
+}
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ImportProfile.xaml.cs" startline="111" endline="119">
+<![CDATA[
+private void cmdOpen_Click(object sender, RoutedEventArgs e)
+{
+OpenFileDialog openfile = new OpenFileDialog();
+openfile.Filter = "ASXGui Profile|*.ini|Text File|*.txt|All Files|*.*";
+openfile.FileName = txtFile.Text;
+if ((bool)openfile.ShowDialog())
+txtFile.Text = openfile.FileName;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="29" semantic_similarity= "0.67" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\MainForm.xaml.cs" startline="1126" endline="1151">
+<![CDATA[
+private void cmdUp_Click(object sender, RoutedEventArgs e)
+{
+for (int i = 0; i < lstVideos.Items.Count; i++)
+{
+VideoItem v = (VideoItem)lstVideos.Items[i];
+if (i > 0 && v.IsSelected)
+{
+if (strcmdgo == "Stop Encoding" && i == currentjob)
+currentjob--;
+if (strcmdgo == "Stop Encoding" && i == currentjob + 1)
+currentjob++;
+VideoItem itm1 = (VideoItem)lstVideos.Items[i - 1];
+VideoItem itm2 = (VideoItem)lstVideos.Items[i];
+video v1 = videolist[i - 1];
+video v2 = videolist[i];
+lstVideos.Items.RemoveAt(i);
+lstVideos.Items.RemoveAt(i - 1);
+lstVideos.Items.Insert(i - 1, itm2);
+lstVideos.Items.Insert(i, itm1);
+videolist[i - 1] = v2;
+videolist[i] = v1;
+}
+}
+for (int i = 0; i < lstVideos.Items.Count; i++)
+{
+VideoItem v = (VideoItem)lstVideos.Items[i];
+if (i > 0 && v.IsSelected)
+{
+if (strcmdgo == "Stop Encoding" && i == currentjob)
+currentjob--;
+if (strcmdgo == "Stop Encoding" && i == currentjob + 1)
+currentjob++;
+VideoItem itm1 = (VideoItem)lstVideos.Items[i - 1];
+VideoItem itm2 = (VideoItem)lstVideos.Items[i];
+video v1 = videolist[i - 1];
+video v2 = videolist[i];
+lstVideos.Items.RemoveAt(i);
+lstVideos.Items.RemoveAt(i - 1);
+lstVideos.Items.Insert(i - 1, itm2);
+lstVideos.Items.Insert(i, itm1);
+videolist[i - 1] = v2;
+videolist[i] = v1;
+}
+}
+lstVideos.Focus();
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\MainForm.xaml.cs" startline="1152" endline="1177">
+<![CDATA[
+private void cmdDown_Click(object sender, RoutedEventArgs e)
+{
+for (int i = lstVideos.Items.Count - 1; i >= 0; i--)
+{
+VideoItem v = (VideoItem)lstVideos.Items[i];
+if (i < videolist.Count - 1 && v.IsSelected)
+{
+if (strcmdgo == "Stop Encoding" && i == currentjob)
+currentjob++;
+if (strcmdgo == "Stop Encoding" && i == currentjob + 1)
+currentjob--;
+VideoItem itm1 = (VideoItem)lstVideos.Items[i];
+VideoItem itm2 = (VideoItem)lstVideos.Items[i + 1];
+video v1 = videolist[i];
+video v2 = videolist[i + 1];
+lstVideos.Items.RemoveAt(i + 1);
+lstVideos.Items.RemoveAt(i);
+lstVideos.Items.Insert(i, itm2);
+lstVideos.Items.Insert(i + 1, itm1);
+videolist[i] = v2;
+videolist[i + 1] = v1;
+}
+}
+for (int i = lstVideos.Items.Count - 1; i >= 0; i--)
+{
+VideoItem v = (VideoItem)lstVideos.Items[i];
+if (i < videolist.Count - 1 && v.IsSelected)
+{
+if (strcmdgo == "Stop Encoding" && i == currentjob)
+currentjob++;
+if (strcmdgo == "Stop Encoding" && i == currentjob + 1)
+currentjob--;
+VideoItem itm1 = (VideoItem)lstVideos.Items[i];
+VideoItem itm2 = (VideoItem)lstVideos.Items[i + 1];
+video v1 = videolist[i];
+video v2 = videolist[i + 1];
+lstVideos.Items.RemoveAt(i + 1);
+lstVideos.Items.RemoveAt(i);
+lstVideos.Items.Insert(i, itm2);
+lstVideos.Items.Insert(i + 1, itm1);
+videolist[i] = v2;
+videolist[i + 1] = v1;
+}
+}
+lstVideos.Focus();
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="30" semantic_similarity= "0.91" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\About.xaml.cs" startline="23" endline="27">
+<![CDATA[
+private bool win6 = MainForm.win6;
+public About()
+{
+InitializeComponent();
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\EVO.xaml.cs" startline="22" endline="26">
+<![CDATA[
+private DispatcherTimer timer = new DispatcherTimer();
+public EVO()
+{
+InitializeComponent();
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="31" semantic_similarity= "0.74" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\About.xaml.cs" startline="23" endline="27">
+<![CDATA[
+private bool win6 = MainForm.win6;
+public About()
+{
+InitializeComponent();
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ExportProfile.xaml.cs" startline="24" endline="31">
+<![CDATA[
+private bool win6 = MainForm.win6;
+private List<string> profilelist = MainForm.profileList;
+private string appdir = MainForm.appdir;
+public ExportProfile()
+{
+InitializeComponent();
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="32" semantic_similarity= "0.94" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\About.xaml.cs" startline="23" endline="27">
+<![CDATA[
+private bool win6 = MainForm.win6;
+public About()
+{
+InitializeComponent();
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="21" endline="26">
+<![CDATA[
+public int device = 0;
+public FirstLoad()
+{
+InitializeComponent();
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="33" semantic_similarity= "0.83" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\About.xaml.cs" startline="23" endline="27">
+<![CDATA[
+private bool win6 = MainForm.win6;
+public About()
+{
+InitializeComponent();
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ImportProfile.xaml.cs" startline="26" endline="33">
+<![CDATA[
+private bool win6 = MainForm.win6;
+private string appdir = MainForm.appdir;
+public ImportProfile()
+{
+InitializeComponent();
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="34" semantic_similarity= "0.64" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\About.xaml.cs" startline="23" endline="27">
+<![CDATA[
+private bool win6 = MainForm.win6;
+public About()
+{
+InitializeComponent();
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Updating.xaml.cs" startline="25" endline="33">
+<![CDATA[
+private List<string> profilelist = MainForm.profileList;
+private static string appdir = MainForm.appdir;
+private DispatcherTimer timer = new DispatcherTimer(), tmrExit = new DispatcherTimer();
+private bool win6 = MainForm.win6, exit = false;
+public Updating()
+{
+InitializeComponent();
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="35" semantic_similarity= "1.0" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\About.xaml.cs" startline="123" endline="129">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Edit.xaml.cs" startline="560" endline="566">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="36" semantic_similarity= "1.0" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\About.xaml.cs" startline="123" endline="129">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ExportProfile.xaml.cs" startline="45" endline="51">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="37" semantic_similarity= "1.0" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\About.xaml.cs" startline="123" endline="129">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ImportProfile.xaml.cs" startline="156" endline="162">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="38" semantic_similarity= "1.0" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\About.xaml.cs" startline="123" endline="129">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="109" endline="115">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="39" semantic_similarity= "1.0" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\About.xaml.cs" startline="123" endline="129">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Updating.xaml.cs" startline="75" endline="81">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="40" semantic_similarity= "0.91" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\About.xaml.cs" startline="130" endline="143">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+int aero = 0;
+MainForm.DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) MainForm.setGlass(this);
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Edit.xaml.cs" startline="567" endline="583">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+if (win6)
+{
+int aero = 0;
+MainForm.DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) MainForm.setGlass(this);
+}
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="41" semantic_similarity= "0.91" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\About.xaml.cs" startline="130" endline="143">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+int aero = 0;
+MainForm.DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) MainForm.setGlass(this);
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ExportProfile.xaml.cs" startline="52" endline="68">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+if (win6)
+{
+int aero = 0;
+MainForm.DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) MainForm.setGlass(this);
+}
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="42" semantic_similarity= "1.0" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\About.xaml.cs" startline="130" endline="143">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+int aero = 0;
+MainForm.DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) MainForm.setGlass(this);
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ImportProfile.xaml.cs" startline="163" endline="176">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+int aero = 0;
+MainForm.DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) MainForm.setGlass(this);
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="43" semantic_similarity= "1.0" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\About.xaml.cs" startline="130" endline="143">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+int aero = 0;
+MainForm.DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) MainForm.setGlass(this);
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="116" endline="129">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+int aero = 0;
+MainForm.DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) MainForm.setGlass(this);
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="44" semantic_similarity= "1.0" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\About.xaml.cs" startline="130" endline="143">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+int aero = 0;
+MainForm.DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) MainForm.setGlass(this);
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Updating.xaml.cs" startline="82" endline="95">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+int aero = 0;
+MainForm.DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) MainForm.setGlass(this);
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="45" semantic_similarity= "0.8" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Edit.xaml.cs" startline="26" endline="52">
+<![CDATA[
+public video editvid = MainForm.editVid;
+public int currenttrack = 0;
+public struct PB
+{
+public int Width, Height, Left, Top;
+}
+public PB iL = new PB(), iS = new PB();
+public string tooldir = MainForm.toolDir, tempdir = MainForm.tempDir, strAVSAudio = MainForm.strAVSAudio,
+strResize = MainForm.strResize;
+public bool startover = true, load = false, screen = false, owner = false;
+public List<track> edittracklist = new List<track>();
+public List<string> profilelist = MainForm.profileList;
+public List<video> videolist = MainForm.videolist;
+public Process shell = MainForm.shell;
+private DispatcherTimer tmrLoad = new DispatcherTimer(), tmrLoadControls = new DispatcherTimer(),
+tmrOutput = new DispatcherTimer(), tmrAutoCrop = new DispatcherTimer(), tmrPlay = new DispatcherTimer();
+private bool win6 = MainForm.win6;
+private bool playing = false;
+private bool typingProfile = false;
+public Edit()
+{
+InitializeComponent();
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="26" endline="47">
+<![CDATA[
+private bool win6 = MainForm.win6;
+public string tempdir = MainForm.tempDir, strResize = MainForm.strResize,
+strShutdown = MainForm.strShutdown, strAVSAudio = MainForm.strAVSAudio,
+strDeinterlace = MainForm.strDeinterlace, outputdir = MainForm.outputdir,
+logdir = MainForm.logDir, appdir = MainForm.appdir, strEVO = MainForm.strEVO,
+strFilm = MainForm.strFilm, strDefaultProfile = MainForm.strDefaultProfile,
+strFilmMode = MainForm.strFilmMode, strSample = MainForm.strSample,
+strAutoSize = MainForm.strAutoSize, strUpdateProfile = MainForm.strUpdateProfile;
+public bool boolUpdate = MainForm.boolUpdate, useiTunes = MainForm.useiTunes,
+customoutput = MainForm.customoutput, manual32bit = MainForm.manual32bit,
+manual64bit = MainForm.manual64bit, bit64 = MainForm.bit64, MPGDec = MainForm.MPGDec,
+preloadVOB = MainForm.preloadVOB, AVCDec = MainForm.AVCDec, FFDec = MainForm.FFDec,
+preloadMPG = MainForm.preloadMPG, preloadAVC = MainForm.preloadAVC;
+public List<string> profilelist = MainForm.profileList;
+FolderBrowserDialog folderbrowser = new FolderBrowserDialog();
+public Options()
+{
+InitializeComponent();
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="46" semantic_similarity= "0.64" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Edit.xaml.cs" startline="87" endline="95">
+<![CDATA[
+void tmrAutoCrop_Tick(object sender, EventArgs e)
+{
+if (editvid.autocropped)
+{
+tmrOutput.IsEnabled = true;
+tmrAutoCrop.IsEnabled = false;
+}
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ExportProfile.xaml.cs" startline="103" endline="109">
+<![CDATA[
+private void optText_Checked(object sender, RoutedEventArgs e)
+{
+txtFile.IsEnabled = false;
+cmdOpen.IsEnabled = false;
+txtText.IsEnabled = true;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="47" semantic_similarity= "0.64" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Edit.xaml.cs" startline="87" endline="95">
+<![CDATA[
+void tmrAutoCrop_Tick(object sender, EventArgs e)
+{
+if (editvid.autocropped)
+{
+tmrOutput.IsEnabled = true;
+tmrAutoCrop.IsEnabled = false;
+}
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ImportProfile.xaml.cs" startline="134" endline="140">
+<![CDATA[
+private void optText_Checked(object sender, RoutedEventArgs e)
+{
+txtText.IsEnabled = true;
+txtFile.IsEnabled = false;
+cmdOpen.IsEnabled = false;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="48" semantic_similarity= "0.93" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Edit.xaml.cs" startline="544" endline="559">
+<![CDATA[
+private void Window_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+{
+bool stop = false;
+if (cmdCancel.IsMouseOver) stop = true;
+if (cmdOK.IsMouseOver) stop = true;
+if (cboSettings.IsMouseOver) stop = true;
+if (tabSettings.IsMouseOver) stop = true;
+if (Source.IsMouseOver) stop = true;
+if (Video.IsMouseOver) stop = true;
+if (Codec.IsMouseOver) stop = true;
+if (Other.IsMouseOver) stop = true;
+if (cmdPlay.IsMouseOver) stop = true;
+if (!stop) this.WindowState = (this.WindowState == WindowState.Normal) ? WindowState.Maximized
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ExportProfile.xaml.cs" startline="74" endline="88">
+<![CDATA[
+private void Window_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+{
+bool stop = false;
+if (cboSettings.IsMouseOver) stop = true;
+if (optFile.IsMouseOver) stop = true;
+if (txtFile.IsMouseOver) stop = true;
+if (cmdOpen.IsMouseOver) stop = true;
+if (optText.IsMouseOver) stop = true;
+if (txtText.IsMouseOver) stop = true;
+if (cmdClose.IsMouseOver) stop = true;
+if (cmdExport.IsMouseOver) stop = true;
+if (!stop) this.WindowState = (this.WindowState == WindowState.Normal) ? WindowState.Maximized
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="49" semantic_similarity= "0.87" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Edit.xaml.cs" startline="544" endline="559">
+<![CDATA[
+private void Window_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+{
+bool stop = false;
+if (cmdCancel.IsMouseOver) stop = true;
+if (cmdOK.IsMouseOver) stop = true;
+if (cboSettings.IsMouseOver) stop = true;
+if (tabSettings.IsMouseOver) stop = true;
+if (Source.IsMouseOver) stop = true;
+if (Video.IsMouseOver) stop = true;
+if (Codec.IsMouseOver) stop = true;
+if (Other.IsMouseOver) stop = true;
+if (cmdPlay.IsMouseOver) stop = true;
+if (!stop) this.WindowState = (this.WindowState == WindowState.Normal) ? WindowState.Maximized
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ImportProfile.xaml.cs" startline="120" endline="133">
+<![CDATA[
+private void Window_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+{
+bool stop = false;
+if (optFile.IsMouseOver) stop = true;
+if (txtFile.IsMouseOver) stop = true;
+if (cmdOpen.IsMouseOver) stop = true;
+if (optText.IsMouseOver) stop = true;
+if (txtText.IsMouseOver) stop = true;
+if (cmdClose.IsMouseOver) stop = true;
+if (cmdImport.IsMouseOver) stop = true;
+if (!stop) this.WindowState = (this.WindowState == WindowState.Normal) ? WindowState.Maximized
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="50" semantic_similarity= "0.8" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Edit.xaml.cs" startline="544" endline="559">
+<![CDATA[
+private void Window_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+{
+bool stop = false;
+if (cmdCancel.IsMouseOver) stop = true;
+if (cmdOK.IsMouseOver) stop = true;
+if (cboSettings.IsMouseOver) stop = true;
+if (tabSettings.IsMouseOver) stop = true;
+if (Source.IsMouseOver) stop = true;
+if (Video.IsMouseOver) stop = true;
+if (Codec.IsMouseOver) stop = true;
+if (Other.IsMouseOver) stop = true;
+if (cmdPlay.IsMouseOver) stop = true;
+if (!stop) this.WindowState = (this.WindowState == WindowState.Normal) ? WindowState.Maximized
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="91" endline="103">
+<![CDATA[
+private void Window_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+{
+bool stop = false;
+if (tabOptions.IsMouseOver) stop = true;
+if (cboSettings.IsMouseOver) stop = true;
+if (cmdCancel.IsMouseOver) stop = true;
+if (cmdOK.IsMouseOver) stop = true;
+if (opt32bit.IsMouseOver) stop = true;
+if (opt64bit.IsMouseOver) stop = true;
+if (!stop) this.WindowState = (this.WindowState == WindowState.Normal) ? WindowState.Maximized
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="51" semantic_similarity= "1.0" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Edit.xaml.cs" startline="560" endline="566">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ExportProfile.xaml.cs" startline="45" endline="51">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="52" semantic_similarity= "1.0" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Edit.xaml.cs" startline="560" endline="566">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ImportProfile.xaml.cs" startline="156" endline="162">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="53" semantic_similarity= "1.0" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Edit.xaml.cs" startline="560" endline="566">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="109" endline="115">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="54" semantic_similarity= "1.0" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Edit.xaml.cs" startline="560" endline="566">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Updating.xaml.cs" startline="75" endline="81">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="55" semantic_similarity= "1.0" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Edit.xaml.cs" startline="567" endline="583">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+if (win6)
+{
+int aero = 0;
+MainForm.DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) MainForm.setGlass(this);
+}
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ExportProfile.xaml.cs" startline="52" endline="68">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+if (win6)
+{
+int aero = 0;
+MainForm.DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) MainForm.setGlass(this);
+}
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="56" semantic_similarity= "0.91" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Edit.xaml.cs" startline="567" endline="583">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+if (win6)
+{
+int aero = 0;
+MainForm.DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) MainForm.setGlass(this);
+}
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ImportProfile.xaml.cs" startline="163" endline="176">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+int aero = 0;
+MainForm.DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) MainForm.setGlass(this);
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="57" semantic_similarity= "0.91" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Edit.xaml.cs" startline="567" endline="583">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+if (win6)
+{
+int aero = 0;
+MainForm.DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) MainForm.setGlass(this);
+}
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="116" endline="129">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+int aero = 0;
+MainForm.DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) MainForm.setGlass(this);
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="58" semantic_similarity= "0.91" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Edit.xaml.cs" startline="567" endline="583">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+if (win6)
+{
+int aero = 0;
+MainForm.DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) MainForm.setGlass(this);
+}
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Updating.xaml.cs" startline="82" endline="95">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+int aero = 0;
+MainForm.DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) MainForm.setGlass(this);
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="59" semantic_similarity= "0.69" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\EVO.xaml.cs" startline="22" endline="26">
+<![CDATA[
+private DispatcherTimer timer = new DispatcherTimer();
+public EVO()
+{
+InitializeComponent();
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ExportProfile.xaml.cs" startline="24" endline="31">
+<![CDATA[
+private bool win6 = MainForm.win6;
+private List<string> profilelist = MainForm.profileList;
+private string appdir = MainForm.appdir;
+public ExportProfile()
+{
+InitializeComponent();
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="60" semantic_similarity= "0.91" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\EVO.xaml.cs" startline="22" endline="26">
+<![CDATA[
+private DispatcherTimer timer = new DispatcherTimer();
+public EVO()
+{
+InitializeComponent();
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="21" endline="26">
+<![CDATA[
+public int device = 0;
+public FirstLoad()
+{
+InitializeComponent();
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="61" semantic_similarity= "0.77" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\EVO.xaml.cs" startline="22" endline="26">
+<![CDATA[
+private DispatcherTimer timer = new DispatcherTimer();
+public EVO()
+{
+InitializeComponent();
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ImportProfile.xaml.cs" startline="26" endline="33">
+<![CDATA[
+private bool win6 = MainForm.win6;
+private string appdir = MainForm.appdir;
+public ImportProfile()
+{
+InitializeComponent();
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="62" semantic_similarity= "0.64" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\EVO.xaml.cs" startline="22" endline="26">
+<![CDATA[
+private DispatcherTimer timer = new DispatcherTimer();
+public EVO()
+{
+InitializeComponent();
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Updating.xaml.cs" startline="25" endline="33">
+<![CDATA[
+private List<string> profilelist = MainForm.profileList;
+private static string appdir = MainForm.appdir;
+private DispatcherTimer timer = new DispatcherTimer(), tmrExit = new DispatcherTimer();
+private bool win6 = MainForm.win6, exit = false;
+public Updating()
+{
+InitializeComponent();
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="63" semantic_similarity= "0.71" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ExportProfile.xaml.cs" startline="24" endline="31">
+<![CDATA[
+private bool win6 = MainForm.win6;
+private List<string> profilelist = MainForm.profileList;
+private string appdir = MainForm.appdir;
+public ExportProfile()
+{
+InitializeComponent();
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="21" endline="26">
+<![CDATA[
+public int device = 0;
+public FirstLoad()
+{
+InitializeComponent();
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="64" semantic_similarity= "0.87" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ExportProfile.xaml.cs" startline="24" endline="31">
+<![CDATA[
+private bool win6 = MainForm.win6;
+private List<string> profilelist = MainForm.profileList;
+private string appdir = MainForm.appdir;
+public ExportProfile()
+{
+InitializeComponent();
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ImportProfile.xaml.cs" startline="26" endline="33">
+<![CDATA[
+private bool win6 = MainForm.win6;
+private string appdir = MainForm.appdir;
+public ImportProfile()
+{
+InitializeComponent();
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="65" semantic_similarity= "0.82" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ExportProfile.xaml.cs" startline="24" endline="31">
+<![CDATA[
+private bool win6 = MainForm.win6;
+private List<string> profilelist = MainForm.profileList;
+private string appdir = MainForm.appdir;
+public ExportProfile()
+{
+InitializeComponent();
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Updating.xaml.cs" startline="25" endline="33">
+<![CDATA[
+private List<string> profilelist = MainForm.profileList;
+private static string appdir = MainForm.appdir;
+private DispatcherTimer timer = new DispatcherTimer(), tmrExit = new DispatcherTimer();
+private bool win6 = MainForm.win6, exit = false;
+public Updating()
+{
+InitializeComponent();
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="66" semantic_similarity= "1.0" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ExportProfile.xaml.cs" startline="45" endline="51">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ImportProfile.xaml.cs" startline="156" endline="162">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="67" semantic_similarity= "1.0" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ExportProfile.xaml.cs" startline="45" endline="51">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="109" endline="115">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="68" semantic_similarity= "1.0" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ExportProfile.xaml.cs" startline="45" endline="51">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Updating.xaml.cs" startline="75" endline="81">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="69" semantic_similarity= "0.91" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ExportProfile.xaml.cs" startline="52" endline="68">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+if (win6)
+{
+int aero = 0;
+MainForm.DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) MainForm.setGlass(this);
+}
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ImportProfile.xaml.cs" startline="163" endline="176">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+int aero = 0;
+MainForm.DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) MainForm.setGlass(this);
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="70" semantic_similarity= "0.91" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ExportProfile.xaml.cs" startline="52" endline="68">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+if (win6)
+{
+int aero = 0;
+MainForm.DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) MainForm.setGlass(this);
+}
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="116" endline="129">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+int aero = 0;
+MainForm.DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) MainForm.setGlass(this);
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="71" semantic_similarity= "0.91" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ExportProfile.xaml.cs" startline="52" endline="68">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+if (win6)
+{
+int aero = 0;
+MainForm.DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) MainForm.setGlass(this);
+}
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Updating.xaml.cs" startline="82" endline="95">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+int aero = 0;
+MainForm.DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) MainForm.setGlass(this);
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="72" semantic_similarity= "0.93" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ExportProfile.xaml.cs" startline="74" endline="88">
+<![CDATA[
+private void Window_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+{
+bool stop = false;
+if (cboSettings.IsMouseOver) stop = true;
+if (optFile.IsMouseOver) stop = true;
+if (txtFile.IsMouseOver) stop = true;
+if (cmdOpen.IsMouseOver) stop = true;
+if (optText.IsMouseOver) stop = true;
+if (txtText.IsMouseOver) stop = true;
+if (cmdClose.IsMouseOver) stop = true;
+if (cmdExport.IsMouseOver) stop = true;
+if (!stop) this.WindowState = (this.WindowState == WindowState.Normal) ? WindowState.Maximized
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ImportProfile.xaml.cs" startline="120" endline="133">
+<![CDATA[
+private void Window_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+{
+bool stop = false;
+if (optFile.IsMouseOver) stop = true;
+if (txtFile.IsMouseOver) stop = true;
+if (cmdOpen.IsMouseOver) stop = true;
+if (optText.IsMouseOver) stop = true;
+if (txtText.IsMouseOver) stop = true;
+if (cmdClose.IsMouseOver) stop = true;
+if (cmdImport.IsMouseOver) stop = true;
+if (!stop) this.WindowState = (this.WindowState == WindowState.Normal) ? WindowState.Maximized
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="73" semantic_similarity= "0.85" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ExportProfile.xaml.cs" startline="74" endline="88">
+<![CDATA[
+private void Window_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+{
+bool stop = false;
+if (cboSettings.IsMouseOver) stop = true;
+if (optFile.IsMouseOver) stop = true;
+if (txtFile.IsMouseOver) stop = true;
+if (cmdOpen.IsMouseOver) stop = true;
+if (optText.IsMouseOver) stop = true;
+if (txtText.IsMouseOver) stop = true;
+if (cmdClose.IsMouseOver) stop = true;
+if (cmdExport.IsMouseOver) stop = true;
+if (!stop) this.WindowState = (this.WindowState == WindowState.Normal) ? WindowState.Maximized
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="91" endline="103">
+<![CDATA[
+private void Window_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+{
+bool stop = false;
+if (tabOptions.IsMouseOver) stop = true;
+if (cboSettings.IsMouseOver) stop = true;
+if (cmdCancel.IsMouseOver) stop = true;
+if (cmdOK.IsMouseOver) stop = true;
+if (opt32bit.IsMouseOver) stop = true;
+if (opt64bit.IsMouseOver) stop = true;
+if (!stop) this.WindowState = (this.WindowState == WindowState.Normal) ? WindowState.Maximized
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="74" semantic_similarity= "1.0" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ExportProfile.xaml.cs" startline="94" endline="102">
+<![CDATA[
+private void cmdOpen_Click(object sender, RoutedEventArgs e)
+{
+SaveFileDialog saveFile = new SaveFileDialog();
+saveFile.Filter = "ASXGui Profile|*.ini|Text File|*.txt|All Files|*.*";
+saveFile.FileName = txtFile.Text;
+if ((bool)saveFile.ShowDialog())
+txtFile.Text = saveFile.FileName;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ImportProfile.xaml.cs" startline="111" endline="119">
+<![CDATA[
+private void cmdOpen_Click(object sender, RoutedEventArgs e)
+{
+OpenFileDialog openfile = new OpenFileDialog();
+openfile.Filter = "ASXGui Profile|*.ini|Text File|*.txt|All Files|*.*";
+openfile.FileName = txtFile.Text;
+if ((bool)openfile.ShowDialog())
+txtFile.Text = openfile.FileName;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="75" semantic_similarity= "0.62" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ExportProfile.xaml.cs" startline="103" endline="109">
+<![CDATA[
+private void optText_Checked(object sender, RoutedEventArgs e)
+{
+txtFile.IsEnabled = false;
+cmdOpen.IsEnabled = false;
+txtText.IsEnabled = true;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ExportProfile.xaml.cs" startline="110" endline="119">
+<![CDATA[
+private void optFile_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+txtFile.IsEnabled = true;
+cmdOpen.IsEnabled = true;
+txtText.IsEnabled = false;
+}
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="76" semantic_similarity= "1.0" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ExportProfile.xaml.cs" startline="103" endline="109">
+<![CDATA[
+private void optText_Checked(object sender, RoutedEventArgs e)
+{
+txtFile.IsEnabled = false;
+cmdOpen.IsEnabled = false;
+txtText.IsEnabled = true;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ImportProfile.xaml.cs" startline="134" endline="140">
+<![CDATA[
+private void optText_Checked(object sender, RoutedEventArgs e)
+{
+txtText.IsEnabled = true;
+txtFile.IsEnabled = false;
+cmdOpen.IsEnabled = false;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="77" semantic_similarity= "0.62" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ExportProfile.xaml.cs" startline="103" endline="109">
+<![CDATA[
+private void optText_Checked(object sender, RoutedEventArgs e)
+{
+txtFile.IsEnabled = false;
+cmdOpen.IsEnabled = false;
+txtText.IsEnabled = true;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ImportProfile.xaml.cs" startline="141" endline="150">
+<![CDATA[
+private void optFile_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+txtText.IsEnabled = false;
+txtFile.IsEnabled = true;
+cmdOpen.IsEnabled = true;
+}
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="78" semantic_similarity= "0.62" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ExportProfile.xaml.cs" startline="110" endline="119">
+<![CDATA[
+private void optFile_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+txtFile.IsEnabled = true;
+cmdOpen.IsEnabled = true;
+txtText.IsEnabled = false;
+}
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ImportProfile.xaml.cs" startline="134" endline="140">
+<![CDATA[
+private void optText_Checked(object sender, RoutedEventArgs e)
+{
+txtText.IsEnabled = true;
+txtFile.IsEnabled = false;
+cmdOpen.IsEnabled = false;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="79" semantic_similarity= "1.0" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ExportProfile.xaml.cs" startline="110" endline="119">
+<![CDATA[
+private void optFile_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+txtFile.IsEnabled = true;
+cmdOpen.IsEnabled = true;
+txtText.IsEnabled = false;
+}
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ImportProfile.xaml.cs" startline="141" endline="150">
+<![CDATA[
+private void optFile_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+txtText.IsEnabled = false;
+txtFile.IsEnabled = true;
+cmdOpen.IsEnabled = true;
+}
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="80" semantic_similarity= "0.63" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ExportProfile.xaml.cs" startline="110" endline="119">
+<![CDATA[
+private void optFile_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+txtFile.IsEnabled = true;
+cmdOpen.IsEnabled = true;
+txtText.IsEnabled = false;
+}
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="136" endline="145">
+<![CDATA[
+private void optCustomTemp_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+bool c = (bool)optCustomTemp.IsChecked;
+txtTemp.IsEnabled = c;
+cmdTemp.IsEnabled = c;
+}
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="81" semantic_similarity= "0.63" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ExportProfile.xaml.cs" startline="110" endline="119">
+<![CDATA[
+private void optFile_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+txtFile.IsEnabled = true;
+cmdOpen.IsEnabled = true;
+txtText.IsEnabled = false;
+}
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="146" endline="155">
+<![CDATA[
+private void optCustomOutput_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+bool c = (bool)optCustomOutput.IsChecked;
+txtOutput.IsEnabled = c;
+cmdOutput.IsEnabled = c;
+}
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="82" semantic_similarity= "0.63" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ExportProfile.xaml.cs" startline="110" endline="119">
+<![CDATA[
+private void optFile_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+txtFile.IsEnabled = true;
+cmdOpen.IsEnabled = true;
+txtText.IsEnabled = false;
+}
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="156" endline="165">
+<![CDATA[
+private void optCustomLog_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+bool c = (bool)optCustomLog.IsChecked;
+txtLog.IsEnabled = c;
+cmdLog.IsEnabled = c;
+}
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="83" semantic_similarity= "0.64" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ExportProfile.xaml.cs" startline="110" endline="119">
+<![CDATA[
+private void optFile_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+txtFile.IsEnabled = true;
+cmdOpen.IsEnabled = true;
+txtText.IsEnabled = false;
+}
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="296" endline="305">
+<![CDATA[
+private void cboFilm_SelectionChanged(object sender, SelectionChangedEventArgs e)
+{
+if (this.IsLoaded)
+{
+bool f = (cboFilm.SelectedIndex != 2);
+lblFilm.IsEnabled = f;
+cboFilmMode.IsEnabled = f;
+}
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="84" semantic_similarity= "0.8" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ExportProfile.xaml.cs" startline="172" endline="177">
+<![CDATA[
+private void cmdNone_Click(object sender, RoutedEventArgs e)
+{
+foreach (CheckBox c in cboSettings.Items)
+c.IsChecked = false;
+foreach (CheckBox c in cboSettings.Items)
+c.IsChecked = false;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ExportProfile.xaml.cs" startline="178" endline="183">
+<![CDATA[
+private void cmdAll_Click(object sender, RoutedEventArgs e)
+{
+foreach (CheckBox c in cboSettings.Items)
+c.IsChecked = true;
+foreach (CheckBox c in cboSettings.Items)
+c.IsChecked = true;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="85" semantic_similarity= "0.79" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="21" endline="26">
+<![CDATA[
+public int device = 0;
+public FirstLoad()
+{
+InitializeComponent();
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ImportProfile.xaml.cs" startline="26" endline="33">
+<![CDATA[
+private bool win6 = MainForm.win6;
+private string appdir = MainForm.appdir;
+public ImportProfile()
+{
+InitializeComponent();
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="86" semantic_similarity= "0.63" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="21" endline="26">
+<![CDATA[
+public int device = 0;
+public FirstLoad()
+{
+InitializeComponent();
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Updating.xaml.cs" startline="25" endline="33">
+<![CDATA[
+private List<string> profilelist = MainForm.profileList;
+private static string appdir = MainForm.appdir;
+private DispatcherTimer timer = new DispatcherTimer(), tmrExit = new DispatcherTimer();
+private bool win6 = MainForm.win6, exit = false;
+public Updating()
+{
+InitializeComponent();
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="87" semantic_similarity= "0.8" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="27" endline="52">
+<![CDATA[
+private void imgiPhone_MouseEnter(object sender, MouseEventArgs e)
+{
+if (device == 1)
+{
+if (imgiPhone.IsMouseOver)
+{
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone-check-highlight.png", UriKind.Relative));
+}
+else
+{
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone-check.png", UriKind.Relative));
+}
+}
+else
+{
+if (imgiPhone.IsMouseOver)
+{
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone-highlight.png", UriKind.Relative));
+}
+else
+{
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone.png", UriKind.Relative));
+}
+}
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="64" endline="89">
+<![CDATA[
+private void imgiPhone4_MouseEnter(object sender, MouseEventArgs e)
+{
+if (device == 2)
+{
+if (imgiPhone4.IsMouseOver)
+{
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4-check-highlight.png", UriKind.Relative));
+}
+else
+{
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4-check.png", UriKind.Relative));
+}
+}
+else
+{
+if (imgiPhone4.IsMouseOver)
+{
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4-highlight.png", UriKind.Relative));
+}
+else
+{
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4.png", UriKind.Relative));
+}
+}
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="88" semantic_similarity= "0.8" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="27" endline="52">
+<![CDATA[
+private void imgiPhone_MouseEnter(object sender, MouseEventArgs e)
+{
+if (device == 1)
+{
+if (imgiPhone.IsMouseOver)
+{
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone-check-highlight.png", UriKind.Relative));
+}
+else
+{
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone-check.png", UriKind.Relative));
+}
+}
+else
+{
+if (imgiPhone.IsMouseOver)
+{
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone-highlight.png", UriKind.Relative));
+}
+else
+{
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone.png", UriKind.Relative));
+}
+}
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="101" endline="126">
+<![CDATA[
+private void imgPSP_MouseEnter(object sender, MouseEventArgs e)
+{
+if (device == 3)
+{
+if (imgPSP.IsMouseOver)
+{
+imgPSP.Source = new BitmapImage(new Uri("Images/psp-check-highlight.png", UriKind.Relative));
+}
+else
+{
+imgPSP.Source = new BitmapImage(new Uri("Images/psp-check.png", UriKind.Relative));
+}
+}
+else
+{
+if (imgPSP.IsMouseOver)
+{
+imgPSP.Source = new BitmapImage(new Uri("Images/psp-highlight.png", UriKind.Relative));
+}
+else
+{
+imgPSP.Source = new BitmapImage(new Uri("Images/psp.png", UriKind.Relative));
+}
+}
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="89" semantic_similarity= "0.8" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="27" endline="52">
+<![CDATA[
+private void imgiPhone_MouseEnter(object sender, MouseEventArgs e)
+{
+if (device == 1)
+{
+if (imgiPhone.IsMouseOver)
+{
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone-check-highlight.png", UriKind.Relative));
+}
+else
+{
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone-check.png", UriKind.Relative));
+}
+}
+else
+{
+if (imgiPhone.IsMouseOver)
+{
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone-highlight.png", UriKind.Relative));
+}
+else
+{
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone.png", UriKind.Relative));
+}
+}
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="138" endline="163">
+<![CDATA[
+private void imgBlu_MouseEnter(object sender, MouseEventArgs e)
+{
+if (device == 5)
+{
+if (imgBlu.IsMouseOver)
+{
+imgBlu.Source = new BitmapImage(new Uri("Images/blu-check-highlight.png", UriKind.Relative));
+}
+else
+{
+imgBlu.Source = new BitmapImage(new Uri("Images/blu-check.png", UriKind.Relative));
+}
+}
+else
+{
+if (imgBlu.IsMouseOver)
+{
+imgBlu.Source = new BitmapImage(new Uri("Images/blu-highlight.png", UriKind.Relative));
+}
+else
+{
+imgBlu.Source = new BitmapImage(new Uri("Images/blu.png", UriKind.Relative));
+}
+}
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="90" semantic_similarity= "0.8" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="27" endline="52">
+<![CDATA[
+private void imgiPhone_MouseEnter(object sender, MouseEventArgs e)
+{
+if (device == 1)
+{
+if (imgiPhone.IsMouseOver)
+{
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone-check-highlight.png", UriKind.Relative));
+}
+else
+{
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone-check.png", UriKind.Relative));
+}
+}
+else
+{
+if (imgiPhone.IsMouseOver)
+{
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone-highlight.png", UriKind.Relative));
+}
+else
+{
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone.png", UriKind.Relative));
+}
+}
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="186" endline="211">
+<![CDATA[
+private void imgVita_MouseEnter(object sender, MouseEventArgs e)
+{
+if (device == 4)
+{
+if (imgVita.IsMouseOver)
+{
+imgVita.Source = new BitmapImage(new Uri("Images/vita-highlight-check.png", UriKind.Relative));
+}
+else
+{
+imgVita.Source = new BitmapImage(new Uri("Images/vita-check.png", UriKind.Relative));
+}
+}
+else
+{
+if (imgVita.IsMouseOver)
+{
+imgVita.Source = new BitmapImage(new Uri("Images/vita-highlight.png", UriKind.Relative));
+}
+else
+{
+imgVita.Source = new BitmapImage(new Uri("Images/vita.png", UriKind.Relative));
+}
+}
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="91" semantic_similarity= "0.8" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="53" endline="63">
+<![CDATA[
+private void imgiPhone_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+{
+device = 1;
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone-check-highlight.png", UriKind.Relative));
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4.png", UriKind.Relative));
+imgPSP.Source = new BitmapImage(new Uri("Images/psp.png", UriKind.Relative));
+imgVita.Source = new BitmapImage(new Uri("Images/vita.png", UriKind.Relative));
+imgBlu.Source = new BitmapImage(new Uri("Images/blu.png", UriKind.Relative));
+cmdReset.Visibility = Visibility.Visible;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="90" endline="100">
+<![CDATA[
+private void imgiPhone4_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+{
+device = 2;
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone.png", UriKind.Relative));
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4-check-highlight.png", UriKind.Relative));
+imgPSP.Source = new BitmapImage(new Uri("Images/psp.png", UriKind.Relative));
+imgVita.Source = new BitmapImage(new Uri("Images/vita.png", UriKind.Relative));
+imgBlu.Source = new BitmapImage(new Uri("Images/blu.png", UriKind.Relative));
+cmdReset.Visibility = Visibility.Visible;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="92" semantic_similarity= "0.8" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="53" endline="63">
+<![CDATA[
+private void imgiPhone_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+{
+device = 1;
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone-check-highlight.png", UriKind.Relative));
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4.png", UriKind.Relative));
+imgPSP.Source = new BitmapImage(new Uri("Images/psp.png", UriKind.Relative));
+imgVita.Source = new BitmapImage(new Uri("Images/vita.png", UriKind.Relative));
+imgBlu.Source = new BitmapImage(new Uri("Images/blu.png", UriKind.Relative));
+cmdReset.Visibility = Visibility.Visible;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="127" endline="137">
+<![CDATA[
+private void imgPSP_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+{
+device = 3;
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone.png", UriKind.Relative));
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4.png", UriKind.Relative));
+imgPSP.Source = new BitmapImage(new Uri("Images/psp-check-highlight.png", UriKind.Relative));
+imgVita.Source = new BitmapImage(new Uri("Images/vita.png", UriKind.Relative));
+imgBlu.Source = new BitmapImage(new Uri("Images/blu.png", UriKind.Relative));
+cmdReset.Visibility = Visibility.Visible;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="93" semantic_similarity= "0.8" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="53" endline="63">
+<![CDATA[
+private void imgiPhone_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+{
+device = 1;
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone-check-highlight.png", UriKind.Relative));
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4.png", UriKind.Relative));
+imgPSP.Source = new BitmapImage(new Uri("Images/psp.png", UriKind.Relative));
+imgVita.Source = new BitmapImage(new Uri("Images/vita.png", UriKind.Relative));
+imgBlu.Source = new BitmapImage(new Uri("Images/blu.png", UriKind.Relative));
+cmdReset.Visibility = Visibility.Visible;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="164" endline="174">
+<![CDATA[
+private void imgBlu_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+{
+device = 5;
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone.png", UriKind.Relative));
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4.png", UriKind.Relative));
+imgPSP.Source = new BitmapImage(new Uri("Images/psp.png", UriKind.Relative));
+imgVita.Source = new BitmapImage(new Uri("Images/vita.png", UriKind.Relative));
+imgBlu.Source = new BitmapImage(new Uri("Images/blu-check-highlight.png", UriKind.Relative));
+cmdReset.Visibility = Visibility.Visible;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="94" semantic_similarity= "0.69" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="53" endline="63">
+<![CDATA[
+private void imgiPhone_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+{
+device = 1;
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone-check-highlight.png", UriKind.Relative));
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4.png", UriKind.Relative));
+imgPSP.Source = new BitmapImage(new Uri("Images/psp.png", UriKind.Relative));
+imgVita.Source = new BitmapImage(new Uri("Images/vita.png", UriKind.Relative));
+imgBlu.Source = new BitmapImage(new Uri("Images/blu.png", UriKind.Relative));
+cmdReset.Visibility = Visibility.Visible;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="175" endline="185">
+<![CDATA[
+private void cmdReset_Click(object sender, RoutedEventArgs e)
+{
+device = 0;
+cmdReset.Visibility = Visibility.Hidden;
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone.png", UriKind.Relative));
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4.png", UriKind.Relative));
+imgPSP.Source = new BitmapImage(new Uri("Images/psp.png", UriKind.Relative));
+imgVita.Source = new BitmapImage(new Uri("Images/vita.png", UriKind.Relative));
+imgBlu.Source = new BitmapImage(new Uri("Images/blu.png", UriKind.Relative));
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="95" semantic_similarity= "0.8" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="53" endline="63">
+<![CDATA[
+private void imgiPhone_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+{
+device = 1;
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone-check-highlight.png", UriKind.Relative));
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4.png", UriKind.Relative));
+imgPSP.Source = new BitmapImage(new Uri("Images/psp.png", UriKind.Relative));
+imgVita.Source = new BitmapImage(new Uri("Images/vita.png", UriKind.Relative));
+imgBlu.Source = new BitmapImage(new Uri("Images/blu.png", UriKind.Relative));
+cmdReset.Visibility = Visibility.Visible;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="212" endline="222">
+<![CDATA[
+private void imgVita_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+{
+device = 4;
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone.png", UriKind.Relative));
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4.png", UriKind.Relative));
+imgPSP.Source = new BitmapImage(new Uri("Images/psp.png", UriKind.Relative));
+imgVita.Source = new BitmapImage(new Uri("Images/vita-highlight-check.png", UriKind.Relative));
+imgBlu.Source = new BitmapImage(new Uri("Images/blu.png", UriKind.Relative));
+cmdReset.Visibility = Visibility.Visible;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="96" semantic_similarity= "0.8" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="64" endline="89">
+<![CDATA[
+private void imgiPhone4_MouseEnter(object sender, MouseEventArgs e)
+{
+if (device == 2)
+{
+if (imgiPhone4.IsMouseOver)
+{
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4-check-highlight.png", UriKind.Relative));
+}
+else
+{
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4-check.png", UriKind.Relative));
+}
+}
+else
+{
+if (imgiPhone4.IsMouseOver)
+{
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4-highlight.png", UriKind.Relative));
+}
+else
+{
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4.png", UriKind.Relative));
+}
+}
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="101" endline="126">
+<![CDATA[
+private void imgPSP_MouseEnter(object sender, MouseEventArgs e)
+{
+if (device == 3)
+{
+if (imgPSP.IsMouseOver)
+{
+imgPSP.Source = new BitmapImage(new Uri("Images/psp-check-highlight.png", UriKind.Relative));
+}
+else
+{
+imgPSP.Source = new BitmapImage(new Uri("Images/psp-check.png", UriKind.Relative));
+}
+}
+else
+{
+if (imgPSP.IsMouseOver)
+{
+imgPSP.Source = new BitmapImage(new Uri("Images/psp-highlight.png", UriKind.Relative));
+}
+else
+{
+imgPSP.Source = new BitmapImage(new Uri("Images/psp.png", UriKind.Relative));
+}
+}
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="97" semantic_similarity= "0.8" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="64" endline="89">
+<![CDATA[
+private void imgiPhone4_MouseEnter(object sender, MouseEventArgs e)
+{
+if (device == 2)
+{
+if (imgiPhone4.IsMouseOver)
+{
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4-check-highlight.png", UriKind.Relative));
+}
+else
+{
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4-check.png", UriKind.Relative));
+}
+}
+else
+{
+if (imgiPhone4.IsMouseOver)
+{
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4-highlight.png", UriKind.Relative));
+}
+else
+{
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4.png", UriKind.Relative));
+}
+}
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="138" endline="163">
+<![CDATA[
+private void imgBlu_MouseEnter(object sender, MouseEventArgs e)
+{
+if (device == 5)
+{
+if (imgBlu.IsMouseOver)
+{
+imgBlu.Source = new BitmapImage(new Uri("Images/blu-check-highlight.png", UriKind.Relative));
+}
+else
+{
+imgBlu.Source = new BitmapImage(new Uri("Images/blu-check.png", UriKind.Relative));
+}
+}
+else
+{
+if (imgBlu.IsMouseOver)
+{
+imgBlu.Source = new BitmapImage(new Uri("Images/blu-highlight.png", UriKind.Relative));
+}
+else
+{
+imgBlu.Source = new BitmapImage(new Uri("Images/blu.png", UriKind.Relative));
+}
+}
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="98" semantic_similarity= "0.8" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="64" endline="89">
+<![CDATA[
+private void imgiPhone4_MouseEnter(object sender, MouseEventArgs e)
+{
+if (device == 2)
+{
+if (imgiPhone4.IsMouseOver)
+{
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4-check-highlight.png", UriKind.Relative));
+}
+else
+{
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4-check.png", UriKind.Relative));
+}
+}
+else
+{
+if (imgiPhone4.IsMouseOver)
+{
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4-highlight.png", UriKind.Relative));
+}
+else
+{
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4.png", UriKind.Relative));
+}
+}
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="186" endline="211">
+<![CDATA[
+private void imgVita_MouseEnter(object sender, MouseEventArgs e)
+{
+if (device == 4)
+{
+if (imgVita.IsMouseOver)
+{
+imgVita.Source = new BitmapImage(new Uri("Images/vita-highlight-check.png", UriKind.Relative));
+}
+else
+{
+imgVita.Source = new BitmapImage(new Uri("Images/vita-check.png", UriKind.Relative));
+}
+}
+else
+{
+if (imgVita.IsMouseOver)
+{
+imgVita.Source = new BitmapImage(new Uri("Images/vita-highlight.png", UriKind.Relative));
+}
+else
+{
+imgVita.Source = new BitmapImage(new Uri("Images/vita.png", UriKind.Relative));
+}
+}
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="99" semantic_similarity= "0.8" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="90" endline="100">
+<![CDATA[
+private void imgiPhone4_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+{
+device = 2;
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone.png", UriKind.Relative));
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4-check-highlight.png", UriKind.Relative));
+imgPSP.Source = new BitmapImage(new Uri("Images/psp.png", UriKind.Relative));
+imgVita.Source = new BitmapImage(new Uri("Images/vita.png", UriKind.Relative));
+imgBlu.Source = new BitmapImage(new Uri("Images/blu.png", UriKind.Relative));
+cmdReset.Visibility = Visibility.Visible;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="127" endline="137">
+<![CDATA[
+private void imgPSP_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+{
+device = 3;
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone.png", UriKind.Relative));
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4.png", UriKind.Relative));
+imgPSP.Source = new BitmapImage(new Uri("Images/psp-check-highlight.png", UriKind.Relative));
+imgVita.Source = new BitmapImage(new Uri("Images/vita.png", UriKind.Relative));
+imgBlu.Source = new BitmapImage(new Uri("Images/blu.png", UriKind.Relative));
+cmdReset.Visibility = Visibility.Visible;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="100" semantic_similarity= "0.8" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="90" endline="100">
+<![CDATA[
+private void imgiPhone4_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+{
+device = 2;
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone.png", UriKind.Relative));
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4-check-highlight.png", UriKind.Relative));
+imgPSP.Source = new BitmapImage(new Uri("Images/psp.png", UriKind.Relative));
+imgVita.Source = new BitmapImage(new Uri("Images/vita.png", UriKind.Relative));
+imgBlu.Source = new BitmapImage(new Uri("Images/blu.png", UriKind.Relative));
+cmdReset.Visibility = Visibility.Visible;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="164" endline="174">
+<![CDATA[
+private void imgBlu_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+{
+device = 5;
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone.png", UriKind.Relative));
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4.png", UriKind.Relative));
+imgPSP.Source = new BitmapImage(new Uri("Images/psp.png", UriKind.Relative));
+imgVita.Source = new BitmapImage(new Uri("Images/vita.png", UriKind.Relative));
+imgBlu.Source = new BitmapImage(new Uri("Images/blu-check-highlight.png", UriKind.Relative));
+cmdReset.Visibility = Visibility.Visible;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="101" semantic_similarity= "0.69" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="90" endline="100">
+<![CDATA[
+private void imgiPhone4_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+{
+device = 2;
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone.png", UriKind.Relative));
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4-check-highlight.png", UriKind.Relative));
+imgPSP.Source = new BitmapImage(new Uri("Images/psp.png", UriKind.Relative));
+imgVita.Source = new BitmapImage(new Uri("Images/vita.png", UriKind.Relative));
+imgBlu.Source = new BitmapImage(new Uri("Images/blu.png", UriKind.Relative));
+cmdReset.Visibility = Visibility.Visible;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="175" endline="185">
+<![CDATA[
+private void cmdReset_Click(object sender, RoutedEventArgs e)
+{
+device = 0;
+cmdReset.Visibility = Visibility.Hidden;
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone.png", UriKind.Relative));
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4.png", UriKind.Relative));
+imgPSP.Source = new BitmapImage(new Uri("Images/psp.png", UriKind.Relative));
+imgVita.Source = new BitmapImage(new Uri("Images/vita.png", UriKind.Relative));
+imgBlu.Source = new BitmapImage(new Uri("Images/blu.png", UriKind.Relative));
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="102" semantic_similarity= "0.8" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="90" endline="100">
+<![CDATA[
+private void imgiPhone4_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+{
+device = 2;
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone.png", UriKind.Relative));
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4-check-highlight.png", UriKind.Relative));
+imgPSP.Source = new BitmapImage(new Uri("Images/psp.png", UriKind.Relative));
+imgVita.Source = new BitmapImage(new Uri("Images/vita.png", UriKind.Relative));
+imgBlu.Source = new BitmapImage(new Uri("Images/blu.png", UriKind.Relative));
+cmdReset.Visibility = Visibility.Visible;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="212" endline="222">
+<![CDATA[
+private void imgVita_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+{
+device = 4;
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone.png", UriKind.Relative));
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4.png", UriKind.Relative));
+imgPSP.Source = new BitmapImage(new Uri("Images/psp.png", UriKind.Relative));
+imgVita.Source = new BitmapImage(new Uri("Images/vita-highlight-check.png", UriKind.Relative));
+imgBlu.Source = new BitmapImage(new Uri("Images/blu.png", UriKind.Relative));
+cmdReset.Visibility = Visibility.Visible;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="103" semantic_similarity= "0.8" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="101" endline="126">
+<![CDATA[
+private void imgPSP_MouseEnter(object sender, MouseEventArgs e)
+{
+if (device == 3)
+{
+if (imgPSP.IsMouseOver)
+{
+imgPSP.Source = new BitmapImage(new Uri("Images/psp-check-highlight.png", UriKind.Relative));
+}
+else
+{
+imgPSP.Source = new BitmapImage(new Uri("Images/psp-check.png", UriKind.Relative));
+}
+}
+else
+{
+if (imgPSP.IsMouseOver)
+{
+imgPSP.Source = new BitmapImage(new Uri("Images/psp-highlight.png", UriKind.Relative));
+}
+else
+{
+imgPSP.Source = new BitmapImage(new Uri("Images/psp.png", UriKind.Relative));
+}
+}
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="138" endline="163">
+<![CDATA[
+private void imgBlu_MouseEnter(object sender, MouseEventArgs e)
+{
+if (device == 5)
+{
+if (imgBlu.IsMouseOver)
+{
+imgBlu.Source = new BitmapImage(new Uri("Images/blu-check-highlight.png", UriKind.Relative));
+}
+else
+{
+imgBlu.Source = new BitmapImage(new Uri("Images/blu-check.png", UriKind.Relative));
+}
+}
+else
+{
+if (imgBlu.IsMouseOver)
+{
+imgBlu.Source = new BitmapImage(new Uri("Images/blu-highlight.png", UriKind.Relative));
+}
+else
+{
+imgBlu.Source = new BitmapImage(new Uri("Images/blu.png", UriKind.Relative));
+}
+}
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="104" semantic_similarity= "0.8" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="101" endline="126">
+<![CDATA[
+private void imgPSP_MouseEnter(object sender, MouseEventArgs e)
+{
+if (device == 3)
+{
+if (imgPSP.IsMouseOver)
+{
+imgPSP.Source = new BitmapImage(new Uri("Images/psp-check-highlight.png", UriKind.Relative));
+}
+else
+{
+imgPSP.Source = new BitmapImage(new Uri("Images/psp-check.png", UriKind.Relative));
+}
+}
+else
+{
+if (imgPSP.IsMouseOver)
+{
+imgPSP.Source = new BitmapImage(new Uri("Images/psp-highlight.png", UriKind.Relative));
+}
+else
+{
+imgPSP.Source = new BitmapImage(new Uri("Images/psp.png", UriKind.Relative));
+}
+}
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="186" endline="211">
+<![CDATA[
+private void imgVita_MouseEnter(object sender, MouseEventArgs e)
+{
+if (device == 4)
+{
+if (imgVita.IsMouseOver)
+{
+imgVita.Source = new BitmapImage(new Uri("Images/vita-highlight-check.png", UriKind.Relative));
+}
+else
+{
+imgVita.Source = new BitmapImage(new Uri("Images/vita-check.png", UriKind.Relative));
+}
+}
+else
+{
+if (imgVita.IsMouseOver)
+{
+imgVita.Source = new BitmapImage(new Uri("Images/vita-highlight.png", UriKind.Relative));
+}
+else
+{
+imgVita.Source = new BitmapImage(new Uri("Images/vita.png", UriKind.Relative));
+}
+}
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="105" semantic_similarity= "0.8" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="127" endline="137">
+<![CDATA[
+private void imgPSP_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+{
+device = 3;
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone.png", UriKind.Relative));
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4.png", UriKind.Relative));
+imgPSP.Source = new BitmapImage(new Uri("Images/psp-check-highlight.png", UriKind.Relative));
+imgVita.Source = new BitmapImage(new Uri("Images/vita.png", UriKind.Relative));
+imgBlu.Source = new BitmapImage(new Uri("Images/blu.png", UriKind.Relative));
+cmdReset.Visibility = Visibility.Visible;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="164" endline="174">
+<![CDATA[
+private void imgBlu_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+{
+device = 5;
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone.png", UriKind.Relative));
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4.png", UriKind.Relative));
+imgPSP.Source = new BitmapImage(new Uri("Images/psp.png", UriKind.Relative));
+imgVita.Source = new BitmapImage(new Uri("Images/vita.png", UriKind.Relative));
+imgBlu.Source = new BitmapImage(new Uri("Images/blu-check-highlight.png", UriKind.Relative));
+cmdReset.Visibility = Visibility.Visible;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="106" semantic_similarity= "0.69" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="127" endline="137">
+<![CDATA[
+private void imgPSP_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+{
+device = 3;
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone.png", UriKind.Relative));
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4.png", UriKind.Relative));
+imgPSP.Source = new BitmapImage(new Uri("Images/psp-check-highlight.png", UriKind.Relative));
+imgVita.Source = new BitmapImage(new Uri("Images/vita.png", UriKind.Relative));
+imgBlu.Source = new BitmapImage(new Uri("Images/blu.png", UriKind.Relative));
+cmdReset.Visibility = Visibility.Visible;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="175" endline="185">
+<![CDATA[
+private void cmdReset_Click(object sender, RoutedEventArgs e)
+{
+device = 0;
+cmdReset.Visibility = Visibility.Hidden;
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone.png", UriKind.Relative));
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4.png", UriKind.Relative));
+imgPSP.Source = new BitmapImage(new Uri("Images/psp.png", UriKind.Relative));
+imgVita.Source = new BitmapImage(new Uri("Images/vita.png", UriKind.Relative));
+imgBlu.Source = new BitmapImage(new Uri("Images/blu.png", UriKind.Relative));
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="107" semantic_similarity= "0.8" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="127" endline="137">
+<![CDATA[
+private void imgPSP_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+{
+device = 3;
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone.png", UriKind.Relative));
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4.png", UriKind.Relative));
+imgPSP.Source = new BitmapImage(new Uri("Images/psp-check-highlight.png", UriKind.Relative));
+imgVita.Source = new BitmapImage(new Uri("Images/vita.png", UriKind.Relative));
+imgBlu.Source = new BitmapImage(new Uri("Images/blu.png", UriKind.Relative));
+cmdReset.Visibility = Visibility.Visible;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="212" endline="222">
+<![CDATA[
+private void imgVita_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+{
+device = 4;
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone.png", UriKind.Relative));
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4.png", UriKind.Relative));
+imgPSP.Source = new BitmapImage(new Uri("Images/psp.png", UriKind.Relative));
+imgVita.Source = new BitmapImage(new Uri("Images/vita-highlight-check.png", UriKind.Relative));
+imgBlu.Source = new BitmapImage(new Uri("Images/blu.png", UriKind.Relative));
+cmdReset.Visibility = Visibility.Visible;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="108" semantic_similarity= "0.8" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="138" endline="163">
+<![CDATA[
+private void imgBlu_MouseEnter(object sender, MouseEventArgs e)
+{
+if (device == 5)
+{
+if (imgBlu.IsMouseOver)
+{
+imgBlu.Source = new BitmapImage(new Uri("Images/blu-check-highlight.png", UriKind.Relative));
+}
+else
+{
+imgBlu.Source = new BitmapImage(new Uri("Images/blu-check.png", UriKind.Relative));
+}
+}
+else
+{
+if (imgBlu.IsMouseOver)
+{
+imgBlu.Source = new BitmapImage(new Uri("Images/blu-highlight.png", UriKind.Relative));
+}
+else
+{
+imgBlu.Source = new BitmapImage(new Uri("Images/blu.png", UriKind.Relative));
+}
+}
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="186" endline="211">
+<![CDATA[
+private void imgVita_MouseEnter(object sender, MouseEventArgs e)
+{
+if (device == 4)
+{
+if (imgVita.IsMouseOver)
+{
+imgVita.Source = new BitmapImage(new Uri("Images/vita-highlight-check.png", UriKind.Relative));
+}
+else
+{
+imgVita.Source = new BitmapImage(new Uri("Images/vita-check.png", UriKind.Relative));
+}
+}
+else
+{
+if (imgVita.IsMouseOver)
+{
+imgVita.Source = new BitmapImage(new Uri("Images/vita-highlight.png", UriKind.Relative));
+}
+else
+{
+imgVita.Source = new BitmapImage(new Uri("Images/vita.png", UriKind.Relative));
+}
+}
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="109" semantic_similarity= "0.69" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="164" endline="174">
+<![CDATA[
+private void imgBlu_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+{
+device = 5;
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone.png", UriKind.Relative));
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4.png", UriKind.Relative));
+imgPSP.Source = new BitmapImage(new Uri("Images/psp.png", UriKind.Relative));
+imgVita.Source = new BitmapImage(new Uri("Images/vita.png", UriKind.Relative));
+imgBlu.Source = new BitmapImage(new Uri("Images/blu-check-highlight.png", UriKind.Relative));
+cmdReset.Visibility = Visibility.Visible;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="175" endline="185">
+<![CDATA[
+private void cmdReset_Click(object sender, RoutedEventArgs e)
+{
+device = 0;
+cmdReset.Visibility = Visibility.Hidden;
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone.png", UriKind.Relative));
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4.png", UriKind.Relative));
+imgPSP.Source = new BitmapImage(new Uri("Images/psp.png", UriKind.Relative));
+imgVita.Source = new BitmapImage(new Uri("Images/vita.png", UriKind.Relative));
+imgBlu.Source = new BitmapImage(new Uri("Images/blu.png", UriKind.Relative));
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="110" semantic_similarity= "0.8" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="164" endline="174">
+<![CDATA[
+private void imgBlu_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+{
+device = 5;
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone.png", UriKind.Relative));
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4.png", UriKind.Relative));
+imgPSP.Source = new BitmapImage(new Uri("Images/psp.png", UriKind.Relative));
+imgVita.Source = new BitmapImage(new Uri("Images/vita.png", UriKind.Relative));
+imgBlu.Source = new BitmapImage(new Uri("Images/blu-check-highlight.png", UriKind.Relative));
+cmdReset.Visibility = Visibility.Visible;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="212" endline="222">
+<![CDATA[
+private void imgVita_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+{
+device = 4;
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone.png", UriKind.Relative));
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4.png", UriKind.Relative));
+imgPSP.Source = new BitmapImage(new Uri("Images/psp.png", UriKind.Relative));
+imgVita.Source = new BitmapImage(new Uri("Images/vita-highlight-check.png", UriKind.Relative));
+imgBlu.Source = new BitmapImage(new Uri("Images/blu.png", UriKind.Relative));
+cmdReset.Visibility = Visibility.Visible;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="111" semantic_similarity= "0.69" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="175" endline="185">
+<![CDATA[
+private void cmdReset_Click(object sender, RoutedEventArgs e)
+{
+device = 0;
+cmdReset.Visibility = Visibility.Hidden;
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone.png", UriKind.Relative));
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4.png", UriKind.Relative));
+imgPSP.Source = new BitmapImage(new Uri("Images/psp.png", UriKind.Relative));
+imgVita.Source = new BitmapImage(new Uri("Images/vita.png", UriKind.Relative));
+imgBlu.Source = new BitmapImage(new Uri("Images/blu.png", UriKind.Relative));
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\FirstLoad.xaml.cs" startline="212" endline="222">
+<![CDATA[
+private void imgVita_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+{
+device = 4;
+imgiPhone.Source = new BitmapImage(new Uri("Images/iPhone.png", UriKind.Relative));
+imgiPhone4.Source = new BitmapImage(new Uri("Images/iphone4.png", UriKind.Relative));
+imgPSP.Source = new BitmapImage(new Uri("Images/psp.png", UriKind.Relative));
+imgVita.Source = new BitmapImage(new Uri("Images/vita-highlight-check.png", UriKind.Relative));
+imgBlu.Source = new BitmapImage(new Uri("Images/blu.png", UriKind.Relative));
+cmdReset.Visibility = Visibility.Visible;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="112" semantic_similarity= "0.74" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ImportProfile.xaml.cs" startline="26" endline="33">
+<![CDATA[
+private bool win6 = MainForm.win6;
+private string appdir = MainForm.appdir;
+public ImportProfile()
+{
+InitializeComponent();
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Updating.xaml.cs" startline="25" endline="33">
+<![CDATA[
+private List<string> profilelist = MainForm.profileList;
+private static string appdir = MainForm.appdir;
+private DispatcherTimer timer = new DispatcherTimer(), tmrExit = new DispatcherTimer();
+private bool win6 = MainForm.win6, exit = false;
+public Updating()
+{
+InitializeComponent();
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="113" semantic_similarity= "0.92" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ImportProfile.xaml.cs" startline="120" endline="133">
+<![CDATA[
+private void Window_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+{
+bool stop = false;
+if (optFile.IsMouseOver) stop = true;
+if (txtFile.IsMouseOver) stop = true;
+if (cmdOpen.IsMouseOver) stop = true;
+if (optText.IsMouseOver) stop = true;
+if (txtText.IsMouseOver) stop = true;
+if (cmdClose.IsMouseOver) stop = true;
+if (cmdImport.IsMouseOver) stop = true;
+if (!stop) this.WindowState = (this.WindowState == WindowState.Normal) ? WindowState.Maximized
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="91" endline="103">
+<![CDATA[
+private void Window_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+{
+bool stop = false;
+if (tabOptions.IsMouseOver) stop = true;
+if (cboSettings.IsMouseOver) stop = true;
+if (cmdCancel.IsMouseOver) stop = true;
+if (cmdOK.IsMouseOver) stop = true;
+if (opt32bit.IsMouseOver) stop = true;
+if (opt64bit.IsMouseOver) stop = true;
+if (!stop) this.WindowState = (this.WindowState == WindowState.Normal) ? WindowState.Maximized
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="114" semantic_similarity= "0.62" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ImportProfile.xaml.cs" startline="134" endline="140">
+<![CDATA[
+private void optText_Checked(object sender, RoutedEventArgs e)
+{
+txtText.IsEnabled = true;
+txtFile.IsEnabled = false;
+cmdOpen.IsEnabled = false;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ImportProfile.xaml.cs" startline="141" endline="150">
+<![CDATA[
+private void optFile_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+txtText.IsEnabled = false;
+txtFile.IsEnabled = true;
+cmdOpen.IsEnabled = true;
+}
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="115" semantic_similarity= "0.63" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ImportProfile.xaml.cs" startline="141" endline="150">
+<![CDATA[
+private void optFile_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+txtText.IsEnabled = false;
+txtFile.IsEnabled = true;
+cmdOpen.IsEnabled = true;
+}
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="136" endline="145">
+<![CDATA[
+private void optCustomTemp_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+bool c = (bool)optCustomTemp.IsChecked;
+txtTemp.IsEnabled = c;
+cmdTemp.IsEnabled = c;
+}
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="116" semantic_similarity= "0.63" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ImportProfile.xaml.cs" startline="141" endline="150">
+<![CDATA[
+private void optFile_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+txtText.IsEnabled = false;
+txtFile.IsEnabled = true;
+cmdOpen.IsEnabled = true;
+}
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="146" endline="155">
+<![CDATA[
+private void optCustomOutput_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+bool c = (bool)optCustomOutput.IsChecked;
+txtOutput.IsEnabled = c;
+cmdOutput.IsEnabled = c;
+}
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="117" semantic_similarity= "0.63" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ImportProfile.xaml.cs" startline="141" endline="150">
+<![CDATA[
+private void optFile_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+txtText.IsEnabled = false;
+txtFile.IsEnabled = true;
+cmdOpen.IsEnabled = true;
+}
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="156" endline="165">
+<![CDATA[
+private void optCustomLog_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+bool c = (bool)optCustomLog.IsChecked;
+txtLog.IsEnabled = c;
+cmdLog.IsEnabled = c;
+}
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="118" semantic_similarity= "0.64" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ImportProfile.xaml.cs" startline="141" endline="150">
+<![CDATA[
+private void optFile_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+txtText.IsEnabled = false;
+txtFile.IsEnabled = true;
+cmdOpen.IsEnabled = true;
+}
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="296" endline="305">
+<![CDATA[
+private void cboFilm_SelectionChanged(object sender, SelectionChangedEventArgs e)
+{
+if (this.IsLoaded)
+{
+bool f = (cboFilm.SelectedIndex != 2);
+lblFilm.IsEnabled = f;
+cboFilmMode.IsEnabled = f;
+}
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="119" semantic_similarity= "1.0" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ImportProfile.xaml.cs" startline="156" endline="162">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="109" endline="115">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="120" semantic_similarity= "1.0" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ImportProfile.xaml.cs" startline="156" endline="162">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Updating.xaml.cs" startline="75" endline="81">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="121" semantic_similarity= "1.0" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ImportProfile.xaml.cs" startline="163" endline="176">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+int aero = 0;
+MainForm.DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) MainForm.setGlass(this);
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="116" endline="129">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+int aero = 0;
+MainForm.DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) MainForm.setGlass(this);
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="122" semantic_similarity= "1.0" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\ImportProfile.xaml.cs" startline="163" endline="176">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+int aero = 0;
+MainForm.DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) MainForm.setGlass(this);
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Updating.xaml.cs" startline="82" endline="95">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+int aero = 0;
+MainForm.DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) MainForm.setGlass(this);
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="123" semantic_similarity= "1.0" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="109" endline="115">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Updating.xaml.cs" startline="75" endline="81">
+<![CDATA[
+protected override void OnSourceInitialized(EventArgs e)
+{
+base.OnSourceInitialized(e);
+IntPtr hwnd = new WindowInteropHelper(this).Handle;
+HwndSource.FromHwnd(hwnd).AddHook(new HwndSourceHook(WndProc));
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="124" semantic_similarity= "1.0" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="116" endline="129">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+int aero = 0;
+MainForm.DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) MainForm.setGlass(this);
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Updating.xaml.cs" startline="82" endline="95">
+<![CDATA[
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+if (msg == 0x031E)
+{
+int aero = 0;
+MainForm.DwmIsCompositionEnabled(ref aero);
+win6 = (aero > 0);
+if (win6) this.Background = Brushes.Transparent; else this.Background = SystemColors.ControlBrush;
+if (win6) MainForm.setGlass(this);
+handled = true;
+}
+return IntPtr.Zero;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="125" semantic_similarity= "0.8" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="136" endline="145">
+<![CDATA[
+private void optCustomTemp_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+bool c = (bool)optCustomTemp.IsChecked;
+txtTemp.IsEnabled = c;
+cmdTemp.IsEnabled = c;
+}
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="146" endline="155">
+<![CDATA[
+private void optCustomOutput_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+bool c = (bool)optCustomOutput.IsChecked;
+txtOutput.IsEnabled = c;
+cmdOutput.IsEnabled = c;
+}
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="126" semantic_similarity= "0.8" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="136" endline="145">
+<![CDATA[
+private void optCustomTemp_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+bool c = (bool)optCustomTemp.IsChecked;
+txtTemp.IsEnabled = c;
+cmdTemp.IsEnabled = c;
+}
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="156" endline="165">
+<![CDATA[
+private void optCustomLog_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+bool c = (bool)optCustomLog.IsChecked;
+txtLog.IsEnabled = c;
+cmdLog.IsEnabled = c;
+}
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="127" semantic_similarity= "0.68" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="136" endline="145">
+<![CDATA[
+private void optCustomTemp_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+bool c = (bool)optCustomTemp.IsChecked;
+txtTemp.IsEnabled = c;
+cmdTemp.IsEnabled = c;
+}
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="179" endline="189">
+<![CDATA[
+private void optMPGOff_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+bool c = (bool)optMPGOn.IsChecked;
+chkVOB.IsEnabled = c;
+chkMPG.IsEnabled = c;
+lblMPG.IsEnabled = c;
+}
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="128" semantic_similarity= "0.65" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="136" endline="145">
+<![CDATA[
+private void optCustomTemp_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+bool c = (bool)optCustomTemp.IsChecked;
+txtTemp.IsEnabled = c;
+cmdTemp.IsEnabled = c;
+}
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="190" endline="198">
+<![CDATA[
+private void optAVCOff_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+bool c = (bool)optAVCOn.IsChecked;
+chkAVC.IsEnabled = c;
+}
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="129" semantic_similarity= "0.69" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="136" endline="145">
+<![CDATA[
+private void optCustomTemp_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+bool c = (bool)optCustomTemp.IsChecked;
+txtTemp.IsEnabled = c;
+cmdTemp.IsEnabled = c;
+}
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="296" endline="305">
+<![CDATA[
+private void cboFilm_SelectionChanged(object sender, SelectionChangedEventArgs e)
+{
+if (this.IsLoaded)
+{
+bool f = (cboFilm.SelectedIndex != 2);
+lblFilm.IsEnabled = f;
+cboFilmMode.IsEnabled = f;
+}
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="130" semantic_similarity= "0.8" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="146" endline="155">
+<![CDATA[
+private void optCustomOutput_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+bool c = (bool)optCustomOutput.IsChecked;
+txtOutput.IsEnabled = c;
+cmdOutput.IsEnabled = c;
+}
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="156" endline="165">
+<![CDATA[
+private void optCustomLog_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+bool c = (bool)optCustomLog.IsChecked;
+txtLog.IsEnabled = c;
+cmdLog.IsEnabled = c;
+}
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="131" semantic_similarity= "0.68" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="146" endline="155">
+<![CDATA[
+private void optCustomOutput_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+bool c = (bool)optCustomOutput.IsChecked;
+txtOutput.IsEnabled = c;
+cmdOutput.IsEnabled = c;
+}
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="179" endline="189">
+<![CDATA[
+private void optMPGOff_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+bool c = (bool)optMPGOn.IsChecked;
+chkVOB.IsEnabled = c;
+chkMPG.IsEnabled = c;
+lblMPG.IsEnabled = c;
+}
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="132" semantic_similarity= "0.65" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="146" endline="155">
+<![CDATA[
+private void optCustomOutput_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+bool c = (bool)optCustomOutput.IsChecked;
+txtOutput.IsEnabled = c;
+cmdOutput.IsEnabled = c;
+}
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="190" endline="198">
+<![CDATA[
+private void optAVCOff_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+bool c = (bool)optAVCOn.IsChecked;
+chkAVC.IsEnabled = c;
+}
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="133" semantic_similarity= "0.69" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="146" endline="155">
+<![CDATA[
+private void optCustomOutput_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+bool c = (bool)optCustomOutput.IsChecked;
+txtOutput.IsEnabled = c;
+cmdOutput.IsEnabled = c;
+}
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="296" endline="305">
+<![CDATA[
+private void cboFilm_SelectionChanged(object sender, SelectionChangedEventArgs e)
+{
+if (this.IsLoaded)
+{
+bool f = (cboFilm.SelectedIndex != 2);
+lblFilm.IsEnabled = f;
+cboFilmMode.IsEnabled = f;
+}
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="134" semantic_similarity= "0.68" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="156" endline="165">
+<![CDATA[
+private void optCustomLog_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+bool c = (bool)optCustomLog.IsChecked;
+txtLog.IsEnabled = c;
+cmdLog.IsEnabled = c;
+}
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="179" endline="189">
+<![CDATA[
+private void optMPGOff_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+bool c = (bool)optMPGOn.IsChecked;
+chkVOB.IsEnabled = c;
+chkMPG.IsEnabled = c;
+lblMPG.IsEnabled = c;
+}
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="135" semantic_similarity= "0.65" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="156" endline="165">
+<![CDATA[
+private void optCustomLog_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+bool c = (bool)optCustomLog.IsChecked;
+txtLog.IsEnabled = c;
+cmdLog.IsEnabled = c;
+}
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="190" endline="198">
+<![CDATA[
+private void optAVCOff_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+bool c = (bool)optAVCOn.IsChecked;
+chkAVC.IsEnabled = c;
+}
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="136" semantic_similarity= "0.69" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="156" endline="165">
+<![CDATA[
+private void optCustomLog_Checked(object sender, RoutedEventArgs e)
+{
+if (this.IsLoaded)
+{
+bool c = (bool)optCustomLog.IsChecked;
+txtLog.IsEnabled = c;
+cmdLog.IsEnabled = c;
+}
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="296" endline="305">
+<![CDATA[
+private void cboFilm_SelectionChanged(object sender, SelectionChangedEventArgs e)
+{
+if (this.IsLoaded)
+{
+bool f = (cboFilm.SelectedIndex != 2);
+lblFilm.IsEnabled = f;
+cboFilmMode.IsEnabled = f;
+}
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="137" semantic_similarity= "0.62" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="257" endline="266">
+<![CDATA[
+private void cmdTemp_Click(object sender, RoutedEventArgs e)
+{
+folderbrowser.SelectedPath = tempdir;
+if (folderbrowser.ShowDialog() != System.Windows.Forms.DialogResult.Cancel)
+{
+tempdir = folderbrowser.SelectedPath;
+txtTemp.Text = tempdir;
+}
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="279" endline="285">
+<![CDATA[
+private void cmdOutput_Click(object sender, RoutedEventArgs e)
+{
+folderbrowser.SelectedPath = txtOutput.Text;
+if (folderbrowser.ShowDialog() != System.Windows.Forms.DialogResult.Cancel)
+txtOutput.Text = folderbrowser.SelectedPath;
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="138" semantic_similarity= "0.8" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="257" endline="266">
+<![CDATA[
+private void cmdTemp_Click(object sender, RoutedEventArgs e)
+{
+folderbrowser.SelectedPath = tempdir;
+if (folderbrowser.ShowDialog() != System.Windows.Forms.DialogResult.Cancel)
+{
+tempdir = folderbrowser.SelectedPath;
+txtTemp.Text = tempdir;
+}
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="286" endline="295">
+<![CDATA[
+private void cmdLog_Click(object sender, RoutedEventArgs e)
+{
+folderbrowser.SelectedPath = logdir;
+if (folderbrowser.ShowDialog() != System.Windows.Forms.DialogResult.Cancel)
+{
+logdir = folderbrowser.SelectedPath;
+txtLog.Text = logdir;
+}
+}
+]]>
+</clone_fragment>
+</clone_pair>
+<clone_pair pairid="139" semantic_similarity= "0.62" >
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="279" endline="285">
+<![CDATA[
+private void cmdOutput_Click(object sender, RoutedEventArgs e)
+{
+folderbrowser.SelectedPath = txtOutput.Text;
+if (folderbrowser.ShowDialog() != System.Windows.Forms.DialogResult.Cancel)
+txtOutput.Text = folderbrowser.SelectedPath;
+}
+]]>
+</clone_fragment>
+<clone_fragment file="C:\Users\win10Admin\Desktop\Test_Cases\1-ASXGUI\Trunk\ASXGui\Options.xaml.cs" startline="286" endline="295">
+<![CDATA[
+private void cmdLog_Click(object sender, RoutedEventArgs e)
+{
+folderbrowser.SelectedPath = logdir;
+if (folderbrowser.ShowDialog() != System.Windows.Forms.DialogResult.Cancel)
+{
+logdir = folderbrowser.SelectedPath;
+txtLog.Text = logdir;
+}
+}
+]]>
+</clone_fragment>
+</clone_pair>
+</clones>

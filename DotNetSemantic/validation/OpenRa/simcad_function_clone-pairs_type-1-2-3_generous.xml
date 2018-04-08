@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="simcad.xsl"?>
+<SimCad version="SimCad 2.2">
+<DetectionTimeStamp>2018-03-24 16:25:54.296</DetectionTimeStamp>
+<SearchInput>n/a</SearchInput>
+<SearchTarget>/Users/farouq/Desktop/Test_Cases/OpenRA</SearchTarget>
+<SourceFragmentType>function</SourceFragmentType>
+<SourceTransformation>generous</SourceTransformation>
+<CloneType>Type-1, Type-2, Type-3</CloneType>
+<CloneGroupingType>pair</CloneGroupingType>
+<SourceFragmentTotal>1342</SourceFragmentTotal>
+<CloneFragmentTotal>166</CloneFragmentTotal>
+<CloneSetTotal>145</CloneSetTotal>
+<Clones fragmentType="function" cloneSetType="pair" nfragments="166" ngroups="145">
+<ClonePair groupid="1" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.Cnc/Widgets/ProductionTabsWidget.cs.ifdefed" startline="35" endline="58" pcid="657"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/ServerTraits/LobbyCommands.cs.ifdefed" startline="546" endline="562" pcid="1115"/>
+</ClonePair>
+<ClonePair groupid="2" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.Cnc/Widgets/ProductionTabsWidget.cs.ifdefed" startline="35" endline="58" pcid="657"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Traits/World/Shroud.cs.ifdefed" startline="93" endline="116" pcid="473"/>
+</ClonePair>
+<ClonePair groupid="3" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.Cnc/Widgets/ProductionTabsWidget.cs.ifdefed" startline="205" endline="209" pcid="661"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Widgets/ScrollPanelWidget.cs.ifdefed" startline="166" endline="170" pcid="536"/>
+</ClonePair>
+<ClonePair groupid="4" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.Cnc/Widgets/ProductionTabsWidget.cs.ifdefed" startline="267" endline="278" pcid="663"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/BuildPaletteWidget.cs.ifdefed" startline="148" endline="157" pcid="1149"/>
+</ClonePair>
+<ClonePair groupid="5" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.Cnc/Widgets/SupportPowersWidget.cs.ifdefed" startline="141" endline="146" pcid="669"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.Cnc/Widgets/CncWorldInteractionControllerWidget.cs.ifdefed" startline="43" endline="48" pcid="638"/>
+</ClonePair>
+<ClonePair groupid="6" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.Cnc/Widgets/SupportPowersWidget.cs.ifdefed" startline="141" endline="146" pcid="669"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Widgets/MapPreviewWidget.cs.ifdefed" startline="66" endline="70" pcid="519"/>
+</ClonePair>
+<ClonePair groupid="7" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.Cnc/Widgets/SupportPowersWidget.cs.ifdefed" startline="141" endline="146" pcid="669"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Widgets/ButtonWidget.cs.ifdefed" startline="154" endline="159" pcid="494"/>
+</ClonePair>
+<ClonePair groupid="8" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.Cnc/Widgets/SupportPowersWidget.cs.ifdefed" startline="148" endline="152" pcid="670"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Widgets/ButtonWidget.cs.ifdefed" startline="161" endline="165" pcid="495"/>
+</ClonePair>
+<ClonePair groupid="9" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.Cnc/Widgets/SupportPowersWidget.cs.ifdefed" startline="148" endline="152" pcid="670"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Widgets/ClientTooltipRegionWidget.cs.ifdefed" startline="60" endline="65" pcid="506"/>
+</ClonePair>
+<ClonePair groupid="10" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.Cnc/Widgets/SupportPowersWidget.cs.ifdefed" startline="148" endline="152" pcid="670"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Widgets/MapPreviewWidget.cs.ifdefed" startline="72" endline="76" pcid="520"/>
+</ClonePair>
+<ClonePair groupid="11" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.Cnc/Widgets/SupportPowersWidget.cs.ifdefed" startline="148" endline="152" pcid="670"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.Cnc/Widgets/CncWorldInteractionControllerWidget.cs.ifdefed" startline="50" endline="54" pcid="639"/>
+</ClonePair>
+<ClonePair groupid="12" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.Cnc/Widgets/SupportPowersWidget.cs.ifdefed" startline="148" endline="152" pcid="670"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.Cnc/Widgets/ResourceBarWidget.cs.ifdefed" startline="50" endline="54" pcid="665"/>
+</ClonePair>
+<ClonePair groupid="13" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.Cnc/Widgets/SupportPowersWidget.cs.ifdefed" startline="154" endline="174" pcid="671"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/SupportPowerBinWidget.cs.ifdefed" startline="58" endline="72" pcid="1264"/>
+</ClonePair>
+<ClonePair groupid="14" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Renderer.Cg/Shader.cs.ifdefed" startline="52" endline="68" pcid="1282"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/InfiltrateForExploration.cs.ifdefed" startline="21" endline="26" pcid="937"/>
+</ClonePair>
+<ClonePair groupid="15" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.FileFormats/Map/TileSet.cs.ifdefed" startline="57" endline="71" pcid="173"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Graphics/MappedImage.cs.ifdefed" startline="37" endline="44" pcid="265"/>
+</ClonePair>
+<ClonePair groupid="16" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.FileFormats/Map/TileSet.cs.ifdefed" startline="57" endline="71" pcid="173"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/GameRules/ActorInfo.cs.ifdefed" startline="64" endline="76" pcid="228"/>
+</ClonePair>
+<ClonePair groupid="17" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Armament.cs.ifdefed" startline="102" endline="165" pcid="745"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Player/PlayerStatistics.cs.ifdefed" startline="106" endline="126" pcid="1032"/>
+</ClonePair>
+<ClonePair groupid="18" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/PropertiesDialog.Designer.cs.ifdefed" startline="24" endline="31" pcid="41"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/ActorPropertiesDialog.Designer.cs.ifdefed" startline="14" endline="21" pcid="0"/>
+</ClonePair>
+<ClonePair groupid="19" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/PropertiesDialog.Designer.cs.ifdefed" startline="24" endline="31" pcid="41"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/ErrorListDialog.Designer.cs.ifdefed" startline="24" endline="31" pcid="7"/>
+</ClonePair>
+<ClonePair groupid="20" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/PropertiesDialog.Designer.cs.ifdefed" startline="24" endline="31" pcid="41"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/Form1.Designer.cs.ifdefed" startline="24" endline="31" pcid="9"/>
+</ClonePair>
+<ClonePair groupid="21" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/PropertiesDialog.Designer.cs.ifdefed" startline="24" endline="31" pcid="41"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/MapSelect.Designer.cs.ifdefed" startline="19" endline="26" pcid="37"/>
+</ClonePair>
+<ClonePair groupid="22" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/PropertiesDialog.Designer.cs.ifdefed" startline="24" endline="31" pcid="41"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/NewMapDialog.Designer.cs.ifdefed" startline="24" endline="31" pcid="39"/>
+</ClonePair>
+<ClonePair groupid="23" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/PropertiesDialog.Designer.cs.ifdefed" startline="24" endline="31" pcid="41"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/ResizeDialog.Designer.cs.ifdefed" startline="24" endline="31" pcid="46"/>
+</ClonePair>
+<ClonePair groupid="24" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/PropertiesDialog.Designer.cs.ifdefed" startline="24" endline="31" pcid="41"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.TilesetBuilder/frmBuilder.Designer.cs.ifdefed" startline="14" endline="21" pcid="1308"/>
+</ClonePair>
+<ClonePair groupid="25" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/PropertiesDialog.Designer.cs.ifdefed" startline="24" endline="31" pcid="41"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.TilesetBuilder/frmNew.Designer.cs.ifdefed" startline="14" endline="21" pcid="1319"/>
+</ClonePair>
+<ClonePair groupid="26" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Widgets/ClientTooltipRegionWidget.cs.ifdefed" startline="60" endline="65" pcid="506"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Widgets/ButtonWidget.cs.ifdefed" startline="161" endline="165" pcid="495"/>
+</ClonePair>
+<ClonePair groupid="27" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Widgets/ClientTooltipRegionWidget.cs.ifdefed" startline="60" endline="65" pcid="506"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Widgets/MapPreviewWidget.cs.ifdefed" startline="72" endline="76" pcid="520"/>
+</ClonePair>
+<ClonePair groupid="28" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Widgets/ClientTooltipRegionWidget.cs.ifdefed" startline="60" endline="65" pcid="506"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.Cnc/Widgets/CncWorldInteractionControllerWidget.cs.ifdefed" startline="50" endline="54" pcid="639"/>
+</ClonePair>
+<ClonePair groupid="29" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Widgets/ClientTooltipRegionWidget.cs.ifdefed" startline="60" endline="65" pcid="506"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.Cnc/Widgets/ResourceBarWidget.cs.ifdefed" startline="50" endline="54" pcid="665"/>
+</ClonePair>
+<ClonePair groupid="30" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/NukePaletteEffect.cs.ifdefed" startline="36" endline="52" pcid="1003"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.Cnc/Widgets/Logic/CncSettingsLogic.cs.ifdefed" startline="156" endline="174" pcid="649"/>
+</ClonePair>
+<ClonePair groupid="31" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Network/UPnP.cs.ifdefed" startline="116" endline="129" pcid="359"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Network/UPnP.cs.ifdefed" startline="131" endline="144" pcid="360"/>
+</ClonePair>
+<ClonePair groupid="32" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/ProximityCapturable.cs.ifdefed" startline="83" endline="102" pcid="1059"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Air/FallsToEarth.cs.ifdefed" startline="27" endline="33" pcid="722"/>
+</ClonePair>
+<ClonePair groupid="33" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/ProximityCapturable.cs.ifdefed" startline="83" endline="102" pcid="1059"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.Cnc/Missions/Gdi01Script.cs.ifdefed" startline="165" endline="173" pcid="625"/>
+</ClonePair>
+<ClonePair groupid="34" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/ProximityCapturable.cs.ifdefed" startline="83" endline="102" pcid="1059"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Player/PlaceBuilding.cs.ifdefed" startline="107" endline="122" pcid="1027"/>
+</ClonePair>
+<ClonePair groupid="35" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.Cnc/Widgets/CncWorldInteractionControllerWidget.cs.ifdefed" startline="43" endline="48" pcid="638"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Widgets/MapPreviewWidget.cs.ifdefed" startline="66" endline="70" pcid="519"/>
+</ClonePair>
+<ClonePair groupid="36" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.Cnc/Widgets/CncWorldInteractionControllerWidget.cs.ifdefed" startline="43" endline="48" pcid="638"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Widgets/ButtonWidget.cs.ifdefed" startline="154" endline="159" pcid="494"/>
+</ClonePair>
+<ClonePair groupid="37" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.Cnc/Widgets/CncWorldInteractionControllerWidget.cs.ifdefed" startline="50" endline="54" pcid="639"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Widgets/ButtonWidget.cs.ifdefed" startline="161" endline="165" pcid="495"/>
+</ClonePair>
+<ClonePair groupid="38" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.Cnc/Widgets/CncWorldInteractionControllerWidget.cs.ifdefed" startline="50" endline="54" pcid="639"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Widgets/MapPreviewWidget.cs.ifdefed" startline="72" endline="76" pcid="520"/>
+</ClonePair>
+<ClonePair groupid="39" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.Cnc/Widgets/CncWorldInteractionControllerWidget.cs.ifdefed" startline="50" endline="54" pcid="639"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.Cnc/Widgets/ResourceBarWidget.cs.ifdefed" startline="50" endline="54" pcid="665"/>
+</ClonePair>
+<ClonePair groupid="40" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/ModData.cs.ifdefed" startline="84" endline="94" pcid="332"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/TraitDictionary.cs.ifdefed" startline="27" endline="32" pcid="411"/>
+</ClonePair>
+<ClonePair groupid="41" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Graphics/ChromeProvider.cs.ifdefed" startline="30" endline="43" pcid="248"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/Surface.cs.ifdefed" startline="366" endline="372" pcid="66"/>
+</ClonePair>
+<ClonePair groupid="42" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/MPStartLocations.cs.ifdefed" startline="29" endline="59" pcid="955"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/AutoHeal.cs.ifdefed" startline="22" endline="36" pcid="772"/>
+</ClonePair>
+<ClonePair groupid="43" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.Cnc/Widgets/ResourceBarWidget.cs.ifdefed" startline="50" endline="54" pcid="665"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Widgets/ButtonWidget.cs.ifdefed" startline="161" endline="165" pcid="495"/>
+</ClonePair>
+<ClonePair groupid="44" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.Cnc/Widgets/ResourceBarWidget.cs.ifdefed" startline="50" endline="54" pcid="665"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Widgets/MapPreviewWidget.cs.ifdefed" startline="72" endline="76" pcid="520"/>
+</ClonePair>
+<ClonePair groupid="45" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Air/FlyCircle.cs.ifdefed" startline="18" endline="35" pcid="728"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Air/Fly.cs.ifdefed" startline="26" endline="47" pcid="724"/>
+</ClonePair>
+<ClonePair groupid="46" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Widgets/WorldInteractionControllerWidget.cs.ifdefed" startline="139" endline="147" pcid="589"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Render/RenderInfantry.cs.ifdefed" startline="130" endline="138" pcid="1079"/>
+</ClonePair>
+<ClonePair groupid="47" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Network/OrderManager.cs.ifdefed" startline="198" endline="206" pcid="342"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.FileFormats/Primitives/DisposableAction.cs.ifdefed" startline="27" endline="33" pcid="195"/>
+</ClonePair>
+<ClonePair groupid="48" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Air/Fly.cs.ifdefed" startline="26" endline="47" pcid="724"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/BuildPaletteWidget.cs.ifdefed" startline="159" endline="186" pcid="1150"/>
+</ClonePair>
+<ClonePair groupid="49" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Air/Fly.cs.ifdefed" startline="26" endline="47" pcid="724"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Air/HeliAttack.cs.ifdefed" startline="22" endline="52" pcid="731"/>
+</ClonePair>
+<ClonePair groupid="50" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Attack/AttackFrontal.cs.ifdefed" startline="45" endline="51" pcid="750"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Attack/AttackLeap.cs.ifdefed" startline="46" endline="52" pcid="752"/>
+</ClonePair>
+<ClonePair groupid="51" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Attack/AttackFrontal.cs.ifdefed" startline="45" endline="51" pcid="750"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Attack/AttackMedic.cs.ifdefed" startline="30" endline="36" pcid="754"/>
+</ClonePair>
+<ClonePair groupid="52" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Attack/AttackLeap.cs.ifdefed" startline="46" endline="52" pcid="752"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Attack/AttackMedic.cs.ifdefed" startline="30" endline="36" pcid="754"/>
+</ClonePair>
+<ClonePair groupid="53" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Activities/RAHarvesterDockSequence.cs.ifdefed" startline="38" endline="65" pcid="704"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.Cnc/Activities/HarvesterDockSequence.cs.ifdefed" startline="42" endline="70" pcid="608"/>
+</ClonePair>
+<ClonePair groupid="54" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Chronoshiftable.cs.ifdefed" startline="83" endline="89" pcid="843"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/IronCurtainable.cs.ifdefed" startline="46" endline="52" pcid="939"/>
+</ClonePair>
+<ClonePair groupid="55" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/ConquestVictoryConditions.cs.ifdefed" startline="59" endline="75" pcid="863"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/ConquestVictoryConditions.cs.ifdefed" startline="77" endline="85" pcid="864"/>
+</ClonePair>
+<ClonePair groupid="56" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/BrushTool.cs.ifdefed" startline="26" endline="61" pcid="4"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Activities/UnloadCargo.cs.ifdefed" startline="25" endline="40" pcid="714"/>
+</ClonePair>
+<ClonePair groupid="57" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Graphics/LineRenderer.cs.ifdefed" startline="33" endline="47" pcid="261"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Graphics/QuadRenderer.cs.ifdefed" startline="30" endline="43" pcid="271"/>
+</ClonePair>
+<ClonePair groupid="58" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Graphics/LineRenderer.cs.ifdefed" startline="81" endline="86" pcid="264"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Graphics/QuadRenderer.cs.ifdefed" startline="60" endline="65" pcid="273"/>
+</ClonePair>
+<ClonePair groupid="59" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Graphics/LineRenderer.cs.ifdefed" startline="81" endline="86" pcid="264"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Graphics/SpriteRenderer.cs.ifdefed" startline="95" endline="100" pcid="300"/>
+</ClonePair>
+<ClonePair groupid="60" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.FileFormats/Graphics/ShpWriter.cs.ifdefed" startline="21" endline="54" pcid="162"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.FileFormats/FieldLoader.cs.ifdefed" startline="287" endline="306" pcid="83"/>
+</ClonePair>
+<ClonePair groupid="61" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Buildings/BibLayer.cs.ifdefed" startline="74" endline="86" pcid="797"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/World/SmudgeLayer.cs.ifdefed" startline="78" endline="91" pcid="1281"/>
+</ClonePair>
+<ClonePair groupid="62" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Attack/AttackLoyalty.cs.ifdefed" startline="28" endline="46" pcid="753"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Effects/LaserZap.cs.ifdefed" startline="56" endline="77" pcid="906"/>
+</ClonePair>
+<ClonePair groupid="63" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/Form1.cs.ifdefed" startline="503" endline="508" pcid="26"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/Form1.cs.ifdefed" startline="510" endline="516" pcid="27"/>
+</ClonePair>
+<ClonePair groupid="64" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/Form1.cs.ifdefed" startline="503" endline="508" pcid="26"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/Form1.cs.ifdefed" startline="741" endline="747" pcid="36"/>
+</ClonePair>
+<ClonePair groupid="65" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/Form1.cs.ifdefed" startline="510" endline="516" pcid="27"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/Form1.cs.ifdefed" startline="741" endline="747" pcid="36"/>
+</ClonePair>
+<ClonePair groupid="66" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/Form1.cs.ifdefed" startline="717" endline="724" pcid="34"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/Form1.cs.ifdefed" startline="726" endline="733" pcid="35"/>
+</ClonePair>
+<ClonePair groupid="67" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Graphics/Animation.cs.ifdefed" startline="102" endline="109" pcid="244"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/GameRules/ActorInfo.cs.ifdefed" startline="123" endline="135" pcid="231"/>
+</ClonePair>
+<ClonePair groupid="68" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Graphics/Animation.cs.ifdefed" startline="102" endline="109" pcid="244"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Lint/CheckSyncAnnotations.cs.ifdefed" startline="28" endline="39" pcid="951"/>
+</ClonePair>
+<ClonePair groupid="69" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Graphics/Animation.cs.ifdefed" startline="102" endline="109" pcid="244"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Player/PlaceBuilding.cs.ifdefed" startline="107" endline="122" pcid="1027"/>
+</ClonePair>
+<ClonePair groupid="70" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Graphics/QuadRenderer.cs.ifdefed" startline="60" endline="65" pcid="273"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Graphics/SpriteRenderer.cs.ifdefed" startline="95" endline="100" pcid="300"/>
+</ClonePair>
+<ClonePair groupid="71" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/MapSelect.Designer.cs.ifdefed" startline="19" endline="26" pcid="37"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/ActorPropertiesDialog.Designer.cs.ifdefed" startline="14" endline="21" pcid="0"/>
+</ClonePair>
+<ClonePair groupid="72" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/MapSelect.Designer.cs.ifdefed" startline="19" endline="26" pcid="37"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/ErrorListDialog.Designer.cs.ifdefed" startline="24" endline="31" pcid="7"/>
+</ClonePair>
+<ClonePair groupid="73" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/MapSelect.Designer.cs.ifdefed" startline="19" endline="26" pcid="37"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/Form1.Designer.cs.ifdefed" startline="24" endline="31" pcid="9"/>
+</ClonePair>
+<ClonePair groupid="74" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/MapSelect.Designer.cs.ifdefed" startline="19" endline="26" pcid="37"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/NewMapDialog.Designer.cs.ifdefed" startline="24" endline="31" pcid="39"/>
+</ClonePair>
+<ClonePair groupid="75" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/MapSelect.Designer.cs.ifdefed" startline="19" endline="26" pcid="37"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/ResizeDialog.Designer.cs.ifdefed" startline="24" endline="31" pcid="46"/>
+</ClonePair>
+<ClonePair groupid="76" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/MapSelect.Designer.cs.ifdefed" startline="19" endline="26" pcid="37"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.TilesetBuilder/frmBuilder.Designer.cs.ifdefed" startline="14" endline="21" pcid="1308"/>
+</ClonePair>
+<ClonePair groupid="77" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/MapSelect.Designer.cs.ifdefed" startline="19" endline="26" pcid="37"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.TilesetBuilder/frmNew.Designer.cs.ifdefed" startline="14" endline="21" pcid="1319"/>
+</ClonePair>
+<ClonePair groupid="78" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.Cnc/CncMenuPaletteEffect.cs.ifdefed" startline="65" endline="86" pcid="614"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/CrateSpawner.cs.ifdefed" startline="41" endline="58" pcid="874"/>
+</ClonePair>
+<ClonePair groupid="79" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Widgets/ButtonWidget.cs.ifdefed" startline="154" endline="159" pcid="494"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Widgets/MapPreviewWidget.cs.ifdefed" startline="66" endline="70" pcid="519"/>
+</ClonePair>
+<ClonePair groupid="80" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Widgets/ButtonWidget.cs.ifdefed" startline="161" endline="165" pcid="495"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Widgets/MapPreviewWidget.cs.ifdefed" startline="72" endline="76" pcid="520"/>
+</ClonePair>
+<ClonePair groupid="81" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/RadarWidget.cs.ifdefed" startline="68" endline="87" pcid="1254"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/RadarBinWidget.cs.ifdefed" startline="71" endline="90" pcid="1249"/>
+</ClonePair>
+<ClonePair groupid="82" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/RadarWidget.cs.ifdefed" startline="89" endline="121" pcid="1255"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/RadarBinWidget.cs.ifdefed" startline="92" endline="124" pcid="1250"/>
+</ClonePair>
+<ClonePair groupid="83" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/ActorExts.cs.ifdefed" startline="24" endline="34" pcid="719"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/ActorExts.cs.ifdefed" startline="36" endline="46" pcid="720"/>
+</ClonePair>
+<ClonePair groupid="84" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/World.cs.ifdefed" startline="157" endline="162" pcid="596"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/World.cs.ifdefed" startline="164" endline="170" pcid="597"/>
+</ClonePair>
+<ClonePair groupid="85" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.TilesetBuilder/frmNew.Designer.cs.ifdefed" startline="14" endline="21" pcid="1319"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/ActorPropertiesDialog.Designer.cs.ifdefed" startline="14" endline="21" pcid="0"/>
+</ClonePair>
+<ClonePair groupid="86" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.TilesetBuilder/frmNew.Designer.cs.ifdefed" startline="14" endline="21" pcid="1319"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/ErrorListDialog.Designer.cs.ifdefed" startline="24" endline="31" pcid="7"/>
+</ClonePair>
+<ClonePair groupid="87" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.TilesetBuilder/frmNew.Designer.cs.ifdefed" startline="14" endline="21" pcid="1319"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/Form1.Designer.cs.ifdefed" startline="24" endline="31" pcid="9"/>
+</ClonePair>
+<ClonePair groupid="88" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.TilesetBuilder/frmNew.Designer.cs.ifdefed" startline="14" endline="21" pcid="1319"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/NewMapDialog.Designer.cs.ifdefed" startline="24" endline="31" pcid="39"/>
+</ClonePair>
+<ClonePair groupid="89" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.TilesetBuilder/frmNew.Designer.cs.ifdefed" startline="14" endline="21" pcid="1319"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/ResizeDialog.Designer.cs.ifdefed" startline="24" endline="31" pcid="46"/>
+</ClonePair>
+<ClonePair groupid="90" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.TilesetBuilder/frmNew.Designer.cs.ifdefed" startline="14" endline="21" pcid="1319"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.TilesetBuilder/frmBuilder.Designer.cs.ifdefed" startline="14" endline="21" pcid="1308"/>
+</ClonePair>
+<ClonePair groupid="91" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Utility/Command.cs.ifdefed" startline="356" endline="373" pcid="1331"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Effects/Missile.cs.ifdefed" startline="169" endline="175" pcid="909"/>
+</ClonePair>
+<ClonePair groupid="92" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Render/RenderInfantry.cs.ifdefed" startline="92" endline="118" pcid="1077"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Crates/HealUnitsCrateAction.cs.ifdefed" startline="26" endline="37" pcid="884"/>
+</ClonePair>
+<ClonePair groupid="93" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/RALoadScreen.cs.ifdefed" startline="36" endline="49" pcid="1060"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.D2k/D2kLoadScreen.cs.ifdefed" startline="33" endline="45" pcid="673"/>
+</ClonePair>
+<ClonePair groupid="94" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/RALoadScreen.cs.ifdefed" startline="51" endline="72" pcid="1061"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.D2k/D2kLoadScreen.cs.ifdefed" startline="47" endline="68" pcid="674"/>
+</ClonePair>
+<ClonePair groupid="95" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/CrushableInfantry.cs.ifdefed" startline="55" endline="61" pcid="893"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Buildings/Wall.cs.ifdefed" startline="36" endline="42" pcid="821"/>
+</ClonePair>
+<ClonePair groupid="96" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.Cnc/Missions/Gdi01Script.cs.ifdefed" startline="47" endline="57" pcid="622"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.Cnc/Missions/Gdi01Script.cs.ifdefed" startline="59" endline="69" pcid="623"/>
+</ClonePair>
+<ClonePair groupid="97" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Widgets/Widget.cs.ifdefed" startline="320" endline="328" pcid="573"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Widgets/Widget.cs.ifdefed" startline="332" endline="340" pcid="574"/>
+</ClonePair>
+<ClonePair groupid="98" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/ErrorListDialog.Designer.cs.ifdefed" startline="24" endline="31" pcid="7"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/ActorPropertiesDialog.Designer.cs.ifdefed" startline="14" endline="21" pcid="0"/>
+</ClonePair>
+<ClonePair groupid="99" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/ErrorListDialog.Designer.cs.ifdefed" startline="24" endline="31" pcid="7"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/Form1.Designer.cs.ifdefed" startline="24" endline="31" pcid="9"/>
+</ClonePair>
+<ClonePair groupid="100" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/ErrorListDialog.Designer.cs.ifdefed" startline="24" endline="31" pcid="7"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/NewMapDialog.Designer.cs.ifdefed" startline="24" endline="31" pcid="39"/>
+</ClonePair>
+<ClonePair groupid="101" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/ErrorListDialog.Designer.cs.ifdefed" startline="24" endline="31" pcid="7"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/ResizeDialog.Designer.cs.ifdefed" startline="24" endline="31" pcid="46"/>
+</ClonePair>
+<ClonePair groupid="102" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/ErrorListDialog.Designer.cs.ifdefed" startline="24" endline="31" pcid="7"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.TilesetBuilder/frmBuilder.Designer.cs.ifdefed" startline="14" endline="21" pcid="1308"/>
+</ClonePair>
+<ClonePair groupid="103" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/AI/AttackOrFleeFuzzy.cs.ifdefed" startline="90" endline="123" pcid="677"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/AI/AttackOrFleeFuzzy.cs.ifdefed" startline="125" endline="172" pcid="678"/>
+</ClonePair>
+<ClonePair groupid="104" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/AI/AttackOrFleeFuzzy.cs.ifdefed" startline="228" endline="235" pcid="683"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/AI/AttackOrFleeFuzzy.cs.ifdefed" startline="237" endline="249" pcid="684"/>
+</ClonePair>
+<ClonePair groupid="105" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.Cnc/Widgets/Logic/CncSettingsLogic.cs.ifdefed" startline="176" endline="196" pcid="650"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/Logic/SettingsMenuLogic.cs.ifdefed" startline="268" endline="288" pcid="1236"/>
+</ClonePair>
+<ClonePair groupid="106" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.Cnc/Widgets/Logic/CncSettingsLogic.cs.ifdefed" startline="176" endline="196" pcid="650"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/Logic/SettingsMenuLogic.cs.ifdefed" startline="290" endline="310" pcid="1237"/>
+</ClonePair>
+<ClonePair groupid="107" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.Cnc/Widgets/Logic/CncSettingsLogic.cs.ifdefed" startline="176" endline="196" pcid="650"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/Logic/SettingsMenuLogic.cs.ifdefed" startline="353" endline="372" pcid="1240"/>
+</ClonePair>
+<ClonePair groupid="108" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Activities/RepairBridge.cs.ifdefed" startline="22" endline="35" pcid="708"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Attack/AttackTesla.cs.ifdefed" startline="68" endline="78" pcid="761"/>
+</ClonePair>
+<ClonePair groupid="109" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Render/RenderInfantryPanic.cs.ifdefed" startline="31" endline="39" pcid="1080"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/TakeCover.cs.ifdefed" startline="86" endline="94" pcid="1138"/>
+</ClonePair>
+<ClonePair groupid="110" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Render/RenderInfantryPanic.cs.ifdefed" startline="46" endline="53" pcid="1081"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/TakeCover.cs.ifdefed" startline="101" endline="108" pcid="1139"/>
+</ClonePair>
+<ClonePair groupid="111" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Render/RenderBuildingWall.cs.ifdefed" startline="53" endline="69" pcid="1072"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Player/BaseAttackNotifier.cs.ifdefed" startline="34" endline="49" pcid="1022"/>
+</ClonePair>
+<ClonePair groupid="112" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/RenderDetectionCircle.cs.ifdefed" startline="20" endline="30" pcid="1093"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/RenderShroudCircle.cs.ifdefed" startline="36" endline="46" pcid="1099"/>
+</ClonePair>
+<ClonePair groupid="113" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/Logic/SettingsMenuLogic.cs.ifdefed" startline="268" endline="288" pcid="1236"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/Logic/SettingsMenuLogic.cs.ifdefed" startline="290" endline="310" pcid="1237"/>
+</ClonePair>
+<ClonePair groupid="114" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/Logic/SettingsMenuLogic.cs.ifdefed" startline="268" endline="288" pcid="1236"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/Logic/SettingsMenuLogic.cs.ifdefed" startline="353" endline="372" pcid="1240"/>
+</ClonePair>
+<ClonePair groupid="115" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/Logic/SettingsMenuLogic.cs.ifdefed" startline="290" endline="310" pcid="1237"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/Logic/SettingsMenuLogic.cs.ifdefed" startline="353" endline="372" pcid="1240"/>
+</ClonePair>
+<ClonePair groupid="116" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/Logic/SettingsMenuLogic.cs.ifdefed" startline="332" endline="351" pcid="1239"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/Logic/SettingsMenuLogic.cs.ifdefed" startline="353" endline="372" pcid="1240"/>
+</ClonePair>
+<ClonePair groupid="117" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Traits/World/Shroud.cs.ifdefed" startline="147" endline="160" pcid="476"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Traits/World/Shroud.cs.ifdefed" startline="248" endline="259" pcid="483"/>
+</ClonePair>
+<ClonePair groupid="118" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Actor.cs.ifdefed" startline="191" endline="197" pcid="217"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Effects/PowerdownIndicator.cs.ifdefed" startline="29" endline="35" pcid="916"/>
+</ClonePair>
+<ClonePair groupid="119" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/World/ResourceClaimLayer.cs.ifdefed" startline="50" endline="69" pcid="1275"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/World/ResourceClaimLayer.cs.ifdefed" startline="99" endline="119" pcid="1278"/>
+</ClonePair>
+<ClonePair groupid="120" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/ActorPropertiesDialog.Designer.cs.ifdefed" startline="14" endline="21" pcid="0"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/Form1.Designer.cs.ifdefed" startline="24" endline="31" pcid="9"/>
+</ClonePair>
+<ClonePair groupid="121" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/ActorPropertiesDialog.Designer.cs.ifdefed" startline="14" endline="21" pcid="0"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/NewMapDialog.Designer.cs.ifdefed" startline="24" endline="31" pcid="39"/>
+</ClonePair>
+<ClonePair groupid="122" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/ActorPropertiesDialog.Designer.cs.ifdefed" startline="14" endline="21" pcid="0"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/ResizeDialog.Designer.cs.ifdefed" startline="24" endline="31" pcid="46"/>
+</ClonePair>
+<ClonePair groupid="123" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/ActorPropertiesDialog.Designer.cs.ifdefed" startline="14" endline="21" pcid="0"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.TilesetBuilder/frmBuilder.Designer.cs.ifdefed" startline="14" endline="21" pcid="1308"/>
+</ClonePair>
+<ClonePair groupid="124" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Widgets/WidgetUtils.cs.ifdefed" startline="161" endline="214" pcid="584"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Effects/Bullet.cs.ifdefed" startline="154" endline="183" pcid="897"/>
+</ClonePair>
+<ClonePair groupid="125" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Map.cs.ifdefed" startline="248" endline="277" pcid="323"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Map.cs.ifdefed" startline="279" endline="309" pcid="324"/>
+</ClonePair>
+<ClonePair groupid="126" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Graphics/ShroudRenderer.cs.ifdefed" startline="59" endline="81" pcid="289"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Graphics/ShroudRenderer.cs.ifdefed" startline="83" endline="106" pcid="290"/>
+</ClonePair>
+<ClonePair groupid="127" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/Logic/LobbyUtils.cs.ifdefed" startline="239" endline="251" pcid="1198"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/Logic/LobbyUtils.cs.ifdefed" startline="253" endline="263" pcid="1199"/>
+</ClonePair>
+<ClonePair groupid="128" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.FileFormats/Primitives/Set.cs.ifdefed" startline="21" endline="26" pcid="200"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.FileFormats/Primitives/Set.cs.ifdefed" startline="28" endline="33" pcid="201"/>
+</ClonePair>
+<ClonePair groupid="129" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Player/HarvesterAttackNotifier.cs.ifdefed" startline="34" endline="49" pcid="1025"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Player/BaseAttackNotifier.cs.ifdefed" startline="34" endline="49" pcid="1022"/>
+</ClonePair>
+<ClonePair groupid="130" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Missions/DefaultShellmapScript.cs.ifdefed" startline="26" endline="34" pcid="959"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.Cnc/Missions/CncShellmapScript.cs.ifdefed" startline="27" endline="36" pcid="616"/>
+</ClonePair>
+<ClonePair groupid="131" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.TilesetBuilder/frmBuilder.Designer.cs.ifdefed" startline="14" endline="21" pcid="1308"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/Form1.Designer.cs.ifdefed" startline="24" endline="31" pcid="9"/>
+</ClonePair>
+<ClonePair groupid="132" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.TilesetBuilder/frmBuilder.Designer.cs.ifdefed" startline="14" endline="21" pcid="1308"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/NewMapDialog.Designer.cs.ifdefed" startline="24" endline="31" pcid="39"/>
+</ClonePair>
+<ClonePair groupid="133" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.TilesetBuilder/frmBuilder.Designer.cs.ifdefed" startline="14" endline="21" pcid="1308"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/ResizeDialog.Designer.cs.ifdefed" startline="24" endline="31" pcid="46"/>
+</ClonePair>
+<ClonePair groupid="134" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.FileFormats/FileFormats/Blowfish.cs.ifdefed" startline="70" endline="87" pcid="97"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.FileFormats/FileFormats/Blowfish.cs.ifdefed" startline="89" endline="106" pcid="98"/>
+</ClonePair>
+<ClonePair groupid="135" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/ResizeDialog.Designer.cs.ifdefed" startline="24" endline="31" pcid="46"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/Form1.Designer.cs.ifdefed" startline="24" endline="31" pcid="9"/>
+</ClonePair>
+<ClonePair groupid="136" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/ResizeDialog.Designer.cs.ifdefed" startline="24" endline="31" pcid="46"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/NewMapDialog.Designer.cs.ifdefed" startline="24" endline="31" pcid="39"/>
+</ClonePair>
+<ClonePair groupid="137" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Player/ProductionQueue.cs.ifdefed" startline="150" endline="155" pcid="1036"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Player/ProductionQueue.cs.ifdefed" startline="157" endline="162" pcid="1037"/>
+</ClonePair>
+<ClonePair groupid="138" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Player/ProductionQueue.cs.ifdefed" startline="382" endline="407" pcid="1046"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Effects/LaserZap.cs.ifdefed" startline="56" endline="77" pcid="906"/>
+</ClonePair>
+<ClonePair groupid="139" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/Surface.cs.ifdefed" startline="130" endline="137" pcid="52"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/Surface.cs.ifdefed" startline="139" endline="146" pcid="53"/>
+</ClonePair>
+<ClonePair groupid="140" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/Surface.cs.ifdefed" startline="531" endline="537" pcid="71"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Sound.cs.ifdefed" startline="64" endline="70" pcid="377"/>
+</ClonePair>
+<ClonePair groupid="141" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Render/RenderBuilding.cs.ifdefed" startline="85" endline="89" pcid="1067"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Render/RenderBuilding.cs.ifdefed" startline="97" endline="101" pcid="1069"/>
+</ClonePair>
+<ClonePair groupid="142" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Sound.cs.ifdefed" startline="158" endline="164" pcid="381"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Game/Sound.cs.ifdefed" startline="181" endline="188" pcid="383"/>
+</ClonePair>
+<ClonePair groupid="143" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/NewMapDialog.Designer.cs.ifdefed" startline="24" endline="31" pcid="39"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Editor/Form1.Designer.cs.ifdefed" startline="24" endline="31" pcid="9"/>
+</ClonePair>
+<ClonePair groupid="144" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Activities/Wait.cs.ifdefed" startline="33" endline="40" pcid="717"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Activities/Wait.cs.ifdefed" startline="60" endline="67" pcid="718"/>
+</ClonePair>
+<ClonePair groupid="145" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Render/RenderUnit.cs.ifdefed" startline="30" endline="33" pcid="1083"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/OpenRA/OpenRA/OpenRA.Mods.RA/Render/RenderUnit.cs.ifdefed" startline="41" endline="45" pcid="1085"/>
+</ClonePair>
+</Clones>
+</SimCad>

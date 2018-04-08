@@ -1,0 +1,281 @@
+<clones>
+<systeminfo processor="nicad3" system="scriptcs-0.17.1" granularity="functions-blind" threshold="30%" minlines="5" maxlines="2500"/>
+<cloneinfo npcs="363" npairs="55"/>
+<runinfo ncompares="8036" cputime="49351"/>
+
+<clone nlines="29" similarity="86">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/test/ScriptCs.Tests.Acceptance/Support/FileSystem.cs.ifdefed" startline="11" endline="56" pcid="28"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/test/ScriptCs.Tests.Acceptance/Support/FileSystem.cs.ifdefed" startline="58" endline="103" pcid="29"></source>
+</clone>
+
+<clone nlines="20" similarity="80">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs/Command/ExecuteScriptCommand.cs.ifdefed" startline="22" endline="52" pcid="151"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs/Command/ExecuteLooseScriptCommand.cs.ifdefed" startline="22" endline="47" pcid="143"></source>
+</clone>
+
+<clone nlines="13" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Hosting/LineEditor.cs.ifdefed" startline="600" endline="617" pcid="194"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Hosting/LineEditor.cs.ifdefed" startline="619" endline="635" pcid="195"></source>
+</clone>
+
+<clone nlines="9" similarity="70">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Engine.Mono/Segmenter/Analyser/CodeAnalyzer.cs.ifdefed" startline="12" endline="21" pcid="361"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Engine.Mono/Segmenter/Analyser/CodeAnalyzer.cs.ifdefed" startline="23" endline="35" pcid="362"></source>
+</clone>
+
+<clone nlines="9" similarity="70">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Hosting/LineEditor.cs.ifdefed" startline="1075" endline="1088" pcid="220"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Hosting/LineEditor.cs.ifdefed" startline="1090" endline="1098" pcid="221"></source>
+</clone>
+
+<clone nlines="6" similarity="83">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Hosting/LineEditor.cs.ifdefed" startline="645" endline="653" pcid="197"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Hosting/LineEditor.cs.ifdefed" startline="655" endline="663" pcid="198"></source>
+</clone>
+
+<clone nlines="6" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Hosting/LineEditor.cs.ifdefed" startline="471" endline="477" pcid="186"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Hosting/LineEditor.cs.ifdefed" startline="479" endline="485" pcid="187"></source>
+</clone>
+
+<clone nlines="5" similarity="80">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs/ProfileOptimizationShim.cs.ifdefed" startline="10" endline="18" pcid="138"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs/ProfileOptimizationShim.cs.ifdefed" startline="20" endline="28" pcid="139"></source>
+</clone>
+
+<clone nlines="5" similarity="80">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/ScriptPackSession.cs.ifdefed" startline="55" endline="61" pcid="313"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/ScriptPackSession.cs.ifdefed" startline="63" endline="69" pcid="314"></source>
+</clone>
+
+<clone nlines="5" similarity="80">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Hosting/LineEditor.cs.ifdefed" startline="948" endline="954" pcid="214"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/ScriptPackSession.cs.ifdefed" startline="63" endline="69" pcid="314"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="195" endline="202" pcid="295"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="226" endline="233" pcid="299"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="164" endline="171" pcid="291"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="226" endline="233" pcid="299"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="133" endline="140" pcid="287"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="226" endline="233" pcid="299"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="103" endline="110" pcid="283"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="226" endline="233" pcid="299"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="73" endline="80" pcid="279"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="226" endline="233" pcid="299"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="187" endline="193" pcid="294"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="218" endline="224" pcid="298"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="156" endline="162" pcid="290"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="218" endline="224" pcid="298"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="125" endline="131" pcid="286"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="218" endline="224" pcid="298"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="95" endline="101" pcid="282"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="218" endline="224" pcid="298"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="57" endline="63" pcid="277"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="218" endline="224" pcid="298"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="179" endline="185" pcid="293"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="210" endline="216" pcid="297"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="148" endline="154" pcid="289"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="210" endline="216" pcid="297"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="117" endline="123" pcid="285"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="210" endline="216" pcid="297"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="87" endline="93" pcid="281"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="210" endline="216" pcid="297"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="49" endline="55" pcid="276"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="210" endline="216" pcid="297"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="164" endline="171" pcid="291"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="195" endline="202" pcid="295"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="133" endline="140" pcid="287"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="195" endline="202" pcid="295"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="103" endline="110" pcid="283"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="195" endline="202" pcid="295"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="73" endline="80" pcid="279"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="195" endline="202" pcid="295"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="156" endline="162" pcid="290"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="187" endline="193" pcid="294"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="125" endline="131" pcid="286"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="187" endline="193" pcid="294"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="95" endline="101" pcid="282"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="187" endline="193" pcid="294"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="57" endline="63" pcid="277"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="187" endline="193" pcid="294"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="148" endline="154" pcid="289"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="179" endline="185" pcid="293"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="117" endline="123" pcid="285"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="179" endline="185" pcid="293"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="87" endline="93" pcid="281"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="179" endline="185" pcid="293"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="49" endline="55" pcid="276"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="179" endline="185" pcid="293"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="133" endline="140" pcid="287"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="164" endline="171" pcid="291"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="103" endline="110" pcid="283"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="164" endline="171" pcid="291"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="73" endline="80" pcid="279"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="164" endline="171" pcid="291"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="125" endline="131" pcid="286"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="156" endline="162" pcid="290"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="95" endline="101" pcid="282"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="156" endline="162" pcid="290"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="57" endline="63" pcid="277"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="156" endline="162" pcid="290"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="117" endline="123" pcid="285"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="148" endline="154" pcid="289"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="87" endline="93" pcid="281"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="148" endline="154" pcid="289"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="49" endline="55" pcid="276"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="148" endline="154" pcid="289"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="103" endline="110" pcid="283"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="133" endline="140" pcid="287"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="73" endline="80" pcid="279"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="133" endline="140" pcid="287"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="95" endline="101" pcid="282"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="125" endline="131" pcid="286"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="57" endline="63" pcid="277"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="125" endline="131" pcid="286"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="87" endline="93" pcid="281"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="117" endline="123" pcid="285"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="49" endline="55" pcid="276"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="117" endline="123" pcid="285"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="73" endline="80" pcid="279"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="103" endline="110" pcid="283"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="57" endline="63" pcid="277"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="95" endline="101" pcid="282"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="49" endline="55" pcid="276"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="87" endline="93" pcid="281"></source>
+</clone>
+
+</clones>

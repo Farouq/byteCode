@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="simcad.xsl"?>
+<SimCad version="SimCad 2.2">
+<DetectionTimeStamp>2018-03-24 15:52:43.158</DetectionTimeStamp>
+<SearchInput>n/a</SearchInput>
+<SearchTarget>/Users/farouq/Desktop/Test_Cases/1-ASXGUI</SearchTarget>
+<SourceFragmentType>function</SourceFragmentType>
+<SourceTransformation>generous</SourceTransformation>
+<CloneType>Type-1, Type-2, Type-3</CloneType>
+<CloneGroupingType>group</CloneGroupingType>
+<SourceFragmentTotal>139</SourceFragmentTotal>
+<CloneFragmentTotal>54</CloneFragmentTotal>
+<CloneSetTotal>16</CloneSetTotal>
+<Clones fragmentType="function" cloneSetType="group" nfragments="54" ngroups="16">
+<CloneGroup groupid="1" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/App.xaml.cs.ifdefed" startline="20" endline="25" pcid="3"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/App.xaml.cs.ifdefed" startline="27" endline="32" pcid="4"/>
+</CloneGroup>
+<CloneGroup groupid="2" nfragments="4" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/App.xaml.cs.ifdefed" startline="37" endline="42" pcid="5"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/App.xaml.cs.ifdefed" startline="44" endline="49" pcid="6"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/App.xaml.cs.ifdefed" startline="54" endline="59" pcid="7"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/App.xaml.cs.ifdefed" startline="61" endline="66" pcid="8"/>
+</CloneGroup>
+<CloneGroup groupid="3" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/About.xaml.cs.ifdefed" startline="114" endline="117" pcid="0"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ImportProfile.xaml.cs.ifdefed" startline="35" endline="38" pcid="54"/>
+</CloneGroup>
+<CloneGroup groupid="4" nfragments="7" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/About.xaml.cs.ifdefed" startline="124" endline="129" pcid="1"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Edit.xaml.cs.ifdefed" startline="561" endline="566" pcid="18"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ExportProfile.xaml.cs.ifdefed" startline="46" endline="51" pcid="36"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ImportProfile.xaml.cs.ifdefed" startline="157" endline="162" pcid="60"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/MainForm.xaml.cs.ifdefed" startline="500" endline="505" pcid="70"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="110" endline="115" pcid="103"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Updating.xaml.cs.ifdefed" startline="76" endline="81" pcid="120"/>
+</CloneGroup>
+<CloneGroup groupid="5" nfragments="4" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/About.xaml.cs.ifdefed" startline="131" endline="143" pcid="2"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ImportProfile.xaml.cs.ifdefed" startline="164" endline="176" pcid="61"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="117" endline="129" pcid="104"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Updating.xaml.cs.ifdefed" startline="83" endline="95" pcid="121"/>
+</CloneGroup>
+<CloneGroup groupid="6" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/MainForm.xaml.cs.ifdefed" startline="795" endline="800" pcid="78"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/MainForm.xaml.cs.ifdefed" startline="949" endline="956" pcid="85"/>
+</CloneGroup>
+<CloneGroup groupid="7" nfragments="3" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/MainForm.xaml.cs.ifdefed" startline="1195" endline="1203" pcid="96"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/MainForm.xaml.cs.ifdefed" startline="1205" endline="1211" pcid="97"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/MainForm.xaml.cs.ifdefed" startline="1252" endline="1258" pcid="99"/>
+</CloneGroup>
+<CloneGroup groupid="8" nfragments="4" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Edit.xaml.cs.ifdefed" startline="545" endline="559" pcid="17"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="92" endline="103" pcid="102"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ImportProfile.xaml.cs.ifdefed" startline="121" endline="133" pcid="57"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ExportProfile.xaml.cs.ifdefed" startline="75" endline="88" pcid="38"/>
+</CloneGroup>
+<CloneGroup groupid="9" nfragments="2" type="Type-1">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Edit.xaml.cs.ifdefed" startline="568" endline="583" pcid="19"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ExportProfile.xaml.cs.ifdefed" startline="53" endline="68" pcid="37"/>
+</CloneGroup>
+<CloneGroup groupid="10" nfragments="5" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/FirstLoad.xaml.cs.ifdefed" startline="91" endline="100" pcid="46"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/FirstLoad.xaml.cs.ifdefed" startline="54" endline="63" pcid="44"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/FirstLoad.xaml.cs.ifdefed" startline="128" endline="137" pcid="48"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/FirstLoad.xaml.cs.ifdefed" startline="165" endline="174" pcid="50"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/FirstLoad.xaml.cs.ifdefed" startline="213" endline="222" pcid="53"/>
+</CloneGroup>
+<CloneGroup groupid="11" nfragments="3" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Edit.xaml.cs.ifdefed" startline="966" endline="982" pcid="32"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ExportProfile.xaml.cs.ifdefed" startline="111" endline="119" pcid="41"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ImportProfile.xaml.cs.ifdefed" startline="142" endline="150" pcid="59"/>
+</CloneGroup>
+<CloneGroup groupid="12" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ImportProfile.xaml.cs.ifdefed" startline="112" endline="119" pcid="56"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ExportProfile.xaml.cs.ifdefed" startline="95" endline="102" pcid="39"/>
+</CloneGroup>
+<CloneGroup groupid="13" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ImportProfile.xaml.cs.ifdefed" startline="135" endline="140" pcid="58"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ExportProfile.xaml.cs.ifdefed" startline="104" endline="109" pcid="40"/>
+</CloneGroup>
+<CloneGroup groupid="14" nfragments="5" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="137" endline="145" pcid="105"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="147" endline="155" pcid="106"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="157" endline="165" pcid="107"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="297" endline="305" pcid="116"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="180" endline="189" pcid="109"/>
+</CloneGroup>
+<CloneGroup groupid="15" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="258" endline="266" pcid="112"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="287" endline="295" pcid="115"/>
+</CloneGroup>
+<CloneGroup groupid="16" nfragments="5" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/FirstLoad.xaml.cs.ifdefed" startline="28" endline="52" pcid="43"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/FirstLoad.xaml.cs.ifdefed" startline="187" endline="211" pcid="52"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/FirstLoad.xaml.cs.ifdefed" startline="65" endline="89" pcid="45"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/FirstLoad.xaml.cs.ifdefed" startline="102" endline="126" pcid="47"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/FirstLoad.xaml.cs.ifdefed" startline="139" endline="163" pcid="49"/>
+</CloneGroup>
+</Clones>
+</SimCad>

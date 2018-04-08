@@ -1,0 +1,262 @@
+Similarity Analyser 2.5.6 - http://www.harukizaemon.com/simian
+Copyright (c) 2003-2017 Simon Harris.  All rights reserved.
+Simian is not free unless used solely for non-commercial or evaluation purposes.
+{failOnDuplication=true, ignoreCharacterCase=true, ignoreCurlyBraces=true, ignoreIdentifierCase=true, ignoreModifiers=true, ignoreStringCase=true, threshold=6}
+Found 6 duplicate lines with fingerprint 280160ef1cf177a0dc29584a01fe2279 in the following files:
+ Between lines 212 and 220 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.FileFormats/FileFormats/BlowfishKeyProvider.cs
+ Between lines 190 and 199 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.FileFormats/FileFormats/BlowfishKeyProvider.cs
+Found 6 duplicate lines with fingerprint ea0e4ea1c34b8a1df558cd5ff1a7c35f in the following files:
+ Between lines 39 and 46 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Air/Fly.cs
+ Between lines 27 and 34 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Air/FlyCircle.cs
+Found 6 duplicate lines with fingerprint fbf57965ec884e8dc28e6cbe68c41abf in the following files:
+ Between lines 18 and 39 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Editor/ResizeDialog.Designer.cs
+ Between lines 18 and 39 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Editor/PropertiesDialog.Designer.cs
+ Between lines 16 and 31 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Editor/MapSelect.Designer.cs
+ Between lines 18 and 39 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Editor/Form1.Designer.cs
+ Between lines 18 and 39 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Editor/ErrorListDialog.Designer.cs
+ Between lines 8 and 29 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Editor/ActorPropertiesDialog.Designer.cs
+ Between lines 18 and 39 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Editor/NewMapDialog.Designer.cs
+ Between lines 8 and 29 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.TilesetBuilder/frmBuilder.Designer.cs
+ Between lines 8 and 29 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.TilesetBuilder/frmNew.Designer.cs
+Found 6 duplicate lines with fingerprint c52cb8af7c58a502175e75a8053bb154 in the following files:
+ Between lines 71 and 76 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/BuildPaletteWidget.cs
+ Between lines 75 and 80 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.Cnc/Widgets/ProductionPaletteWidget.cs
+Found 6 duplicate lines with fingerprint cc58d72f61094968bd87bd5c85a8ae7e in the following files:
+ Between lines 346 and 353 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Editor/LegacyMapImporter.cs
+ Between lines 287 and 294 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Editor/LegacyMapImporter.cs
+Found 6 duplicate lines with fingerprint a68ad90d7aa0c873c8fe11b17ea764e4 in the following files:
+ Between lines 30 and 39 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/NukePaletteEffect.cs
+ Between lines 30 and 39 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/ChronoshiftPaletteEffect.cs
+Found 6 duplicate lines with fingerprint 63af8c56509cc1e58d9bc1ed9d7e5dab in the following files:
+ Between lines 388 and 396 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Missions/Allies03Script.cs
+ Between lines 347 and 355 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Missions/Allies04Script.cs
+Found 6 duplicate lines with fingerprint 17320f548a2aa3c753817640d25c8f44 in the following files:
+ Between lines 285 and 293 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Game/Map.cs
+ Between lines 253 and 261 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Game/Map.cs
+Found 6 duplicate lines with fingerprint 1dd2d7327047babad0fa4e0193b0ad5f in the following files:
+ Between lines 109 and 117 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/Logic/RAInstallFromCDLogic.cs
+ Between lines 757 and 765 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.D2k/Widgets/Logic/D2kExtractGameFilesLogic.cs
+ Between lines 120 and 128 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.D2k/Widgets/Logic/D2kInstallFromCDLogic.cs
+Found 6 duplicate lines with fingerprint b1f4654ccef10adf9e64717aebe4ca38 in the following files:
+ Between lines 509 and 514 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Game/Sound.cs
+ Between lines 497 and 502 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Game/Sound.cs
+Found 6 duplicate lines with fingerprint 3b4d18a9c058cde6200d1466f0fb3b6f in the following files:
+ Between lines 263 and 269 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Editor/Form1.cs
+ Between lines 232 and 238 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Editor/Form1.cs
+Found 6 duplicate lines with fingerprint 03709a3dba39271ee7fcc968cb6c5b80 in the following files:
+ Between lines 36 and 43 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Game/Graphics/SpriteRenderer.cs
+ Between lines 34 and 41 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Game/Graphics/QuadRenderer.cs
+Found 6 duplicate lines with fingerprint 41ebb2ac32599d1fc59c5e6ac559217b in the following files:
+ Between lines 464 and 471 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/Logic/LobbyLogic.cs
+ Between lines 421 and 428 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/Logic/LobbyLogic.cs
+Found 6 duplicate lines with fingerprint 4a58e7a14d6671ace9cfefc5b56c154e in the following files:
+ Between lines 24 and 30 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/Logic/DownloadPackagesLogic.cs
+ Between lines 24 and 30 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.D2k/Widgets/Logic/D2kDownloadPackagesLogic.cs
+Found 6 duplicate lines with fingerprint 31e9bc4f43eada011820e3aea8e6abd4 in the following files:
+ Between lines 154 and 159 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.Cnc/Missions/Gdi01Script.cs
+ Between lines 144 and 149 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.Cnc/Missions/Gdi01Script.cs
+Found 6 duplicate lines with fingerprint a08871fecbe14022e8f522609bcaa461 in the following files:
+ Between lines 106 and 116 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Game/Graphics/Minimap.cs
+ Between lines 71 and 81 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Game/Graphics/Minimap.cs
+ Between lines 40 and 50 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Game/Graphics/Minimap.cs
+Found 6 duplicate lines with fingerprint 3b96b693951b6d8e884d2adb3c85cefa in the following files:
+ Between lines 75 and 80 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Missions/Allies03Script.cs
+ Between lines 51 and 56 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Missions/Survival01Script.cs
+Found 6 duplicate lines with fingerprint 17c7dc37d4790cb19909323328bac9e2 in the following files:
+ Between lines 134 and 139 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.Cnc/Missions/Gdi01Script.cs
+ Between lines 124 and 129 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.Cnc/Missions/Gdi01Script.cs
+Found 6 duplicate lines with fingerprint 1c182f6c2890a0de272d81e6e12ece10 in the following files:
+ Between lines 650 and 655 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Game/Sound.cs
+ Between lines 335 and 340 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Game/Sound.cs
+Found 6 duplicate lines with fingerprint 6bff42f1c2107af8eb12293663a2ef01 in the following files:
+ Between lines 62 and 70 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.FileFormats/FileFormats/Format80.cs
+ Between lines 15 and 23 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.FileFormats/FileFormats/Format40.cs
+Found 6 duplicate lines with fingerprint 7f9fa3394f1baf259cb31a474d71583f in the following files:
+ Between lines 165 and 170 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/ColorMixerWidget.cs
+ Between lines 193 and 200 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Game/Widgets/ScrollPanelWidget.cs
+Found 6 duplicate lines with fingerprint a17fb7dea23719c8539a4438cf7c83dd in the following files:
+ Between lines 130 and 138 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Game/Graphics/Minimap.cs
+ Between lines 102 and 110 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Game/Graphics/Minimap.cs
+Found 7 duplicate lines with fingerprint 2864c79c189a226f1f35d64cffeadffc in the following files:
+ Between lines 22 and 31 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.D2k/Widgets/Logic/D2kInstallLogic.cs
+ Between lines 22 and 31 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/Logic/RAInstallLogic.cs
+Found 7 duplicate lines with fingerprint ef0fd4adf953de5293c27980e562ca7f in the following files:
+ Between lines 148 and 154 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Editor/NewMapDialog.Designer.cs
+ Between lines 122 and 128 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Editor/ResizeDialog.Designer.cs
+Found 7 duplicate lines with fingerprint 329b5025c3c4a8065799f08b05b293e6 in the following files:
+ Between lines 112 and 118 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Editor/NewMapDialog.Designer.cs
+ Between lines 134 and 140 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Editor/ResizeDialog.Designer.cs
+Found 7 duplicate lines with fingerprint e8a7f3df174147cb6cdc73475c8c818f in the following files:
+ Between lines 100 and 116 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.FileFormats/Filesystem/InstallShieldPackage.cs
+ Between lines 152 and 168 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.FileFormats/Filesystem/MixFile.cs
+Found 7 duplicate lines with fingerprint 7043f114048cdf7752ec562fd524f76b in the following files:
+ Between lines 119 and 128 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.D2k/Widgets/Logic/D2kInstallFromCDLogic.cs
+ Between lines 756 and 765 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.D2k/Widgets/Logic/D2kExtractGameFilesLogic.cs
+Found 7 duplicate lines with fingerprint 006649cede02f363f0ec41b10bfe74d1 in the following files:
+ Between lines 39 and 50 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Game/Graphics/Minimap.cs
+ Between lines 70 and 81 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Game/Graphics/Minimap.cs
+Found 7 duplicate lines with fingerprint e0eb20d4b54557098641b819f367c5cb in the following files:
+ Between lines 61 and 71 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Game/PVecInt.cs
+ Between lines 62 and 72 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Game/PSubVec.cs
+ Between lines 58 and 68 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Game/CVec.cs
+Found 7 duplicate lines with fingerprint 0044f867c217529b469af5bbc5e19172 in the following files:
+ Between lines 130 and 136 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Editor/NewMapDialog.Designer.cs
+ Between lines 110 and 116 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Editor/ResizeDialog.Designer.cs
+Found 7 duplicate lines with fingerprint ba74eb639a740a0c4f49a4e7387a1b1e in the following files:
+ Between lines 8 and 31 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.TilesetBuilder/frmBuilder.Designer.cs
+ Between lines 18 and 41 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Editor/Form1.Designer.cs
+ Between lines 16 and 33 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Editor/MapSelect.Designer.cs
+Found 7 duplicate lines with fingerprint 767cc575b70737b2f084762cb113f5bc in the following files:
+ Between lines 21 and 33 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Orders/RepairOrderGenerator.cs
+ Between lines 30 and 42 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Orders/PowerDownOrderGenerator.cs
+Found 7 duplicate lines with fingerprint 9bf295b2c872968e0bd90a686261875c in the following files:
+ Between lines 56 and 63 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Game/Graphics/Animation.cs
+ Between lines 80 and 87 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Game/Graphics/Animation.cs
+Found 7 duplicate lines with fingerprint 6424ae16721265a9bc23851976729f1f in the following files:
+ Between lines 56 and 64 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Game/Widgets/SliderWidget.cs
+ Between lines 172 and 180 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/ColorMixerWidget.cs
+Found 7 duplicate lines with fingerprint 959c7fcc7f0953404f37d93ec257d610 in the following files:
+ Between lines 24 and 31 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.D2k/Widgets/Logic/D2kInstallFromCDLogic.cs
+ Between lines 23 and 30 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/Logic/RAInstallFromCDLogic.cs
+Found 7 duplicate lines with fingerprint 3a302b54788c04fc3789f2202b862453 in the following files:
+ Between lines 189 and 195 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Editor/NewMapDialog.Designer.cs
+ Between lines 180 and 186 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Editor/ResizeDialog.Designer.cs
+Found 7 duplicate lines with fingerprint 76f98146c81234a30806b1edb05c166b in the following files:
+ Between lines 95 and 109 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Missions/Allies04Script.cs
+ Between lines 123 and 137 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Missions/Allies03Script.cs
+Found 7 duplicate lines with fingerprint ef2263a50fb665275a7f7fdabe3c1de0 in the following files:
+ Between lines 698 and 707 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.D2k/Widgets/Logic/D2kExtractGameFilesLogic.cs
+ Between lines 99 and 108 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.D2k/Widgets/Logic/D2kInstallFromCDLogic.cs
+ Between lines 89 and 98 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/Logic/RAInstallFromCDLogic.cs
+Found 7 duplicate lines with fingerprint 039ff9103c28c92a9ba80480207ae3d7 in the following files:
+ Between lines 68 and 74 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.TilesetBuilder/frmBuilder.cs
+ Between lines 129 and 135 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.TilesetBuilder/frmBuilder.cs
+Found 7 duplicate lines with fingerprint 8dc22908ce43c6bd6a474f649bbd2e80 in the following files:
+ Between lines 35 and 42 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/RadarBinWidget.cs
+ Between lines 32 and 39 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/RadarWidget.cs
+Found 7 duplicate lines with fingerprint f4d3a47b0e9d153fe7c059b53e4684bb in the following files:
+ Between lines 26 and 37 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Game/Graphics/QuadRenderer.cs
+ Between lines 29 and 40 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Game/Graphics/LineRenderer.cs
+Found 7 duplicate lines with fingerprint 4303ba10256c519c83781228453f2063 in the following files:
+ Between lines 24 and 33 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.Cnc/Missions/CncShellmapScript.cs
+ Between lines 23 and 32 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Missions/DefaultShellmapScript.cs
+Found 7 duplicate lines with fingerprint 564cb805209acd7c030679a831c5442c in the following files:
+ Between lines 74 and 82 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Buildings/BibLayer.cs
+ Between lines 78 and 87 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/World/SmudgeLayer.cs
+Found 7 duplicate lines with fingerprint 3bc4e3a9e64da245ec6b19f3bf57d44b in the following files:
+ Between lines 156 and 163 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/RadarBinWidget.cs
+ Between lines 143 and 150 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/RadarWidget.cs
+Found 7 duplicate lines with fingerprint 3f3a1880cc471979508a8791bcd3cff6 in the following files:
+ Between lines 166 and 172 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Editor/NewMapDialog.Designer.cs
+ Between lines 98 and 104 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Editor/ResizeDialog.Designer.cs
+Found 8 duplicate lines with fingerprint fb065c6a71ff3436ce95fc0c699f3c29 in the following files:
+ Between lines 68 and 75 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Editor/ResizeDialog.Designer.cs
+ Between lines 212 and 219 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Editor/NewMapDialog.Designer.cs
+Found 8 duplicate lines with fingerprint 08f8f38c1f414a60d72e1f837018cca5 in the following files:
+ Between lines 43 and 59 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Editor/Properties/Resources.Designer.cs
+ Between lines 43 and 59 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.TilesetBuilder/Properties/Resources.Designer.cs
+Found 8 duplicate lines with fingerprint e891f8ff4eea43f2611d6d4a25facd8a in the following files:
+ Between lines 18 and 42 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Editor/PropertiesDialog.Designer.cs
+ Between lines 18 and 42 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Editor/NewMapDialog.Designer.cs
+Found 8 duplicate lines with fingerprint 7cd3f0c73f38bfc3f8aa7f08490428db in the following files:
+ Between lines 179 and 193 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Game/Widgets/ScrollPanelWidget.cs
+ Between lines 217 and 231 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.Cnc/Widgets/ProductionTabsWidget.cs
+Found 8 duplicate lines with fingerprint 7fff1d3dacb0a81d7a51e8299e63f640 in the following files:
+ Between lines 51 and 63 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Orders/PowerDownOrderGenerator.cs
+ Between lines 45 and 57 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Orders/RepairOrderGenerator.cs
+Found 9 duplicate lines with fingerprint 5bb083e8c755bb87204150b47b2ae542 in the following files:
+ Between lines 54 and 62 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.Cnc/Activities/HarvesterDockSequence.cs
+ Between lines 47 and 55 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Activities/RAHarvesterDockSequence.cs
+Found 9 duplicate lines with fingerprint 5fd5ed282bb1ae046cc37a772e9c311a in the following files:
+ Between lines 114 and 131 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/RadarBinWidget.cs
+ Between lines 111 and 128 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/RadarWidget.cs
+Found 9 duplicate lines with fingerprint 56fda8505933469739db678dfc8e73f8 in the following files:
+ Between lines 232 and 245 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Game/Map.cs
+ Between lines 231 and 244 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Editor/LegacyMapImporter.cs
+Found 9 duplicate lines with fingerprint 1f15db5ec80b94efc6992522b6122ba1 in the following files:
+ Between lines 70 and 84 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.D2k/D2kLoadScreen.cs
+ Between lines 74 and 88 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/RALoadScreen.cs
+ Between lines 120 and 134 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.Cnc/CncLoadScreen.cs
+Found 9 duplicate lines with fingerprint f89c03bc197b18c2ee19b6c1b77d704b in the following files:
+ Between lines 35 and 47 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.D2k/Widgets/Logic/D2kInstallFromCDLogic.cs
+ Between lines 35 and 46 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/Logic/RAInstallFromCDLogic.cs
+ Between lines 39 and 51 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.Cnc/Widgets/Logic/CncInstallFromCDLogic.cs
+Found 9 duplicate lines with fingerprint 3537862a41422048b4988f4b5d49a1a4 in the following files:
+ Between lines 27 and 39 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.D2k/D2kLoadScreen.cs
+ Between lines 30 and 42 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/RALoadScreen.cs
+Found 10 duplicate lines with fingerprint ac114477d940a3d100440d0c17f0620d in the following files:
+ Between lines 15 and 33 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/BuildingCaptureNotification.cs
+ Between lines 15 and 33 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.D2k/BuildingCaptureNotification.cs
+Found 10 duplicate lines with fingerprint fe7c1ea210739d4e118c93e384d16a91 in the following files:
+ Between lines 93 and 107 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/RadarWidget.cs
+ Between lines 96 and 110 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/RadarBinWidget.cs
+Found 10 duplicate lines with fingerprint f0f7f60fd2ec1c743d0c2442747dd3e8 in the following files:
+ Between lines 164 and 180 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/RadarWidget.cs
+ Between lines 181 and 197 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/RadarBinWidget.cs
+Found 10 duplicate lines with fingerprint 2bf9b4fc44953385f94b7a5402d600ea in the following files:
+ Between lines 43 and 57 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/ObserverSupportPowerIconsWidget.cs
+ Between lines 42 and 56 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/ObserverProductionIconsWidget.cs
+Found 10 duplicate lines with fingerprint 7bd567a96d037feef616de7b26fbac50 in the following files:
+ Between lines 81 and 94 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/Logic/RAInstallFromCDLogic.cs
+ Between lines 90 and 103 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.Cnc/Widgets/Logic/CncInstallFromCDLogic.cs
+ Between lines 91 and 104 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.D2k/Widgets/Logic/D2kInstallFromCDLogic.cs
+Found 10 duplicate lines with fingerprint 1e08237c4a650f80b672598baa5bb0f4 in the following files:
+ Between lines 56 and 70 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/Logic/RAInstallFromCDLogic.cs
+ Between lines 69 and 83 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.Cnc/Widgets/Logic/CncInstallFromCDLogic.cs
+ Between lines 65 and 79 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.D2k/Widgets/Logic/D2kInstallFromCDLogic.cs
+Found 10 duplicate lines with fingerprint 11078c862b5196ceacd01af67f4cfffd in the following files:
+ Between lines 79 and 89 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/ObserverSupportPowerIconsWidget.cs
+ Between lines 81 and 91 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/ObserverProductionIconsWidget.cs
+Found 10 duplicate lines with fingerprint 5883a4071d079b7cbb66ef228754b6a2 in the following files:
+ Between lines 593 and 607 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/AI/HackyAI.cs
+ Between lines 536 and 550 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/AI/HackyAI.cs
+Found 10 duplicate lines with fingerprint 3d2ef195bee60efc9cd77639b2b79d95 in the following files:
+ Between lines 34 and 46 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/Logic/RAInstallFromCDLogic.cs
+ Between lines 34 and 47 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.D2k/Widgets/Logic/D2kInstallFromCDLogic.cs
+Found 10 duplicate lines with fingerprint 98dffb4d301ce94ac15c35e0057d0319 in the following files:
+ Between lines 188 and 202 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Utility/Command.cs
+ Between lines 155 and 169 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Utility/Command.cs
+ Between lines 216 and 230 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Utility/Command.cs
+Found 11 duplicate lines with fingerprint 42b00aba6844bb707d99106d7dc2bfb1 in the following files:
+ Between lines 134 and 147 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/Logic/IngameChatLogic.cs
+ Between lines 314 and 327 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/Logic/LobbyLogic.cs
+Found 11 duplicate lines with fingerprint a5b773093bf6cbb38265a5486f420783 in the following files:
+ Between lines 81 and 99 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Activities/FindResources.cs
+ Between lines 353 and 371 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Harvester.cs
+Found 12 duplicate lines with fingerprint 759cfe3ca28c0ee671d209232264a997 in the following files:
+ Between lines 196 and 207 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Editor/ResizeDialog.Designer.cs
+ Between lines 254 and 265 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Editor/NewMapDialog.Designer.cs
+Found 12 duplicate lines with fingerprint ba535de272df04cf7ee35c4b3a4a9888 in the following files:
+ Between lines 22 and 41 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Editor/Properties/Resources.Designer.cs
+ Between lines 22 and 41 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.TilesetBuilder/Properties/Resources.Designer.cs
+Found 12 duplicate lines with fingerprint d75d5daa9878cf5dc84f024ff87f6a23 in the following files:
+ Between lines 23 and 34 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/CrateDrop.cs
+ Between lines 22 and 33 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/CrateSpawner.cs
+Found 13 duplicate lines with fingerprint 906d21c6fd21788a57f6616a840b5ba7 in the following files:
+ Between lines 39 and 57 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/SupportPowers/AirstrikePower.cs
+ Between lines 44 and 62 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/SupportPowers/ParatroopersPower.cs
+Found 13 duplicate lines with fingerprint 484f72f8e4ee34801f63d352fa795981 in the following files:
+ Between lines 211 and 228 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Utility/Command.cs
+ Between lines 242 and 258 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Utility/Command.cs
+ Between lines 302 and 319 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Utility/Command.cs
+Found 13 duplicate lines with fingerprint fe232b736ed194c0b62fb6cf9f6c5afd in the following files:
+ Between lines 58 and 79 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.D2k/Widgets/Logic/D2kInstallFromCDLogic.cs
+ Between lines 62 and 83 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.Cnc/Widgets/Logic/CncInstallFromCDLogic.cs
+Found 14 duplicate lines with fingerprint 54a47c3e4041a7ff799ad4bd90fc9521 in the following files:
+ Between lines 149 and 166 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Game/Widgets/ViewportScrollControllerWidget.cs
+ Between lines 137 and 155 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.Cnc/Widgets/CncWorldInteractionControllerWidget.cs
+Found 14 duplicate lines with fingerprint ac95c604e51d046c1e2f31a678093f61 in the following files:
+ Between lines 81 and 101 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/Logic/RAInstallFromCDLogic.cs
+ Between lines 91 and 111 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.D2k/Widgets/Logic/D2kInstallFromCDLogic.cs
+Found 22 duplicate lines with fingerprint 8ea4f02bc71b32fa98c4dc80dd5d7dce in the following files:
+ Between lines 53 and 89 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/RadarWidget.cs
+ Between lines 56 and 92 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/RadarBinWidget.cs
+Found 30 duplicate lines with fingerprint 8fa3282f2f7c5a806d23686f58876bf6 in the following files:
+ Between lines 45 and 92 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/RALoadScreen.cs
+ Between lines 41 and 88 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.D2k/D2kLoadScreen.cs
+Found 43 duplicate lines with fingerprint 80630d4eb9d615d962cedf6c2bea62ff in the following files:
+ Between lines 33 and 108 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.D2k/Widgets/Logic/D2kDownloadPackagesLogic.cs
+ Between lines 33 and 108 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/OpenRA/OpenRA/OpenRA.Mods.RA/Widgets/Logic/DownloadPackagesLogic.cs
+Found 1406 duplicate lines in 157 blocks in 80 files
+Processed a total of 36964 significant (73237 raw) lines in 617 files
+Processing time: 0.806sec

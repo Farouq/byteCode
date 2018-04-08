@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="simcad.xsl"?>
+<SimCad version="SimCad 2.2">
+<DetectionTimeStamp>2018-03-24 18:37:36.856</DetectionTimeStamp>
+<SearchInput>n/a</SearchInput>
+<SearchTarget>/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1</SearchTarget>
+<SourceFragmentType>function</SourceFragmentType>
+<SourceTransformation>generous</SourceTransformation>
+<CloneType>Type-1, Type-2, Type-3</CloneType>
+<CloneGroupingType>pair</CloneGroupingType>
+<SourceFragmentTotal>215</SourceFragmentTotal>
+<CloneFragmentTotal>36</CloneFragmentTotal>
+<CloneSetTotal>56</CloneSetTotal>
+<Clones fragmentType="function" cloneSetType="pair" nfragments="36" ngroups="56">
+<ClonePair groupid="1" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Hosting/LineEditor.cs.ifdefed" startline="203" endline="208" pcid="88"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Hosting/LineEditor.cs.ifdefed" startline="794" endline="800" pcid="116"/>
+</ClonePair>
+<ClonePair groupid="2" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Hosting/LineEditor.cs.ifdefed" startline="471" endline="477" pcid="99"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Hosting/LineEditor.cs.ifdefed" startline="479" endline="485" pcid="100"/>
+</ClonePair>
+<ClonePair groupid="3" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Core/ScriptExecutorExtensions.cs.ifdefed" startline="13" endline="20" pcid="66"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Core/ScriptExecutorExtensions.cs.ifdefed" startline="29" endline="37" pcid="67"/>
+</ClonePair>
+<ClonePair groupid="4" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Core/Guard.cs.ifdefed" startline="21" endline="29" pcid="35"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Core/Guard.cs.ifdefed" startline="41" endline="49" pcid="36"/>
+</ClonePair>
+<ClonePair groupid="5" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/test/ScriptCs.Tests.Acceptance/ScriptPacks.cs.ifdefed" startline="10" endline="27" pcid="206"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/test/ScriptCs.Tests.Acceptance/ScriptExecution.cs.ifdefed" startline="69" endline="84" pcid="198"/>
+</ClonePair>
+<ClonePair groupid="6" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/test/ScriptCs.Core.Tests/ReplCommands/ScriptPacksCommandTests.cs.ifdefed" startline="54" endline="65" pcid="179"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/test/ScriptCs.Core.Tests/ReplCommands/ScriptPacksCommandTests.cs.ifdefed" startline="67" endline="78" pcid="180"/>
+</ClonePair>
+<ClonePair groupid="7" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/test/ScriptCs.Tests.Acceptance/ScriptExecution.cs.ifdefed" startline="53" endline="67" pcid="197"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/test/ScriptCs.Tests.Acceptance/ScriptExecution.cs.ifdefed" startline="103" endline="117" pcid="200"/>
+</ClonePair>
+<ClonePair groupid="8" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/test/ScriptCs.Tests.Acceptance/ScriptExecution.cs.ifdefed" startline="53" endline="67" pcid="197"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/test/ScriptCs.Tests.Acceptance/Configuration.cs.ifdefed" startline="10" endline="27" pcid="183"/>
+</ClonePair>
+<ClonePair groupid="9" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/test/ScriptCs.Tests.Acceptance/ScriptExecution.cs.ifdefed" startline="69" endline="84" pcid="198"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/test/ScriptCs.Tests.Acceptance/ScriptExecution.cs.ifdefed" startline="103" endline="117" pcid="200"/>
+</ClonePair>
+<ClonePair groupid="10" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/test/ScriptCs.Tests.Acceptance/Configuration.cs.ifdefed" startline="10" endline="27" pcid="183"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/test/ScriptCs.Tests.Acceptance/Configuration.cs.ifdefed" startline="29" endline="50" pcid="184"/>
+</ClonePair>
+<ClonePair groupid="11" nfragments="2" type="Type-3">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/test/ScriptCs.Tests.Acceptance/Support/FileSystem.cs.ifdefed" startline="11" endline="56" pcid="207"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/test/ScriptCs.Tests.Acceptance/Support/FileSystem.cs.ifdefed" startline="58" endline="103" pcid="208"/>
+</ClonePair>
+<ClonePair groupid="12" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="49" endline="55" pcid="2"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="87" endline="93" pcid="6"/>
+</ClonePair>
+<ClonePair groupid="13" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="49" endline="55" pcid="2"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="117" endline="123" pcid="9"/>
+</ClonePair>
+<ClonePair groupid="14" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="49" endline="55" pcid="2"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="148" endline="154" pcid="12"/>
+</ClonePair>
+<ClonePair groupid="15" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="49" endline="55" pcid="2"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="179" endline="185" pcid="15"/>
+</ClonePair>
+<ClonePair groupid="16" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="49" endline="55" pcid="2"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="210" endline="216" pcid="18"/>
+</ClonePair>
+<ClonePair groupid="17" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="57" endline="63" pcid="3"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="95" endline="101" pcid="7"/>
+</ClonePair>
+<ClonePair groupid="18" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="57" endline="63" pcid="3"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="125" endline="131" pcid="10"/>
+</ClonePair>
+<ClonePair groupid="19" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="57" endline="63" pcid="3"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="156" endline="162" pcid="13"/>
+</ClonePair>
+<ClonePair groupid="20" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="57" endline="63" pcid="3"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="187" endline="193" pcid="16"/>
+</ClonePair>
+<ClonePair groupid="21" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="57" endline="63" pcid="3"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="218" endline="224" pcid="19"/>
+</ClonePair>
+<ClonePair groupid="22" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="73" endline="80" pcid="5"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="103" endline="110" pcid="8"/>
+</ClonePair>
+<ClonePair groupid="23" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="73" endline="80" pcid="5"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="133" endline="140" pcid="11"/>
+</ClonePair>
+<ClonePair groupid="24" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="73" endline="80" pcid="5"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="164" endline="171" pcid="14"/>
+</ClonePair>
+<ClonePair groupid="25" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="73" endline="80" pcid="5"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="195" endline="202" pcid="17"/>
+</ClonePair>
+<ClonePair groupid="26" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="73" endline="80" pcid="5"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="226" endline="233" pcid="20"/>
+</ClonePair>
+<ClonePair groupid="27" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="87" endline="93" pcid="6"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="117" endline="123" pcid="9"/>
+</ClonePair>
+<ClonePair groupid="28" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="87" endline="93" pcid="6"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="148" endline="154" pcid="12"/>
+</ClonePair>
+<ClonePair groupid="29" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="87" endline="93" pcid="6"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="179" endline="185" pcid="15"/>
+</ClonePair>
+<ClonePair groupid="30" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="87" endline="93" pcid="6"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="210" endline="216" pcid="18"/>
+</ClonePair>
+<ClonePair groupid="31" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="95" endline="101" pcid="7"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="125" endline="131" pcid="10"/>
+</ClonePair>
+<ClonePair groupid="32" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="95" endline="101" pcid="7"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="156" endline="162" pcid="13"/>
+</ClonePair>
+<ClonePair groupid="33" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="95" endline="101" pcid="7"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="187" endline="193" pcid="16"/>
+</ClonePair>
+<ClonePair groupid="34" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="95" endline="101" pcid="7"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="218" endline="224" pcid="19"/>
+</ClonePair>
+<ClonePair groupid="35" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="103" endline="110" pcid="8"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="133" endline="140" pcid="11"/>
+</ClonePair>
+<ClonePair groupid="36" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="103" endline="110" pcid="8"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="164" endline="171" pcid="14"/>
+</ClonePair>
+<ClonePair groupid="37" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="103" endline="110" pcid="8"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="195" endline="202" pcid="17"/>
+</ClonePair>
+<ClonePair groupid="38" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="103" endline="110" pcid="8"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="226" endline="233" pcid="20"/>
+</ClonePair>
+<ClonePair groupid="39" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="117" endline="123" pcid="9"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="148" endline="154" pcid="12"/>
+</ClonePair>
+<ClonePair groupid="40" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="117" endline="123" pcid="9"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="179" endline="185" pcid="15"/>
+</ClonePair>
+<ClonePair groupid="41" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="117" endline="123" pcid="9"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="210" endline="216" pcid="18"/>
+</ClonePair>
+<ClonePair groupid="42" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="125" endline="131" pcid="10"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="156" endline="162" pcid="13"/>
+</ClonePair>
+<ClonePair groupid="43" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="125" endline="131" pcid="10"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="187" endline="193" pcid="16"/>
+</ClonePair>
+<ClonePair groupid="44" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="125" endline="131" pcid="10"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="218" endline="224" pcid="19"/>
+</ClonePair>
+<ClonePair groupid="45" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="133" endline="140" pcid="11"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="164" endline="171" pcid="14"/>
+</ClonePair>
+<ClonePair groupid="46" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="133" endline="140" pcid="11"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="195" endline="202" pcid="17"/>
+</ClonePair>
+<ClonePair groupid="47" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="133" endline="140" pcid="11"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="226" endline="233" pcid="20"/>
+</ClonePair>
+<ClonePair groupid="48" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="148" endline="154" pcid="12"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="179" endline="185" pcid="15"/>
+</ClonePair>
+<ClonePair groupid="49" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="148" endline="154" pcid="12"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="210" endline="216" pcid="18"/>
+</ClonePair>
+<ClonePair groupid="50" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="156" endline="162" pcid="13"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="187" endline="193" pcid="16"/>
+</ClonePair>
+<ClonePair groupid="51" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="156" endline="162" pcid="13"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="218" endline="224" pcid="19"/>
+</ClonePair>
+<ClonePair groupid="52" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="164" endline="171" pcid="14"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="195" endline="202" pcid="17"/>
+</ClonePair>
+<ClonePair groupid="53" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="164" endline="171" pcid="14"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="226" endline="233" pcid="20"/>
+</ClonePair>
+<ClonePair groupid="54" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="179" endline="185" pcid="15"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="210" endline="216" pcid="18"/>
+</ClonePair>
+<ClonePair groupid="55" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="187" endline="193" pcid="16"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="218" endline="224" pcid="19"/>
+</ClonePair>
+<ClonePair groupid="56" nfragments="2" type="Type-2">
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="195" endline="202" pcid="17"/>
+<CloneFragment file="/Users/farouq/Desktop/Test_Cases/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs.ifdefed" startline="226" endline="233" pcid="20"/>
+</ClonePair>
+</Clones>
+</SimCad>

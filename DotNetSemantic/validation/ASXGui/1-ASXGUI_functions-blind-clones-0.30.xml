@@ -1,0 +1,481 @@
+<clones>
+<systeminfo processor="nicad3" system="1-ASXGUI" granularity="functions-blind" threshold="30%" minlines="5" maxlines="2500"/>
+<cloneinfo npcs="202" npairs="95"/>
+<runinfo ncompares="2617" cputime="47746"/>
+
+<clone nlines="22" similarity="91">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Edit.xaml.cs.ifdefed" startline="545" endline="559" pcid="134"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ExportProfile.xaml.cs.ifdefed" startline="75" endline="88" pcid="194"></source>
+</clone>
+
+<clone nlines="21" similarity="82">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Edit.xaml.cs.ifdefed" startline="545" endline="559" pcid="134"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ImportProfile.xaml.cs.ifdefed" startline="121" endline="133" pcid="93"></source>
+</clone>
+
+<clone nlines="20" similarity="73">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Edit.xaml.cs.ifdefed" startline="545" endline="559" pcid="134"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="92" endline="103" pcid="101"></source>
+</clone>
+
+<clone nlines="20" similarity="90">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ImportProfile.xaml.cs.ifdefed" startline="121" endline="133" pcid="93"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ExportProfile.xaml.cs.ifdefed" startline="75" endline="88" pcid="194"></source>
+</clone>
+
+<clone nlines="19" similarity="80">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ExportProfile.xaml.cs.ifdefed" startline="75" endline="88" pcid="194"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="92" endline="103" pcid="101"></source>
+</clone>
+
+<clone nlines="18" similarity="89">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ImportProfile.xaml.cs.ifdefed" startline="121" endline="133" pcid="93"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="92" endline="103" pcid="101"></source>
+</clone>
+
+<clone nlines="17" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Edit.xaml.cs.ifdefed" startline="568" endline="583" pcid="136"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ExportProfile.xaml.cs.ifdefed" startline="53" endline="68" pcid="192"></source>
+</clone>
+
+<clone nlines="16" similarity="76">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Edit.xaml.cs.ifdefed" startline="568" endline="583" pcid="136"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/MainForm.xaml.cs.ifdefed" startline="506" endline="519" pcid="51"></source>
+</clone>
+
+<clone nlines="16" similarity="88">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Edit.xaml.cs.ifdefed" startline="568" endline="583" pcid="136"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/About.xaml.cs.ifdefed" startline="131" endline="143" pcid="21"></source>
+</clone>
+
+<clone nlines="16" similarity="88">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Edit.xaml.cs.ifdefed" startline="568" endline="583" pcid="136"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Updating.xaml.cs.ifdefed" startline="83" endline="95" pcid="189"></source>
+</clone>
+
+<clone nlines="16" similarity="88">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Edit.xaml.cs.ifdefed" startline="568" endline="583" pcid="136"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="117" endline="129" pcid="104"></source>
+</clone>
+
+<clone nlines="16" similarity="88">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Edit.xaml.cs.ifdefed" startline="568" endline="583" pcid="136"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ImportProfile.xaml.cs.ifdefed" startline="164" endline="176" pcid="98"></source>
+</clone>
+
+<clone nlines="16" similarity="76">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ExportProfile.xaml.cs.ifdefed" startline="53" endline="68" pcid="192"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/MainForm.xaml.cs.ifdefed" startline="506" endline="519" pcid="51"></source>
+</clone>
+
+<clone nlines="16" similarity="88">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ExportProfile.xaml.cs.ifdefed" startline="53" endline="68" pcid="192"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/About.xaml.cs.ifdefed" startline="131" endline="143" pcid="21"></source>
+</clone>
+
+<clone nlines="16" similarity="88">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ExportProfile.xaml.cs.ifdefed" startline="53" endline="68" pcid="192"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Updating.xaml.cs.ifdefed" startline="83" endline="95" pcid="189"></source>
+</clone>
+
+<clone nlines="16" similarity="88">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ExportProfile.xaml.cs.ifdefed" startline="53" endline="68" pcid="192"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="117" endline="129" pcid="104"></source>
+</clone>
+
+<clone nlines="16" similarity="88">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ImportProfile.xaml.cs.ifdefed" startline="164" endline="176" pcid="98"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ExportProfile.xaml.cs.ifdefed" startline="53" endline="68" pcid="192"></source>
+</clone>
+
+<clone nlines="15" similarity="86">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/About.xaml.cs.ifdefed" startline="131" endline="143" pcid="21"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/MainForm.xaml.cs.ifdefed" startline="506" endline="519" pcid="51"></source>
+</clone>
+
+<clone nlines="15" similarity="86">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Updating.xaml.cs.ifdefed" startline="83" endline="95" pcid="189"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/MainForm.xaml.cs.ifdefed" startline="506" endline="519" pcid="51"></source>
+</clone>
+
+<clone nlines="15" similarity="86">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="117" endline="129" pcid="104"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/MainForm.xaml.cs.ifdefed" startline="506" endline="519" pcid="51"></source>
+</clone>
+
+<clone nlines="15" similarity="86">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ImportProfile.xaml.cs.ifdefed" startline="164" endline="176" pcid="98"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/MainForm.xaml.cs.ifdefed" startline="506" endline="519" pcid="51"></source>
+</clone>
+
+<clone nlines="15" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/About.xaml.cs.ifdefed" startline="131" endline="143" pcid="21"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Updating.xaml.cs.ifdefed" startline="83" endline="95" pcid="189"></source>
+</clone>
+
+<clone nlines="15" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/About.xaml.cs.ifdefed" startline="131" endline="143" pcid="21"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="117" endline="129" pcid="104"></source>
+</clone>
+
+<clone nlines="15" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ImportProfile.xaml.cs.ifdefed" startline="164" endline="176" pcid="98"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/About.xaml.cs.ifdefed" startline="131" endline="143" pcid="21"></source>
+</clone>
+
+<clone nlines="15" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Updating.xaml.cs.ifdefed" startline="83" endline="95" pcid="189"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="117" endline="129" pcid="104"></source>
+</clone>
+
+<clone nlines="15" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ImportProfile.xaml.cs.ifdefed" startline="164" endline="176" pcid="98"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Updating.xaml.cs.ifdefed" startline="83" endline="95" pcid="189"></source>
+</clone>
+
+<clone nlines="15" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ImportProfile.xaml.cs.ifdefed" startline="164" endline="176" pcid="98"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="117" endline="129" pcid="104"></source>
+</clone>
+
+<clone nlines="7" similarity="75">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/MainForm.xaml.cs.ifdefed" startline="1195" endline="1203" pcid="81"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/MainForm.xaml.cs.ifdefed" startline="1205" endline="1211" pcid="82"></source>
+</clone>
+
+<clone nlines="8" similarity="75">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="180" endline="189" pcid="110"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="297" endline="305" pcid="120"></source>
+</clone>
+
+<clone nlines="8" similarity="87">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="157" endline="165" pcid="108"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="180" endline="189" pcid="110"></source>
+</clone>
+
+<clone nlines="8" similarity="87">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="147" endline="155" pcid="107"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="180" endline="189" pcid="110"></source>
+</clone>
+
+<clone nlines="8" similarity="87">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="137" endline="145" pcid="106"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="180" endline="189" pcid="110"></source>
+</clone>
+
+<clone nlines="7" similarity="75">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="180" endline="189" pcid="110"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="191" endline="198" pcid="111"></source>
+</clone>
+
+<clone nlines="7" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ImportProfile.xaml.cs.ifdefed" startline="112" endline="119" pcid="92"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ExportProfile.xaml.cs.ifdefed" startline="95" endline="102" pcid="196"></source>
+</clone>
+
+<clone nlines="7" similarity="85">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ImportProfile.xaml.cs.ifdefed" startline="142" endline="150" pcid="95"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ExportProfile.xaml.cs.ifdefed" startline="111" endline="119" pcid="198"></source>
+</clone>
+
+<clone nlines="7" similarity="71">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="287" endline="295" pcid="119"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="297" endline="305" pcid="120"></source>
+</clone>
+
+<clone nlines="7" similarity="71">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="258" endline="266" pcid="116"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="297" endline="305" pcid="120"></source>
+</clone>
+
+<clone nlines="7" similarity="85">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="157" endline="165" pcid="108"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="297" endline="305" pcid="120"></source>
+</clone>
+
+<clone nlines="7" similarity="85">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="147" endline="155" pcid="107"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="297" endline="305" pcid="120"></source>
+</clone>
+
+<clone nlines="7" similarity="85">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="137" endline="145" pcid="106"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="297" endline="305" pcid="120"></source>
+</clone>
+
+<clone nlines="7" similarity="71">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="191" endline="198" pcid="111"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="297" endline="305" pcid="120"></source>
+</clone>
+
+<clone nlines="7" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="258" endline="266" pcid="116"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="287" endline="295" pcid="119"></source>
+</clone>
+
+<clone nlines="7" similarity="71">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="157" endline="165" pcid="108"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="287" endline="295" pcid="119"></source>
+</clone>
+
+<clone nlines="7" similarity="71">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="147" endline="155" pcid="107"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="287" endline="295" pcid="119"></source>
+</clone>
+
+<clone nlines="7" similarity="71">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="137" endline="145" pcid="106"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="287" endline="295" pcid="119"></source>
+</clone>
+
+<clone nlines="7" similarity="71">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="157" endline="165" pcid="108"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="258" endline="266" pcid="116"></source>
+</clone>
+
+<clone nlines="7" similarity="71">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="147" endline="155" pcid="107"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="258" endline="266" pcid="116"></source>
+</clone>
+
+<clone nlines="7" similarity="71">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="137" endline="145" pcid="106"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="258" endline="266" pcid="116"></source>
+</clone>
+
+<clone nlines="7" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="147" endline="155" pcid="107"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="157" endline="165" pcid="108"></source>
+</clone>
+
+<clone nlines="7" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="137" endline="145" pcid="106"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="157" endline="165" pcid="108"></source>
+</clone>
+
+<clone nlines="7" similarity="85">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="157" endline="165" pcid="108"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="191" endline="198" pcid="111"></source>
+</clone>
+
+<clone nlines="7" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="137" endline="145" pcid="106"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="147" endline="155" pcid="107"></source>
+</clone>
+
+<clone nlines="7" similarity="85">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="147" endline="155" pcid="107"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="191" endline="198" pcid="111"></source>
+</clone>
+
+<clone nlines="7" similarity="85">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="137" endline="145" pcid="106"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="191" endline="198" pcid="111"></source>
+</clone>
+
+<clone nlines="6" similarity="83">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/MainForm.xaml.cs.ifdefed" startline="581" endline="587" pcid="53"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/MainForm.xaml.cs.ifdefed" startline="1252" endline="1258" pcid="84"></source>
+</clone>
+
+<clone nlines="6" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ImportProfile.xaml.cs.ifdefed" startline="35" endline="38" pcid="88"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/About.xaml.cs.ifdefed" startline="114" endline="117" pcid="18"></source>
+</clone>
+
+<clone nlines="6" similarity="83">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/MainForm.xaml.cs.ifdefed" startline="1205" endline="1211" pcid="82"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/MainForm.xaml.cs.ifdefed" startline="1252" endline="1258" pcid="84"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/MainForm.xaml.cs.ifdefed" startline="795" endline="800" pcid="58"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/MainForm.xaml.cs.ifdefed" startline="949" endline="956" pcid="69"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/App.xaml.cs.ifdefed" startline="54" endline="59" pcid="26"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/App.xaml.cs.ifdefed" startline="61" endline="66" pcid="27"></source>
+</clone>
+
+<clone nlines="5" similarity="80">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/App.xaml.cs.ifdefed" startline="20" endline="25" pcid="22"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/App.xaml.cs.ifdefed" startline="54" endline="59" pcid="26"></source>
+</clone>
+
+<clone nlines="5" similarity="80">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/App.xaml.cs.ifdefed" startline="27" endline="32" pcid="23"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/App.xaml.cs.ifdefed" startline="54" endline="59" pcid="26"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/App.xaml.cs.ifdefed" startline="44" endline="49" pcid="25"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/App.xaml.cs.ifdefed" startline="54" endline="59" pcid="26"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/App.xaml.cs.ifdefed" startline="37" endline="42" pcid="24"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/App.xaml.cs.ifdefed" startline="54" endline="59" pcid="26"></source>
+</clone>
+
+<clone nlines="5" similarity="80">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/App.xaml.cs.ifdefed" startline="20" endline="25" pcid="22"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/App.xaml.cs.ifdefed" startline="61" endline="66" pcid="27"></source>
+</clone>
+
+<clone nlines="5" similarity="80">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/App.xaml.cs.ifdefed" startline="27" endline="32" pcid="23"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/App.xaml.cs.ifdefed" startline="61" endline="66" pcid="27"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/App.xaml.cs.ifdefed" startline="44" endline="49" pcid="25"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/App.xaml.cs.ifdefed" startline="61" endline="66" pcid="27"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/App.xaml.cs.ifdefed" startline="37" endline="42" pcid="24"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/App.xaml.cs.ifdefed" startline="61" endline="66" pcid="27"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/App.xaml.cs.ifdefed" startline="20" endline="25" pcid="22"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/App.xaml.cs.ifdefed" startline="27" endline="32" pcid="23"></source>
+</clone>
+
+<clone nlines="5" similarity="80">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/App.xaml.cs.ifdefed" startline="20" endline="25" pcid="22"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/App.xaml.cs.ifdefed" startline="44" endline="49" pcid="25"></source>
+</clone>
+
+<clone nlines="5" similarity="80">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/App.xaml.cs.ifdefed" startline="20" endline="25" pcid="22"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/App.xaml.cs.ifdefed" startline="37" endline="42" pcid="24"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ImportProfile.xaml.cs.ifdefed" startline="157" endline="162" pcid="97"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="110" endline="115" pcid="103"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ImportProfile.xaml.cs.ifdefed" startline="157" endline="162" pcid="97"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/MainForm.xaml.cs.ifdefed" startline="500" endline="505" pcid="50"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ImportProfile.xaml.cs.ifdefed" startline="157" endline="162" pcid="97"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/About.xaml.cs.ifdefed" startline="124" endline="129" pcid="20"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Edit.xaml.cs.ifdefed" startline="561" endline="566" pcid="135"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ImportProfile.xaml.cs.ifdefed" startline="157" endline="162" pcid="97"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ImportProfile.xaml.cs.ifdefed" startline="157" endline="162" pcid="97"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ExportProfile.xaml.cs.ifdefed" startline="46" endline="51" pcid="191"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ImportProfile.xaml.cs.ifdefed" startline="157" endline="162" pcid="97"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Updating.xaml.cs.ifdefed" startline="76" endline="81" pcid="188"></source>
+</clone>
+
+<clone nlines="5" similarity="80">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ImportProfile.xaml.cs.ifdefed" startline="135" endline="140" pcid="94"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ExportProfile.xaml.cs.ifdefed" startline="104" endline="109" pcid="197"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="110" endline="115" pcid="103"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/MainForm.xaml.cs.ifdefed" startline="500" endline="505" pcid="50"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/About.xaml.cs.ifdefed" startline="124" endline="129" pcid="20"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="110" endline="115" pcid="103"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Edit.xaml.cs.ifdefed" startline="561" endline="566" pcid="135"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="110" endline="115" pcid="103"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ExportProfile.xaml.cs.ifdefed" startline="46" endline="51" pcid="191"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="110" endline="115" pcid="103"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Updating.xaml.cs.ifdefed" startline="76" endline="81" pcid="188"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Options.xaml.cs.ifdefed" startline="110" endline="115" pcid="103"></source>
+</clone>
+
+<clone nlines="5" similarity="80">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/App.xaml.cs.ifdefed" startline="27" endline="32" pcid="23"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/App.xaml.cs.ifdefed" startline="44" endline="49" pcid="25"></source>
+</clone>
+
+<clone nlines="5" similarity="80">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/App.xaml.cs.ifdefed" startline="27" endline="32" pcid="23"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/App.xaml.cs.ifdefed" startline="37" endline="42" pcid="24"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/App.xaml.cs.ifdefed" startline="37" endline="42" pcid="24"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/App.xaml.cs.ifdefed" startline="44" endline="49" pcid="25"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/About.xaml.cs.ifdefed" startline="124" endline="129" pcid="20"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/MainForm.xaml.cs.ifdefed" startline="500" endline="505" pcid="50"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Edit.xaml.cs.ifdefed" startline="561" endline="566" pcid="135"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/MainForm.xaml.cs.ifdefed" startline="500" endline="505" pcid="50"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ExportProfile.xaml.cs.ifdefed" startline="46" endline="51" pcid="191"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/MainForm.xaml.cs.ifdefed" startline="500" endline="505" pcid="50"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Updating.xaml.cs.ifdefed" startline="76" endline="81" pcid="188"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/MainForm.xaml.cs.ifdefed" startline="500" endline="505" pcid="50"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Edit.xaml.cs.ifdefed" startline="561" endline="566" pcid="135"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/About.xaml.cs.ifdefed" startline="124" endline="129" pcid="20"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ExportProfile.xaml.cs.ifdefed" startline="46" endline="51" pcid="191"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/About.xaml.cs.ifdefed" startline="124" endline="129" pcid="20"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/About.xaml.cs.ifdefed" startline="124" endline="129" pcid="20"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Updating.xaml.cs.ifdefed" startline="76" endline="81" pcid="188"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Edit.xaml.cs.ifdefed" startline="561" endline="566" pcid="135"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ExportProfile.xaml.cs.ifdefed" startline="46" endline="51" pcid="191"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Edit.xaml.cs.ifdefed" startline="561" endline="566" pcid="135"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Updating.xaml.cs.ifdefed" startline="76" endline="81" pcid="188"></source>
+</clone>
+
+<clone nlines="5" similarity="100">
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/ExportProfile.xaml.cs.ifdefed" startline="46" endline="51" pcid="191"></source>
+<source file="/Users/farouq/Desktop/Test_Cases/1-ASXGUI/Trunk/ASXGui/Updating.xaml.cs.ifdefed" startline="76" endline="81" pcid="188"></source>
+</clone>
+
+</clones>

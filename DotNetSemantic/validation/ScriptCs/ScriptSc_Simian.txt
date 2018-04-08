@@ -1,0 +1,74 @@
+Similarity Analyser 2.5.6 - http://www.harukizaemon.com/simian
+Copyright (c) 2003-2017 Simon Harris.  All rights reserved.
+Simian is not free unless used solely for non-commercial or evaluation purposes.
+{failOnDuplication=true, ignoreCharacterCase=true, ignoreCurlyBraces=true, ignoreIdentifierCase=true, ignoreModifiers=true, ignoreStringCase=true, threshold=6}
+Found 6 duplicate lines with fingerprint d4cfb6bef22258140a40fd78d2749654 in the following files:
+ Between lines 1059 and 1065 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/App_Packages/LibLog.4.2/LibLog.cs
+ Between lines 840 and 846 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/App_Packages/LibLog.4.2/LibLog.cs
+Found 6 duplicate lines with fingerprint 6a2b997965064e4cada45808b7b194fd in the following files:
+ Between lines 354 and 367 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/App_Packages/LibLog.4.2/LibLog.cs
+ Between lines 235 and 248 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs
+Found 6 duplicate lines with fingerprint 2cff672338b70f4006071d8f7daf8784 in the following files:
+ Between lines 305 and 310 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/test/ScriptCs.Core.Tests/ReplTests.cs
+ Between lines 289 and 294 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/test/ScriptCs.Core.Tests/ReplTests.cs
+Found 6 duplicate lines with fingerprint e61e2a41de521be66263e4f94db1366e in the following files:
+ Between lines 43 and 50 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs/Command/ExecuteScriptCommand.cs
+ Between lines 38 and 45 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs/Command/ExecuteLooseScriptCommand.cs
+Found 6 duplicate lines with fingerprint 0a6b74d12194621bcc234832cc863dc5 in the following files:
+ Between lines 252 and 258 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/test/ScriptCs.Core.Tests/ReplTests.cs
+ Between lines 219 and 225 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/test/ScriptCs.Core.Tests/ReplTests.cs
+Found 6 duplicate lines with fingerprint 443b990f0ac336692ed1645fc01c00e0 in the following files:
+ Between lines 448 and 453 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/test/ScriptCs.Core.Tests/ReplTests.cs
+ Between lines 431 and 436 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/test/ScriptCs.Core.Tests/ReplTests.cs
+Found 7 duplicate lines with fingerprint 44791519c37f98698efeeee26f7f25f2 in the following files:
+ Between lines 207 and 222 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs
+ Between lines 318 and 333 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/App_Packages/LibLog.4.2/LibLog.cs
+Found 7 duplicate lines with fingerprint f79b680dcfd5a8d361bd2f2379734067 in the following files:
+ Between lines 145 and 160 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs
+ Between lines 258 and 273 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/App_Packages/LibLog.4.2/LibLog.cs
+Found 7 duplicate lines with fingerprint b156b99c1de5357fba922668d83f0e74 in the following files:
+ Between lines 176 and 191 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs
+ Between lines 288 and 303 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/App_Packages/LibLog.4.2/LibLog.cs
+Found 7 duplicate lines with fingerprint 1b95704c35ab3b37c5253f96693687fd in the following files:
+ Between lines 25 and 32 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Engine.Mono/Segmenter/Analyser/CodeAnalyzer.cs
+ Between lines 39 and 46 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Engine.Mono/Segmenter/Analyser/CodeAnalyzer.cs
+Found 8 duplicate lines with fingerprint cf5c02769db5c4683d6dbbb0dcd2d7f8 in the following files:
+ Between lines 200 and 207 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs/Command/CommandFactory.cs
+ Between lines 80 and 87 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs/Command/CommandFactory.cs
+Found 8 duplicate lines with fingerprint 611837510376fcb0b382c2b32cc494d2 in the following files:
+ Between lines 366 and 374 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/test/ScriptCs.Core.Tests/ReplTests.cs
+ Between lines 347 and 355 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/test/ScriptCs.Core.Tests/ReplTests.cs
+Found 9 duplicate lines with fingerprint 11e28cc7b43c7c3989368ee9dae65085 in the following files:
+ Between lines 24 and 32 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/test/ScriptCs.Tests.Acceptance/ImplicitInstallation.cs
+ Between lines 89 and 97 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/test/ScriptCs.Tests.Acceptance/Support/ScriptCsExe.cs
+Found 9 duplicate lines with fingerprint 99dcbd1a70765f1b5f4dd3e34fabbc59 in the following files:
+ Between lines 368 and 378 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/test/ScriptCs.Core.Tests/ReplTests.cs
+ Between lines 475 and 485 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/test/ScriptCs.Core.Tests/ReplTests.cs
+Found 9 duplicate lines with fingerprint 9e46e2e56f16a879ded979ce4b5caade in the following files:
+ Between lines 628 and 637 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/test/ScriptCs.Core.Tests/ReplTests.cs
+ Between lines 651 and 660 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/test/ScriptCs.Core.Tests/ReplTests.cs
+ Between lines 674 and 683 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/test/ScriptCs.Core.Tests/ReplTests.cs
+Found 10 duplicate lines with fingerprint e0dadd0f59c1acd0309e37b976e524a6 in the following files:
+ Between lines 173 and 182 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs/Command/CommandFactory.cs
+ Between lines 62 and 71 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs/Command/CommandFactory.cs
+Found 10 duplicate lines with fingerprint 1cbb8ec33b9a6e70486b4fdb1055586d in the following files:
+ Between lines 191 and 214 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/App_Packages/LibLog.4.2/LibLog.cs
+ Between lines 76 and 99 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs
+Found 10 duplicate lines with fingerprint 52ce5634b39ed632bd51df9d8bdeda2b in the following files:
+ Between lines 220 and 243 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/App_Packages/LibLog.4.2/LibLog.cs
+ Between lines 106 and 129 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs
+Found 10 duplicate lines with fingerprint 0e130a1998470a9663bca7ca271c8a79 in the following files:
+ Between lines 162 and 185 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/App_Packages/LibLog.4.2/LibLog.cs
+ Between lines 46 and 69 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/LogExtensions.cs
+Found 12 duplicate lines with fingerprint 0af13419b1043d01c2cdf5db0df81d08 in the following files:
+ Between lines 11 and 28 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs/Command/ExecuteScriptCommand.cs
+ Between lines 11 and 28 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs/Command/ExecuteLooseScriptCommand.cs
+Found 13 duplicate lines with fingerprint e2d8b1c91eff456b63a700502f76113b in the following files:
+ Between lines 228 and 243 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/test/ScriptCs.Core.Tests/ReplTests.cs
+ Between lines 261 and 277 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/test/ScriptCs.Core.Tests/ReplTests.cs
+Found 16 duplicate lines with fingerprint c9c87a8484ee08d59eaeb450dda9b0d9 in the following files:
+ Between lines 1032 and 1054 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/App_Packages/LibLog.4.2/LibLog.cs
+ Between lines 813 and 835 in /Users/farouq/Desktop/Simian/simian-2.5.6/bin/scriptcs-0.17.1/scriptcs-0.17.1/src/ScriptCs.Contracts/App_Packages/LibLog.4.2/LibLog.cs
+Found 385 duplicate lines in 45 blocks in 9 files
+Processed a total of 7138 significant (14226 raw) lines in 136 files
+Processing time: 0.467sec
