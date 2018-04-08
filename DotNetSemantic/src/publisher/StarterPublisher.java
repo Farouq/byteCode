@@ -210,7 +210,6 @@ public class StarterPublisher {
 			bufferedWriter.flush();
 			bufferedWriter.close();
 
-
 		}
 	}
 

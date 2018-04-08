@@ -77,7 +77,7 @@ public class Starter_FactExtraction_Step2 {
 		StarterPublisher.start(config);
 		
 		
-		 
+	 
 		// clone detection using Lev distance on byte code
 		
 		InstructionLev.levenstien(config, config.xmlByteCode);

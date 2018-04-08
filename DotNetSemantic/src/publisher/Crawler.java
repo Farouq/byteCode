@@ -24,6 +24,7 @@ public class Crawler {
 	}
 	 
 	 
+	
 	    private void findRecursively(File current)// throws Exception 
 	    {
 

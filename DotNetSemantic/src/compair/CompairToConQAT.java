@@ -16,6 +16,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 import configuration.Configuration;
+import validation.Write;
 
 public class CompairToConQAT {
 	
@@ -32,12 +33,11 @@ public class CompairToConQAT {
 		// and semantic report
 		
 		String reportAddress=config.reportAddress+"\\FinalCloneReportWeighted Similarities.0.75.xml";
-		String conQATReportAddress=config.reportAddress+"\\ASXGui clones.xml";
+		String conQATReportAddress=config.reportAddress+"\\Scripts clones.xml";
 		
 		// collect disassembled source code
 		 collectListOfFiles(new File(config.sourceCodeAddress), config);
 		
-
 		// Load the clone reports data into ArrayList
 		ArrayList<ArrayList<String>> clones =parseCloneReport (config, reportAddress );
 		// ArrayList<ArrayList<String>> clonesEnd = parseCloneReport2 (config, reportAddress );
@@ -47,18 +47,24 @@ public class CompairToConQAT {
 		//writeToText(clones) ;
 
 
-		
 
 		 ArrayList<ArrayList<String>> conQATClones=parseconQATPairs(config, conQATReportAddress);		 
 		// ArrayList<ArrayList<String>> conQATClonesEnd= parsesimcadPairs2(config, conQATReportAddress);
 		 writeToXMLFileAsSimCad(config,conQATClones,"conQAT clones in SimCad format");
-		 
+//-----------------------------------------------------------------------------------------------------------------------	 
+// this section is to select random set for validation 
+//			Write.generateTestGroup( config,  conQATClones, "03");
+//			System.out.println("-----------------------group selected and printed---------------------");
+//-------------------------------------------------------------------------------------------------------------------------		 
 		 ArrayList<ArrayList<String>> both = new ArrayList<ArrayList<String>>();
 		 ArrayList<ArrayList<String>> semOnly = new ArrayList<ArrayList<String>>();
+		 
 		 
 			System.out.println("Number of clone pairs detected by Conqat "+conQATClones.size());
 		//	System.out.println(conQATClones);
 			int counter=0;
+			
+			FindCommonLoc.locSummery (clones , conQATClones );
 //			
 //			for(int i=0; i<conQATClones.size();i++ ){	
 //				

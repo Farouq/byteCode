@@ -33,6 +33,7 @@ import java.util.ArrayList;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import validation.Write;
 
 
 /*
@@ -47,7 +48,7 @@ public class simianTextReader {
 
 		 Configuration config = Configuration.initialize(args[0]);
 
-		  File semianReportAddress =new File( config.reportAddress + "\\ScriptSc_Simian.txt");
+		  File semianReportAddress =new File( config.reportAddress + "\\Netgore_Simian.txt");
 			ArrayList<ArrayList<String>> semianClones = convert(semianReportAddress, config);
 			System.out.println(" number of clone Classes detected in Simian is: " + semianClones.size());
 
@@ -59,17 +60,28 @@ public class simianTextReader {
 			 semianClones = convertClassIntoPairs( semianClones);
 			 
 				System.out.println(" number of clone pairs detected in Simian is: " + semianClones.size());
+				
+				
+	//			Write.generateTestGroup( config,  semianClones, "04");
+	//			System.out.println("-----------------------group selected and printed---------------------");
 
 //				for (int i = 0; i < semianClones.size(); i++) {
 //					System.out.println(semianClones.get(i).size() + "  " + semianClones.get(i));
 //				}
 
+				// this section is to select random set for validation 
+				Write.generateTestGroup( config,  semianClones, "04");
+				System.out.println("-----------------------group selected and printed---------------------");
+				
 				
 			String myreportAddress = config.reportAddress + "\\FinalCloneReportWeighted Similarities.0.75.xml";
 			ArrayList<ArrayList<String>> clones = parseCloneReport(config, myreportAddress);
 
 			System.out.println("Number of clone pairs detected by my tool " + clones.size());
 
+			// 
+			FindCommonLoc.locSummery (clones , semianClones );
+			
 			ArrayList<ArrayList<String>> both = new ArrayList<ArrayList<String>>();
 			ArrayList<ArrayList<String>> semOnly = new ArrayList<ArrayList<String>>();
 			

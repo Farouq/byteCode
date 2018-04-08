@@ -20,6 +20,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 import configuration.Configuration;
+import validation.Write;
 
 public class CompairToVisualStudio {
 
@@ -30,6 +31,11 @@ public class CompairToVisualStudio {
 		String vSReportAddress = config.reportAddress + "\\ASXGui.txt";
 		ArrayList<ArrayList<String>> VSClones = readVSCloneReport(config, vSReportAddress);
 		System.out.println("Number of clone pairs detected by Visual Studio  " + VSClones.size());
+		
+		
+		Write.generateTestGroup( config,  VSClones, "05");
+		System.out.println("-----------------------group selected and printed---------------------");
+		
 
 		String reportAddress = config.reportAddress + "\\FinalCloneReportWeighted Similarities.0.75.xml";
 		ArrayList<ArrayList<String>> clones = parseCloneReport(config, reportAddress);
@@ -41,13 +47,42 @@ public class CompairToVisualStudio {
 		ArrayList<ArrayList<String>> semOnly = new ArrayList<ArrayList<String>>();
 		int counter = 0;
 		
+		
+		
+		Set<ArrayList<String>> myCloneSet = generateListOfFiles(clones);
+		System.out.println("Number of clone fragments  detected by my tool: " + myCloneSet.size());
+		ArrayList<ArrayList<String>> cloneList = new ArrayList<ArrayList<String>>();
+		//ArrayList<String> clone=new ArrayList<String>();
+		cloneList.addAll(myCloneSet);
+		cloneList=sortReport(cloneList);
+//		for (ArrayList<String> clone:cloneList) {			
+//			System.out.println(clone);
+//		}
+		
+		System.out.println("Total number of cloned LOC by my tool: " +clonedLoc(cloneList));
+		
+		
+		Set<ArrayList<String>> VSCloneSet = generateListOfFiles(VSClones);
+		System.out.println("Number of clone fragments  detected by VS : " + VSCloneSet.size());
+		ArrayList<ArrayList<String>> VSCloneList = new ArrayList<ArrayList<String>>();
+		//ArrayList<String> clone=new ArrayList<String>();
+		VSCloneList.addAll(VSCloneSet);
+		VSCloneList=sortReport(VSCloneList);
+//		for (ArrayList<String> clone:VSCloneList) {			
+//			System.out.println(clone);
+//		}
+//		
+		
+		System.out.println("Total number of cloned LOC by Visual Studio: " +clonedLoc(VSCloneList));
+		System.out.println("Total number of common Loc between two detectors: " + commonLoc(cloneList,VSCloneList));
+
+		
 //		for(int i=0; i<VSClones.size();i++ ){	
 //		
 //		System.out.println(VSClones.get(i));
 //		
 //	}
 		
-
 		for (int i = 0; i < clones.size(); i++) {
 
 			if (foundInVS(clones.get(i), VSClones)) {
@@ -65,7 +100,118 @@ public class CompairToVisualStudio {
 		System.out.println("number of Missed clones  take the difference" );
 
 	}
+	
+	public static int max( int a, int b){
+		if (a>b) {
+			return a;
+		}
+		else { 
+			return b;
+		}
+		
+	}
+	
+	public static int min( int a, int b){
+		if (a<b) {
+			return a;
+		}
+		else { 
+			return b;
+		}
+		
+	}
+	
+	public static int commonLoc(ArrayList<ArrayList<String>> myList, ArrayList<ArrayList<String>> detectorList) {
 
+		int loc = 0;
+
+		for (ArrayList<String> clone : myList) {
+			
+			for (ArrayList<String> cloneToCompare : detectorList) {
+				
+				if(clonesIntersect(clone,cloneToCompare)) {
+					
+					int l1 = Integer.parseInt(clone.get(1).trim());
+					int r1 = Integer.parseInt(clone.get(2).trim());
+										
+					int l2 = Integer.parseInt(cloneToCompare.get(1).trim());
+					int r2 = Integer.parseInt(cloneToCompare.get(2).trim());
+					
+					loc+= min(r1,r2)- max(l1,l2)+1;
+				}
+
+			}
+			
+
+		}
+
+		return loc;
+	}
+	
+	public static boolean clonesIntersect(ArrayList<String> cloneA, ArrayList<String> cloneB) {
+		boolean intersect = false;
+
+
+		String f1 = cloneA.get(0).toLowerCase();
+		int l1 = Integer.parseInt(cloneA.get(1).trim());
+		int r1 = Integer.parseInt(cloneA.get(2).trim());
+		
+		String f2 = cloneB.get(0).toLowerCase();
+		int l2 = Integer.parseInt(cloneB.get(1).trim());
+		int r2 = Integer.parseInt(cloneB.get(2).trim());
+
+			if (f1.equals(f2) && l1 <= r2 && r1 >= l2) {
+				intersect = true;
+			}
+
+		return intersect;
+	}
+	
+	public static Set<ArrayList<String>> generateListOfFiles( ArrayList<ArrayList<String>> clonePairs){
+		Set<ArrayList<String>> files = new HashSet<ArrayList<String>>();
+		
+		for (int i=0; i<clonePairs.size(); i++){
+			ArrayList<String> clone1=new ArrayList<String>();
+			ArrayList<String> clone2=new ArrayList<String>();
+			clone1.add(clonePairs.get(i).get(0));
+			clone1.add(clonePairs.get(i).get(1));
+			clone1.add(clonePairs.get(i).get(2));
+			clone2.add(clonePairs.get(i).get(3));
+			clone2.add(clonePairs.get(i).get(4));
+			clone2.add(clonePairs.get(i).get(5));
+			files.add(clone1);
+			files.add(clone2);
+			
+		}
+		
+		return files;
+	}
+
+	public static ArrayList<ArrayList<String>> sortReport( ArrayList<ArrayList<String>> clones){
+
+		Collections.sort(clones, new Comparator<ArrayList<String>>() {
+			@Override
+			public int compare(ArrayList<String> one, ArrayList<String> two) {
+				return two.get(0).compareTo(one.get(0));
+			}
+		});
+
+		return clones;
+	}
+	
+	
+	public static int clonedLoc( ArrayList<ArrayList<String>> clonesList){
+
+		int loc=0;
+
+		for (ArrayList<String> clone:clonesList) {			
+		loc+= Integer.parseInt(clone.get(2).trim())-Integer.parseInt(clone.get(1).trim())+1;
+	}
+
+		return loc;
+	}
+	
+	
 	public static boolean foundInVS(ArrayList<String> clonePair, ArrayList<ArrayList<String>> conQATClones) {
 		boolean found = false;
 		// System.out.println(clonePair);
@@ -90,8 +236,7 @@ public class CompairToVisualStudio {
 			// System.out.println(fA1+" "+fA2);
 
 			if (((fA1.equals(fA2) && sA1 <= eA2 && eA1 >= sA2) && (fB1.equals(fB2) && sB1 <= eB2 && eB1 >= sB2))
-					|| ((fA1.equals(fB2) && sA1 <= eB2 && eA1 >= sB2)
-							&& (fB1.equals(fA2) && sB1 <= eA2 && eB1 >= sA2))) {
+					|| ((fA1.equals(fB2) && sA1 <= eB2 && eA1 >= sB2) && (fB1.equals(fA2) && sB1 <= eA2 && eB1 >= sA2))) {
 				found = true;
 				// System.out.println(clonePair);
 				break;

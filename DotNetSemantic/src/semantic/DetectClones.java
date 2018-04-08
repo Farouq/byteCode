@@ -58,8 +58,9 @@ public class DetectClones {
 		StarterPublisher.start(config);
 		
 		loadDataIntoArraylists(config);
-	
 		
+	//	detectWeightAverage(config);
+	
 		/* 
 		 * Just to check if all methods data are the same 
 		System.out.println( isTwoArrayListsWithSameValues(methodData,methodsDataForCalls));
@@ -73,7 +74,7 @@ public class DetectClones {
 //		detectUnionSimilarities(config);
 		
 		// is good
-			detectWeightAverage(config);
+
 		
 		// intersection is not effectine 57 clone pairs common 51 extra 6 missed 44
 	    // detectIntersectionSimilarities(config);
