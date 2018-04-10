@@ -230,6 +230,64 @@ public class Recall {
 
 		return validatedClones;
 	}
+	
+	public static ArrayList<ClonePair> loadNiCadClones(String directory) throws IOException {
+
+		ArrayList<ClonePair> validatedClones = new ArrayList<ClonePair>();
+
+		File parentDir = new File(directory);
+
+		for (File file : parentDir.listFiles()) {
+
+			try {
+				DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+
+				DocumentBuilder db = dbf.newDocumentBuilder();
+
+				Document doc = db.parse(file);
+				doc.getDocumentElement().normalize();
+				Element root = doc.getDocumentElement();
+
+				// System.out.println(root.getNodeName()+"--------");
+
+				NodeList nl = root.getElementsByTagName("cloneinfo");
+				nl = root.getElementsByTagName("clone_pair");
+
+				if (nl.getLength() > 0) {
+
+					for (int group = 0; group < nl.getLength(); group++) {
+						NodeList sourceList = nl.item(group).getChildNodes();
+						// System.out.println( sourceList.getLength()+"----------------------");
+
+						// for(int file=1;file<sourceList.getLength();file+=2){
+
+						String file1 = sourceList.item(1).getAttributes().getNamedItem("file").getFirstChild().getNodeValue();
+						String startline1 = sourceList.item(1).getAttributes().getNamedItem("startline").getFirstChild().getNodeValue();
+						String endline1 = sourceList.item(1).getAttributes().getNamedItem("endline").getFirstChild().getNodeValue();
+
+						String file2 = sourceList.item(3).getAttributes().getNamedItem("file").getFirstChild().getNodeValue();
+						String startline2 = sourceList.item(3).getAttributes().getNamedItem("startline").getFirstChild().getNodeValue();
+						String endline2 = sourceList.item(3).getAttributes().getNamedItem("endline").getFirstChild().getNodeValue();
+
+						Boolean validation = false;
+
+						ClonePair clone = new ClonePair(validation, file1, Integer.parseInt(startline1),Integer.parseInt(endline1), file2, Integer.parseInt(startline2),Integer.parseInt(endline2));
+						validatedClones.add(clone);
+
+					}
+
+					// System.out.println("Done");
+
+				}
+
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+
+		} // for (File file:
+
+		return validatedClones;
+	}
 
 }
 
