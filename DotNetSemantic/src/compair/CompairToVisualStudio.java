@@ -370,19 +370,13 @@ public class CompairToVisualStudio {
 
 					// for(int file=1;file<sourceList.getLength();file+=2){
 
-					String file1 = sourceList.item(1).getAttributes().getNamedItem("file").getFirstChild()
-							.getNodeValue();
-					String startline1 = sourceList.item(1).getAttributes().getNamedItem("startline").getFirstChild()
-							.getNodeValue();
-					String endline1 = sourceList.item(1).getAttributes().getNamedItem("endline").getFirstChild()
-							.getNodeValue();
+					String file1 = sourceList.item(1).getAttributes().getNamedItem("file").getFirstChild().getNodeValue();
+					String startline1 = sourceList.item(1).getAttributes().getNamedItem("startline").getFirstChild().getNodeValue();
+					String endline1 = sourceList.item(1).getAttributes().getNamedItem("endline").getFirstChild().getNodeValue();
 
-					String file2 = sourceList.item(3).getAttributes().getNamedItem("file").getFirstChild()
-							.getNodeValue();
-					String startline2 = sourceList.item(3).getAttributes().getNamedItem("startline").getFirstChild()
-							.getNodeValue();
-					String endline2 = sourceList.item(3).getAttributes().getNamedItem("endline").getFirstChild()
-							.getNodeValue();
+					String file2 = sourceList.item(3).getAttributes().getNamedItem("file").getFirstChild().getNodeValue();
+					String startline2 = sourceList.item(3).getAttributes().getNamedItem("startline").getFirstChild().getNodeValue();
+					String endline2 = sourceList.item(3).getAttributes().getNamedItem("endline").getFirstChild().getNodeValue();
 
 					ArrayList<String> clonePair = new ArrayList<String>();
 					clonePair.add(file1);
