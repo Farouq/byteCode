@@ -136,6 +136,7 @@ public class Precision {
 
 class ClonePair {
 	Boolean valid;
+	int toolId=0;
 	String file1;
 	int startLine1;
 	int endLine1;
@@ -156,6 +157,20 @@ class ClonePair {
 	ClonePair(boolean v, String f1, int s1, int e1, String f2, int s2, int e2) {
 
 		valid = v;
+		toolId=0;
+		file1 = f1;
+		startLine1 = s1;
+		endLine1 = e1;
+		file2 = f2;
+		startLine2 = s2;
+		endLine2 = e2;
+
+	}
+	
+	ClonePair(boolean v,int tool, String f1, int s1, int e1, String f2, int s2, int e2) {
+
+		valid = v;
+		toolId=tool;
 		file1 = f1;
 		startLine1 = s1;
 		endLine1 = e1;
@@ -168,14 +183,14 @@ class ClonePair {
 	public String resultString()
 	  {
 	    if (this.valid==null) {
-		      return  "Undecided " + "," + this.file1 + "," + this.startLine1+" , "+ this.endLine1+" , "+ this.file2+  " , " + this.startLine2+" , "+ this.endLine2;
+		      return  "Undecided " + "Tool number "+ this.toolId+ ", " + this.file1 + ", " + this.startLine1+", "+ this.endLine1+", "+ this.file2+  " , " + this.startLine2+", "+ this.endLine2;
 		    }
 	    
 	    if (this.valid) {
-	      return  "true" + "," + this.file1 + "," + this.startLine1+" , "+ this.endLine1+" , "+ this.file2+  " , " + this.startLine2+" , "+ this.endLine2;
+	      return  "true" + ", "+ "Tool number "+ this.toolId+ ", " + this.file1 + ", " + this.startLine1+", "+ this.endLine1+" , "+ this.file2+  ", " + this.startLine2+", "+ this.endLine2;
 	    }
 
-	    return  "false" + "," + this.file1 + "," + this.startLine1+" , "+ this.endLine1+" , "+ this.file2+  " , " + this.startLine2+" , "+ this.endLine2;
+	    return  "false" +", "+ "Tool number "+ this.toolId+  ", " + this.file1 + ", " + this.startLine1+", "+ this.endLine1+" , "+ this.file2+  ", " + this.startLine2+", "+ this.endLine2;
 	  }
 	
 

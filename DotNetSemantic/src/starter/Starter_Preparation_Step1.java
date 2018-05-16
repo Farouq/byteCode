@@ -31,8 +31,7 @@ public class Starter_Preparation_Step1 {
 		
 	}
 
-	
-	
+		
 	public static void makeOutputFolders(Configuration config){
 		mkdir(config.projectClone);
 		mkdir(config.sourceCodeAddress);

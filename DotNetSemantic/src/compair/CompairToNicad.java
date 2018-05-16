@@ -28,14 +28,11 @@ public class CompairToNicad {
 		System.out.println(projectAddress.getName());
 		// need tow files. 1- Nicad report and must be copied into Rrport folder of the project
 		// and semantic report
-
-
-		
-		String reportAddress=config.reportAddress+"\\FinalCloneReportWeighted Similarities.0.61.xml";
-		String nicadReportAddress=config.reportAddress+"\\1-ASXGUI_functions-blind-clones-0.30.xml";
 	
-
-
+		
+		String reportAddress=config.reportAddress+"\\FinalCloneReportWeighted Similarities.0.8.xml";
+		String nicadReportAddress=config.reportAddress+"\\NetGore_0.4.0_functions-blind-clones-0.30.xml";
+	
 
 		// Load the clone reports data into ArrayList
 		ArrayList<ArrayList<String>> clones =parseCloneReport (config, reportAddress );
@@ -46,6 +43,7 @@ public class CompairToNicad {
 		ArrayList<ArrayList<String>> nicadClones=parseNiCadPairs(config, nicadReportAddress);		 
 		ArrayList<ArrayList<String>> nicadClonesEnd= parseNiCadPairs2(config, nicadReportAddress);
 
+		//writeToXMLFileForNiCad(config,nicadClones,"NiCadUpdatedPath");
 
 
 
@@ -603,7 +601,8 @@ public class CompairToNicad {
 
 					Node nNode = nl.item(group);
 					Element eElement = (Element) nNode;
-					String  similarity=eElement.getAttribute("Similarity");
+					String  similarity=eElement.getAttribute("semantic_similarity");
+					
 
 					String file1= sourceList.item(1).getAttributes().getNamedItem("file").getFirstChild().getNodeValue();
 					String startline1 = sourceList.item(1).getAttributes().getNamedItem("startline").getFirstChild().getNodeValue();
@@ -624,6 +623,9 @@ public class CompairToNicad {
 					//		file2=file2.substring(pos);
 
 
+					//System.out.println(similarity);
+					double d= Double.parseDouble(similarity);
+				//	if (d>=0.8) {
 					ArrayList<String> clonePair=new ArrayList<String>();
 					clonePair.add(similarity);
 					clonePair.add(file1);
@@ -633,7 +635,7 @@ public class CompairToNicad {
 					clonePair.add(startline2);
 					clonePair.add(endline2);
 					reportClones.add(clonePair);
-
+				//	}
 
 
 					//	}

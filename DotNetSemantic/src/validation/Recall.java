@@ -51,6 +51,7 @@ public class Recall {
 				if (isOverlap(trueClone,detected))
 				{
 					counter++;
+					break;
 				}
 				
 				

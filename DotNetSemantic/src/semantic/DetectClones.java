@@ -52,14 +52,14 @@ public class DetectClones {
 		// TODO Auto-generated method stub
 
 		Configuration config=Configuration.initialize(args[0]);
-
+//
 		Starter_Preparation_Step1.makeOutputFolders(config);
 		
 		StarterPublisher.start(config);
 		
 		loadDataIntoArraylists(config);
 		
-	//	detectWeightAverage(config);
+		detectWeightAverage(config);
 	
 		/* 
 		 * Just to check if all methods data are the same 
@@ -149,11 +149,15 @@ public class DetectClones {
 						dSigniture=0;
 					}
 
-					
-
+					double finalSimilarity;
 
 					// old condition 
-					double finalSimilarity=dInstruction*0.6 + dMethod*0.2 + dSigniture*0.2;
+					if (calledMethods.get(v).size() > 0	&& calledMethods.get(c).size() > 0) {
+						 finalSimilarity=dInstruction*0.6 + dMethod*0.2 + dSigniture*0.2;
+					} else {
+						 finalSimilarity=dInstruction*0.66667  + dSigniture*0.3334;
+					}
+
 					if (finalSimilarity>=config.threshold /*|| (dSigniture>=0.8 && dInstruction>=0.8)*/) {
 					
 						//double finalSimilarity=dInstruction*0.6+ dMethod *0.2+ dSigniture*0.3;
@@ -188,6 +192,28 @@ public class DetectClones {
 						// check if this clone pairs  Did not detected in nicad	then save these clones in a seperate file
 
 					}
+					
+					if(methodData.get(v).get(0).equals(methodData.get(c).get(0))) {
+						
+						System.out.println("--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+						System.out.println(methodData.get(v).get(0)+" start: "+methodData.get(v).get(1)+" "+methodData.get(v).get(2));
+						System.out.println(methodData.get(c).get(0)+" start: "+methodData.get(c).get(1)+" "+methodData.get(c).get(2));
+						System.out.println(methodData.get(v).get(0));
+						System.out.println("Final similarity: "+finalSimilarity);
+						System.out.println("Method Calls Similarity: "+dMethod);
+						System.out.println(calledMethods.get(v));
+						System.out.println(calledMethods.get(c));
+						System.out.println("Signiture Similarity: "+dSigniture);
+						System.out.println(methodSigniture.get(v));
+						System.out.println( methodSigniture.get(c));
+						System.out.println("Instruction similarity: "+dInstruction);
+						System.out.println(byteCode.get(v));
+						System.out.println(byteCode.get(c));
+						
+						
+						
+					}
+					
 
 
 				} //outer If
@@ -195,11 +221,11 @@ public class DetectClones {
 
 			}	// inner loop 
 			
-			int i= v%progressStep;
-			if(i==0) {
-				progress=((v+1)*100 /byteCode.size());
-				System.out.println("progress: "+ progress+"%");
-			}
+//			int i= v%progressStep;
+//			if(i==0) {
+//				progress=((v+1)*100 /byteCode.size());
+//				System.out.println("progress: "+ progress+"%");
+//			}
 			
 			
 	}// outer loop
@@ -817,7 +843,7 @@ public class DetectClones {
 					csd.add(endline);
 					methodsDataForSignature.add(csd);
 
-					String[] csA = content.split("\n");
+					String[] csA = content.split(" ");
 
 					ArrayList<String> csl = new ArrayList<String>();
 

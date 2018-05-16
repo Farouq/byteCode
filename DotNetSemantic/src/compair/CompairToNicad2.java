@@ -27,9 +27,10 @@ public class CompairToNicad2 {
 		File projectAddress= new File(config.projectAddress);
 		System.out.println(projectAddress.getName());
 		// need tow files. 1- Nicad report and must be copied into Rrport folder of the project
+		
 		// and semantic report
 
-		String reportAddress=config.reportAddress+"\\InstructionLevenshtien0.7.xml";
+		String reportAddress=config.reportAddress+"\\SignitureLevenshtien0.9.xml";
 		String nicadReportAddress=config.reportAddress+"\\1-ASXGUI_functions-blind-clones-0.30.xml";
 		
 		// to measure precesion = trueClones/cloneCounter
@@ -50,6 +51,7 @@ public class CompairToNicad2 {
 //		for(int i=0; i<clones.size();i++ ){
 //			System.out.println(clones.get(i).get(0));
 //		}
+		
 		
 		ArrayList<ArrayList<String>> nicadClones=parseNiCadPairs(config, nicadReportAddress);		 
 		ArrayList<ArrayList<String>> nicadClonesEnd= parseNiCadPairs2(config, nicadReportAddress);
@@ -858,4 +860,5 @@ public class CompairToNicad2 {
 
 
 	}
+	
 }

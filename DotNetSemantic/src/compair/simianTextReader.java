@@ -48,33 +48,32 @@ public class simianTextReader {
 
 		 Configuration config = Configuration.initialize(args[0]);
 
-		  File semianReportAddress =new File( config.reportAddress + "\\Netgore_Simian.txt");
+		  File semianReportAddress =new File( config.reportAddress + "\\ScriptSc_Simian.txt");
 			ArrayList<ArrayList<String>> semianClones = convert(semianReportAddress, config);
 			System.out.println(" number of clone Classes detected in Simian is: " + semianClones.size());
 
-//			for (int i = 0; i < semianClones.size(); i++) {
-//				System.out.println(semianClones.get(i).size() + "  " + semianClones.get(i));
-//			}
-			
 
 			 semianClones = convertClassIntoPairs( semianClones);
 			 
 				System.out.println(" number of clone pairs detected in Simian is: " + semianClones.size());
+				/*
+				 * This method to convert semian report to my report format
+				 */
 				
+		//		writeToXMLFile(config,semianClones,"SimianUpdatedPath");
 				
-	//			Write.generateTestGroup( config,  semianClones, "04");
-	//			System.out.println("-----------------------group selected and printed---------------------");
 
-//				for (int i = 0; i < semianClones.size(); i++) {
-//					System.out.println(semianClones.get(i).size() + "  " + semianClones.get(i));
-//				}
+				
 
-				// this section is to select random set for validation 
-				Write.generateTestGroup( config,  semianClones, "04");
-				System.out.println("-----------------------group selected and printed---------------------");
+				/*
+				 *  this section is to select random set for validation 
+				 */
+				
+		//		Write.generateTestGroup( config,  semianClones, "04");
+		//		System.out.println("-----------------------group selected and printed---------------------");
 				
 				
-			String myreportAddress = config.reportAddress + "\\FinalCloneReportWeighted Similarities.0.75.xml";
+			String myreportAddress = config.reportAddress + "\\FinalCloneReportWeighted Similarities.0.8.xml";
 			ArrayList<ArrayList<String>> clones = parseCloneReport(config, myreportAddress);
 
 			System.out.println("Number of clone pairs detected by my tool " + clones.size());
@@ -116,7 +115,70 @@ public class simianTextReader {
 			
 	}
 
+	private static void writeToXMLFile(Configuration config,ArrayList<ArrayList<String>> meregedClones, String fileName) throws Exception
+	{
+		
+		String outputFileAddress=config.reportAddress+"\\simcad\\"+fileName+".xml";
+		BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(outputFileAddress));
+		bufferedWriter.write("<clones>");
+		bufferedWriter.newLine();
 	
+		for(int i=0; i<meregedClones.size();i++ ){
+			
+			bufferedWriter.write( "<clone_pair>");
+			bufferedWriter.newLine();
+			//System.out.println(d );
+			// first fragment
+			bufferedWriter.write( "<clone_fragment file=\""+meregedClones.get(i).get(0)+"\" startline=\""+ meregedClones.get(i).get(1) +"\" endline=\""+ meregedClones.get(i).get(2)+"\">");
+			bufferedWriter.newLine();
+			bufferedWriter.write("<![CDATA["+ readSourceFile(new File( meregedClones.get(i).get(0)), Integer.parseInt(meregedClones.get(i).get(1)) ,Integer.parseInt(meregedClones.get(i).get(2)))+"]]>");
+			bufferedWriter.newLine();
+			bufferedWriter.write("</clone_fragment>");
+			bufferedWriter.newLine();
+			//second fragment
+			bufferedWriter.write( "<clone_fragment file=\""+meregedClones.get(i).get(3)+"\" startline=\""+ meregedClones.get(i).get(4) +"\" endline=\""+ meregedClones.get(i).get(5)+"\">");
+			bufferedWriter.newLine();
+			bufferedWriter.write("<![CDATA["+readSourceFile(new File( meregedClones.get(i).get(3)), Integer.parseInt(meregedClones.get(i).get(4)) ,Integer.parseInt(meregedClones.get(i).get(5)))+"]]>");
+			bufferedWriter.newLine();
+			bufferedWriter.write("</clone_fragment>");
+			bufferedWriter.newLine();
+			//close pair
+			bufferedWriter.write("</clone_pair>");
+			bufferedWriter.newLine();
+		}
+		
+		bufferedWriter.write("</clones>");
+		bufferedWriter.newLine();
+		bufferedWriter.flush();
+		bufferedWriter.close();
+
+
+	}
+	
+	private static String readSourceFile(File fileName,int startLine, int endLine) throws IOException {
+		
+		String source="";
+		String str="";
+		int line=0;
+
+		 try {
+	            LineNumberReader lr = new LineNumberReader(new FileReader(fileName));
+
+	            while((str = lr.readLine())!=null){
+	            	line++;
+	            	if(line >=startLine && line<=endLine)
+	            		source=source+str+"\n";
+  	
+	            }
+
+	        }catch(Exception e){e.printStackTrace();}
+	
+		
+		return source;
+	}
+
+	
+
 	public static boolean foundInSimian(ArrayList<String> clonePair, ArrayList<ArrayList<String>> conQATClones) {
 		boolean found = false;
 		// System.out.println(clonePair);
@@ -141,8 +203,7 @@ public class simianTextReader {
 			// System.out.println(fA1+" "+fA2);
 
 			if (((fA1.equals(fA2) && sA1 <= eA2 && eA1 >= sA2) && (fB1.equals(fB2) && sB1 <= eB2 && eB1 >= sB2))
-					|| ((fA1.equals(fB2) && sA1 <= eB2 && eA1 >= sB2)
-							&& (fB1.equals(fA2) && sB1 <= eA2 && eB1 >= sA2))) {
+					|| ((fA1.equals(fB2) && sA1 <= eB2 && eA1 >= sB2) && (fB1.equals(fA2) && sB1 <= eA2 && eB1 >= sA2))) {
 				found = true;
 				// System.out.println(clonePair);
 				break;

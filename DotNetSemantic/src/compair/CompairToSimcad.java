@@ -29,18 +29,18 @@ public class CompairToSimcad {
 		// need tow files. 1- simcad report and must be copied into Rrport folder of the project
 		// and semantic report
 		
-		String reportAddress=config.reportAddress+"\\FinalCloneReportWeighted Similarities.0.75.xml";
+		String reportAddress=config.reportAddress+"\\FinalCloneReportWeighted Similarities.0.8.xml";
 		String simcadReportAddress=config.reportAddress+"\\simcad_function_clone-pairs_type-1-2-3_generous.xml";
 		
-		
-
-		// Load the clone reports data into ArrayList
+				// Load the clone reports data into ArrayList
 		 ArrayList<ArrayList<String>> clones =parseCloneReport (config, reportAddress );
 			 ArrayList<ArrayList<String>> clonesEnd = parseCloneReport2 (config, reportAddress );
 
 
 		 ArrayList<ArrayList<String>> simcadClones=parsesimcadPairs(config, simcadReportAddress);		 
 		 ArrayList<ArrayList<String>> simcadClonesEnd= parsesimcadPairs2(config, simcadReportAddress);
+		 System.out.println(simcadClones.size());
+	//	 writeToXMLFile(config,simcadClones,"SimcadUpdatedPath");
 		 
 
 		 // this part is to select a random clones for validatoin
@@ -50,7 +50,7 @@ public class CompairToSimcad {
 			System.out.println("Number of clone pairs detected by simcad is: "+simcadClones.size());
 			System.out.println("Number of clone pairs detected by my tool is: "+clones.size());
 			
-		//	System.out.println(simcadClones);
+			System.out.println(simcadClones.size());
 		//	System.out.println(simcadClonesEnd);
 			
 		//	System.out.println(clones);

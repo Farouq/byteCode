@@ -3,6 +3,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.LineNumberReader;
 import java.util.*;
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -28,9 +29,10 @@ public class CompairToConQAT {
 
 		Configuration config=Configuration.initialize(args[0]);
 
+		
 //		System.out.println(config.reportAddress);
 		// need tow files. 1- simcad report and must be copied into Rrport folder of the project
-		// and semantic report
+		// and semantic repor
 		
 		String reportAddress=config.reportAddress+"\\FinalCloneReportWeighted Similarities.0.75.xml";
 		String conQATReportAddress=config.reportAddress+"\\Scripts clones.xml";
@@ -50,7 +52,10 @@ public class CompairToConQAT {
 
 		 ArrayList<ArrayList<String>> conQATClones=parseconQATPairs(config, conQATReportAddress);		 
 		// ArrayList<ArrayList<String>> conQATClonesEnd= parsesimcadPairs2(config, conQATReportAddress);
-		 writeToXMLFileAsSimCad(config,conQATClones,"conQAT clones in SimCad format");
+// replaced
+//		 writeToXMLFileAsSimCad(config,conQATClones,"conQAT clones in SimCad format");
+		 
+		 
 //-----------------------------------------------------------------------------------------------------------------------	 
 // this section is to select random set for validation 
 //			Write.generateTestGroup( config,  conQATClones, "03");
@@ -63,6 +68,11 @@ public class CompairToConQAT {
 			System.out.println("Number of clone pairs detected by Conqat "+conQATClones.size());
 		//	System.out.println(conQATClones);
 			int counter=0;
+	
+//			-----------------------------------------------------------------------------------------------------------------
+//			This method write conqat report in me report format
+//			writeToXMLFile(config,conQATClones,"Conqat report");
+//			
 			
 			FindCommonLoc.locSummery (clones , conQATClones );
 //			
@@ -112,6 +122,68 @@ public class CompairToConQAT {
 
 	}
 
+	
+	private static void writeToXMLFile(Configuration config,ArrayList<ArrayList<String>> meregedClones, String fileName) throws Exception
+	{
+		
+		String outputFileAddress=config.reportAddress+"\\simcad\\"+fileName+".xml";
+		BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(outputFileAddress));
+		bufferedWriter.write("<clones>");
+		bufferedWriter.newLine();
+	
+		for(int i=0; i<meregedClones.size();i++ ){
+			
+			bufferedWriter.write( "<clone_pair>");
+			bufferedWriter.newLine();
+			//System.out.println(d );
+			// first fragment
+			bufferedWriter.write( "<clone_fragment file=\""+meregedClones.get(i).get(0)+"\" startline=\""+ meregedClones.get(i).get(1) +"\" endline=\""+ meregedClones.get(i).get(2)+"\">");
+			bufferedWriter.newLine();
+			bufferedWriter.write("<![CDATA["+ readSourceFile(new File( meregedClones.get(i).get(0)), Integer.parseInt(meregedClones.get(i).get(1)) ,Integer.parseInt(meregedClones.get(i).get(2)))+"]]>");
+			bufferedWriter.newLine();
+			bufferedWriter.write("</clone_fragment>");
+			bufferedWriter.newLine();
+			//second fragment
+			bufferedWriter.write( "<clone_fragment file=\""+meregedClones.get(i).get(3)+"\" startline=\""+ meregedClones.get(i).get(4) +"\" endline=\""+ meregedClones.get(i).get(5)+"\">");
+			bufferedWriter.newLine();
+			bufferedWriter.write("<![CDATA["+readSourceFile(new File( meregedClones.get(i).get(3)), Integer.parseInt(meregedClones.get(i).get(4)) ,Integer.parseInt(meregedClones.get(i).get(5)))+"]]>");
+			bufferedWriter.newLine();
+			bufferedWriter.write("</clone_fragment>");
+			bufferedWriter.newLine();
+			//close pair
+			bufferedWriter.write("</clone_pair>");
+			bufferedWriter.newLine();
+		}
+		
+		bufferedWriter.write("</clones>");
+		bufferedWriter.newLine();
+		bufferedWriter.flush();
+		bufferedWriter.close();
+
+
+	}
+	
+	private static String readSourceFile(File fileName,int startLine, int endLine) throws IOException {
+		
+		String source="";
+		String str="";
+		int line=0;
+
+		 try {
+	            LineNumberReader lr = new LineNumberReader(new FileReader(fileName));
+
+	            while((str = lr.readLine())!=null){
+	            	line++;
+	            	if(line >=startLine && line<=endLine)
+	            		source=source+str+"\n";
+  	
+	            }
+
+	        }catch(Exception e){e.printStackTrace();}
+	
+		
+		return source;
+	}
 	
 	private static void writeToText(ArrayList<ArrayList<String>> clones) throws Exception
 	{
@@ -219,44 +291,44 @@ public class CompairToConQAT {
 		return temp;
 		}
 	
-	private static void writeToXMLFile(Configuration config,ArrayList<ArrayList<String>> meregedClones, String fileName) throws Exception
-	{
-		String outputFileAddress=config.reportAddress+"\\simcad\\"+fileName+".xml";
-		BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(outputFileAddress));
-		bufferedWriter.write("<clones>");
-		bufferedWriter.newLine();
-	
-		for(int i=0; i<meregedClones.size();i++ ){
-			
-			bufferedWriter.write( "<clone_pair>");
-			bufferedWriter.newLine();
-			//System.out.println(d );
-			// first fragment
-			bufferedWriter.write( "<clone_fragment file=\""+meregedClones.get(i).get(0)+"\" startline=\""+ meregedClones.get(i).get(1) +"\" endline=\""+ meregedClones.get(i).get(2)+"\">");
-			bufferedWriter.newLine();
-			bufferedWriter.write("<![CDATA["+ getSourceCode( config, meregedClones.get(i).get(0), meregedClones.get(i).get(2))+"]]>");
-			bufferedWriter.newLine();
-			bufferedWriter.write("</clone_fragment>");
-			bufferedWriter.newLine();
-			//second fragment
-			bufferedWriter.write( "<clone_fragment file=\""+meregedClones.get(i).get(3)+"\" startline=\""+ meregedClones.get(i).get(4) +"\" endline=\""+ meregedClones.get(i).get(5)+"\">");
-			bufferedWriter.newLine();
-			bufferedWriter.write("<![CDATA["+getSourceCode( config, meregedClones.get(i).get(3), meregedClones.get(i).get(5))+"]]>");
-			bufferedWriter.newLine();
-			bufferedWriter.write("</clone_fragment>");
-			bufferedWriter.newLine();
-			//close pair
-			bufferedWriter.write("</clone_pair>");
-			bufferedWriter.newLine();
-		}
-		
-		bufferedWriter.write("</clones>");
-		bufferedWriter.newLine();
-		bufferedWriter.flush();
-		bufferedWriter.close();
-
-
-	}
+//	private static void writeToXMLFile(Configuration config,ArrayList<ArrayList<String>> meregedClones, String fileName) throws Exception
+//	{
+//		String outputFileAddress=config.reportAddress+"\\simcad\\"+fileName+".xml";
+//		BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(outputFileAddress));
+//		bufferedWriter.write("<clones>");
+//		bufferedWriter.newLine();
+//	
+//		for(int i=0; i<meregedClones.size();i++ ){
+//			
+//			bufferedWriter.write( "<clone_pair>");
+//			bufferedWriter.newLine();
+//			//System.out.println(d );
+//			// first fragment
+//			bufferedWriter.write( "<clone_fragment file=\""+meregedClones.get(i).get(0)+"\" startline=\""+ meregedClones.get(i).get(1) +"\" endline=\""+ meregedClones.get(i).get(2)+"\">");
+//			bufferedWriter.newLine();
+//			bufferedWriter.write("<![CDATA["+ getSourceCode( config, meregedClones.get(i).get(0), meregedClones.get(i).get(2))+"]]>");
+//			bufferedWriter.newLine();
+//			bufferedWriter.write("</clone_fragment>");
+//			bufferedWriter.newLine();
+//			//second fragment
+//			bufferedWriter.write( "<clone_fragment file=\""+meregedClones.get(i).get(3)+"\" startline=\""+ meregedClones.get(i).get(4) +"\" endline=\""+ meregedClones.get(i).get(5)+"\">");
+//			bufferedWriter.newLine();
+//			bufferedWriter.write("<![CDATA["+getSourceCode( config, meregedClones.get(i).get(3), meregedClones.get(i).get(5))+"]]>");
+//			bufferedWriter.newLine();
+//			bufferedWriter.write("</clone_fragment>");
+//			bufferedWriter.newLine();
+//			//close pair
+//			bufferedWriter.write("</clone_pair>");
+//			bufferedWriter.newLine();
+//		}
+//		
+//		bufferedWriter.write("</clones>");
+//		bufferedWriter.newLine();
+//		bufferedWriter.flush();
+//		bufferedWriter.close();
+//
+//
+//	}
 	
 	public static String getSourceCode(Configuration config, String fileName, String end) throws IOException{
 

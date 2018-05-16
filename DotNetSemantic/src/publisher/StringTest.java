@@ -15,14 +15,33 @@ public class StringTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String sig=".method public hidebysig newslot virtual final instance object  Convert(object 'value', class [mscorlib]System.Type targetType, object parameter, class [mscorlib]System.Globalization.CultureInfo culture) cil managed {";
-
-		System.out.println( ParseSigniture( sig));
+		
+		String arg="string s1, string s2";
+		System.out.println(arg);
+		if (arg!=null){
+			String[] para=arg.split(",");
+			System.out.println(para[0]+"  "+para[1]);
+			arg="";
+			
+			for(int s=0;s<para.length;s++){
+				para[s]=para[s].trim();
+				if(para[s].indexOf(" ")>0)
+				para[s]=para[s].substring(0,para[s].indexOf(" "));
+				System.out.println("------"+para[s]);
+				arg=arg+para[s]+" ";
+			}
+		}
+		
+		System.out.println(arg);
+		
+		
+//		String sig=".method public hidebysig newslot virtual final instance object  Convert(object 'value', class [mscorlib]System.Type targetType, object parameter, class [mscorlib]System.Globalization.CultureInfo culture) cil managed {";
+//
+//		System.out.println( ParseSigniture( sig));
 		
 	}
 
-	
-	private static String ParseSigniture(String sig){
+		private static String ParseSigniture(String sig){
 		
 
 		int pos = sig.indexOf("(");

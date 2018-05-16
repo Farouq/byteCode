@@ -28,16 +28,23 @@ public class CompairToVisualStudio {
 
 		Configuration config = Configuration.initialize(args[0]);
 
-		String vSReportAddress = config.reportAddress + "\\ASXGui.txt";
+		
+		String vSReportAddress = config.reportAddress + "\\NetGore.txt";
 		ArrayList<ArrayList<String>> VSClones = readVSCloneReport(config, vSReportAddress);
 		System.out.println("Number of clone pairs detected by Visual Studio  " + VSClones.size());
+		/*
+		 * the following function is to write the cloen report in my format
+		 */
+	//	writeToXMLFile(config,VSClones,"VisualStudio report");
 		
-		
-		Write.generateTestGroup( config,  VSClones, "05");
-		System.out.println("-----------------------group selected and printed---------------------");
+		/*
+		 * the following call is to generate a set for evaluation
+		 */
+//		Write.generateTestGroup( config,  VSClones, "05");
+//		System.out.println("-----------------------group selected and printed---------------------");
 		
 
-		String reportAddress = config.reportAddress + "\\FinalCloneReportWeighted Similarities.0.75.xml";
+		String reportAddress = config.reportAddress + "\\FinalCloneReportWeighted Similarities.0.8.xml";
 		ArrayList<ArrayList<String>> clones = parseCloneReport(config, reportAddress);
 		// ArrayList<ArrayList<String>> clonesEnd = parseCloneReport2 (config,
 		// reportAddress );
@@ -47,8 +54,7 @@ public class CompairToVisualStudio {
 		ArrayList<ArrayList<String>> semOnly = new ArrayList<ArrayList<String>>();
 		int counter = 0;
 		
-		
-		
+				
 		Set<ArrayList<String>> myCloneSet = generateListOfFiles(clones);
 		System.out.println("Number of clone fragments  detected by my tool: " + myCloneSet.size());
 		ArrayList<ArrayList<String>> cloneList = new ArrayList<ArrayList<String>>();
@@ -99,6 +105,68 @@ public class CompairToVisualStudio {
 		System.out.println("number of Extra clones " +semOnly.size());
 		System.out.println("number of Missed clones  take the difference" );
 
+	}
+	
+	private static void writeToXMLFile(Configuration config,ArrayList<ArrayList<String>> meregedClones, String fileName) throws Exception
+	{
+		
+		String outputFileAddress=config.reportAddress+"\\simcad\\"+fileName+".xml";
+		BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(outputFileAddress));
+		bufferedWriter.write("<clones>");
+		bufferedWriter.newLine();
+	
+		for(int i=0; i<meregedClones.size();i++ ){
+			
+			bufferedWriter.write( "<clone_pair>");
+			bufferedWriter.newLine();
+			//System.out.println(d );
+			// first fragment
+			bufferedWriter.write( "<clone_fragment file=\""+meregedClones.get(i).get(0)+"\" startline=\""+ meregedClones.get(i).get(1) +"\" endline=\""+ meregedClones.get(i).get(2)+"\">");
+			bufferedWriter.newLine();
+			bufferedWriter.write("<![CDATA["+ readSourceFile(new File( meregedClones.get(i).get(0)), Integer.parseInt(meregedClones.get(i).get(1)) ,Integer.parseInt(meregedClones.get(i).get(2)))+"]]>");
+			bufferedWriter.newLine();
+			bufferedWriter.write("</clone_fragment>");
+			bufferedWriter.newLine();
+			//second fragment
+			bufferedWriter.write( "<clone_fragment file=\""+meregedClones.get(i).get(3)+"\" startline=\""+ meregedClones.get(i).get(4) +"\" endline=\""+ meregedClones.get(i).get(5)+"\">");
+			bufferedWriter.newLine();
+			bufferedWriter.write("<![CDATA["+readSourceFile(new File( meregedClones.get(i).get(3)), Integer.parseInt(meregedClones.get(i).get(4)) ,Integer.parseInt(meregedClones.get(i).get(5)))+"]]>");
+			bufferedWriter.newLine();
+			bufferedWriter.write("</clone_fragment>");
+			bufferedWriter.newLine();
+			//close pair
+			bufferedWriter.write("</clone_pair>");
+			bufferedWriter.newLine();
+		}
+		
+		bufferedWriter.write("</clones>");
+		bufferedWriter.newLine();
+		bufferedWriter.flush();
+		bufferedWriter.close();
+
+
+	}
+	
+	private static String readSourceFile(File fileName,int startLine, int endLine) throws IOException {
+		
+		String source="";
+		String str="";
+		int line=0;
+
+		 try {
+	            LineNumberReader lr = new LineNumberReader(new FileReader(fileName));
+
+	            while((str = lr.readLine())!=null){
+	            	line++;
+	            	if(line >=startLine && line<=endLine)
+	            		source=source+str+"\n";
+  	
+	            }
+
+	        }catch(Exception e){e.printStackTrace();}
+	
+		
+		return source;
 	}
 	
 	public static int max( int a, int b){
@@ -306,13 +374,13 @@ public class CompairToVisualStudio {
 
 					for (int j = i + 1; j < cloneClass.size(); j++) {
 						ArrayList<String> temp = new ArrayList<String>();
-						temp.add(cloneClass.get(i).get(0));
-						temp.add(cloneClass.get(i).get(1));
-						temp.add(cloneClass.get(i).get(2));
+						temp.add(cloneClass.get(i).get(0).trim());
+						temp.add(cloneClass.get(i).get(1).trim());
+						temp.add(cloneClass.get(i).get(2).trim());
 
-						temp.add(cloneClass.get(j).get(0));
-						temp.add(cloneClass.get(j).get(1));
-						temp.add(cloneClass.get(j).get(2));
+						temp.add(cloneClass.get(j).get(0).trim());
+						temp.add(cloneClass.get(j).get(1).trim());
+						temp.add(cloneClass.get(j).get(2).trim());
 						reportClones.add(temp);
 					}
 				}

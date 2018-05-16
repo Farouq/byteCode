@@ -9,8 +9,12 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
-import java.lang.*;
+
 import org.apache.commons.io.FileUtils;
+
+import java.lang.*;
+
+//import org.apache.commons.io.FileUtils;
 
 
 
@@ -65,7 +69,7 @@ public class StarterPublisher {
 
 		//export the unfiltered binary code and source code to xml files
 		//System.out.println("step4");
-		step4_exportToXML(config,files,disassembledCodeList);
+ 
 		/* To to
 		 * I need to check if path of the files. If the project has been moved after compilation, I need to move the source 
 		 * code files to it's path at the time of compilation
@@ -235,8 +239,7 @@ public class StarterPublisher {
 			int methoBlockEndLine=Integer.MAX_VALUE;
 			for(int j=0;j<in_lines.size();j++)
 			{
-				
-				if(in_lines.get(j).startsWith("// Source File '"))
+								if(in_lines.get(j).startsWith("// Source File '"))
 				{
 					String t=in_lines.get(j).replace("// Source File '", "");
 					t=t.substring(0,t.lastIndexOf("'"));
@@ -617,7 +620,7 @@ public class StarterPublisher {
 					//if (methodBlockBuffer_binary.size()>5 && methoBlockStartLine !=Integer.MAX_VALUE && !currentSourceFileAddress.endsWith(".xaml") && methodBlockBuffer_source.size()>4)
 
 					totalMethodCounter++;
-				    if (methodBlockBuffer_binary.size()>5  && !currentSourceFileAddress.endsWith(".xaml") && methodBlockBuffer_source.size()>4 )
+				    if (methodBlockBuffer_binary.size()>7  && !currentSourceFileAddress.endsWith(".xaml") && methodBlockBuffer_source.size()>4 )
 					{
 
 						methodCounter++;
@@ -718,6 +721,8 @@ public class StarterPublisher {
 							String[] para=args.split(",");
 							args="";
 							for(int s=0;s<para.length;s++){
+								para[s]=para[s].trim(); // added here 
+								
 								if(para[s].indexOf(" ")>0)
 								para[s]=para[s].substring(0,para[s].indexOf(" "));
 								args=args+para[s]+" ";

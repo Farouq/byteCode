@@ -127,7 +127,7 @@ public class Configuration {
 		
 		config.signitureLCSThreshold=0.90;
 
-		config.threshold=0.60;
+		config.threshold=0.75;
 		
 		config.min_threshold=0.5f;
 		config.comparisonMethod=3;

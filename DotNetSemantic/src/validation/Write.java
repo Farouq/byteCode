@@ -231,12 +231,8 @@ public class Write {
 	            	line++;
 	            	if(line >=startLine && line<=endLine)
 	            		source=source+str+"\n";
-	            	//System.out.println(str);
-	            	
-	            	
+  	
 	            }
-	
-		
 
 	        }catch(Exception e){e.printStackTrace();}
 	

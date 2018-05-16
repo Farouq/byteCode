@@ -49,11 +49,12 @@ public class SignitureMatching {
 		//Configuration config=Configuration.loadFromFile();
 		config.xmlmethodSignature=config.disassebledAddress+"\\method_0_Signiture.xml";
 		
+		
 		parse3(config.xmlmethodSignature);
 
 		lcsCalledMethods(config);
-	//	levenstien(config,config.xmlmethodSignature);
-	//	jaccInstructions(config);
+		levenstien(config,config.xmlmethodSignature);
+		jaccInstructions(config);
 		
 	}
 
@@ -70,7 +71,6 @@ public class SignitureMatching {
 		System.out.println("Similarity Threshold: "+config.signitureLCSThreshold);
 
 		
-
 
 		// LCS similarity for called methods
 
@@ -207,7 +207,7 @@ public class SignitureMatching {
 
 		//Configuration config=Configuration.loadFromFile();
 
-		config.signitureLevThreshold=0.95;
+		config.signitureLevThreshold=0.90;
 		
 		String outputFileAddress2=config.reportAddress+"\\SignitureLevenshtien"+ config.signitureLevThreshold+".xml";
 		BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(outputFileAddress2));

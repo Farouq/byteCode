@@ -28,7 +28,6 @@ public class FindCommonLoc {
 		
 		
 		Set<ArrayList<String>> VSCloneSet = generateListOfFiles(VSClones);
-		System.out.println("Number of clone fragments  detected by Other tool: " + VSCloneSet.size());
 		ArrayList<ArrayList<String>> VSCloneList = new ArrayList<ArrayList<String>>();
 		//ArrayList<String> clone=new ArrayList<String>();
 		VSCloneList.addAll(VSCloneSet);
@@ -37,14 +36,18 @@ public class FindCommonLoc {
 //			System.out.println(clone);
 //		}
 //		
+		System.out.println("Number of clone fragments  detected by Other tool  : " + VSCloneList.size());
 		System.out.println("Total number of cloned LOC by Used tool : " +clonedLoc(VSCloneList));
+		System.out.println("Total number of common Loc between two detectors before clean up : " + commonLoc(cloneList,VSCloneList));
+		
 		
 		ArrayList<ArrayList<String>> VSCloneListClean=deleteDuplication(VSCloneList);
-		System.out.println("Number of clone fragments  detected by Other tool after deletion of duplication : " + VSCloneListClean.size());
+	
 		
-		System.out.println("Total number of cloned LOC by Used tool : " +clonedLoc(VSCloneList));
+		System.out.println("Number of clone fragments  detected by Other tool after deletion of duplication : " + VSCloneListClean.size());
+	
 		System.out.println("Total number of cloned LOC by Used tool after clean up: " +clonedLoc(VSCloneListClean));
-		System.out.println("Total number of common Loc between two detectors: " + commonLoc(cloneList,VSCloneList));
+		System.out.println("Total number of common Loc between two detector after clean up : " + commonLoc(cloneList,VSCloneList));
 		
 		System.out.println("-------------------------------------------------------------------------------- ");
 
@@ -91,6 +94,11 @@ public class FindCommonLoc {
 					int r2 = Integer.parseInt(cloneToCompare.get(2).trim());
 					
 					loc+= min(r1,r2)- max(l1,l2)+1;
+					int dif= min(r1,r2)- max(l1,l2)+1;
+//					System.out.println(clone.get(0)+", "+clone.get(1)+", "+clone.get(2));
+//					System.out.println(cloneToCompare.get(0)+", "+cloneToCompare.get(1)+", "+cloneToCompare.get(2));
+//					System.out.println("------------------------------"+ dif +"------------------------------------------");
+//					break;
 				}
 
 			}
@@ -159,8 +167,8 @@ public class FindCommonLoc {
 					
 					l1=min(l1,l2);
 					r1=max(r1,r2);
-				//	myList.get(i).set(1,Integer.toString(l1));
-				//	myList.get(i).set(2,Integer.toString(r1));
+					myList.get(i).set(1,Integer.toString(l1));
+					myList.get(i).set(2,Integer.toString(r1));
 					myList.remove(j);
 					
 				
